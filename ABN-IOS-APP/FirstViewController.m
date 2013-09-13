@@ -17,6 +17,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    NSException* myException = [NSException
+                                exceptionWithName:@"FileNotFoundException"
+                                reason:@"File Not Found on System"
+                                userInfo:nil];
+    @throw myException;
+    
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
