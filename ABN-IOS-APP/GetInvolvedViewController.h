@@ -6,8 +6,12 @@
 //  Copyright (c) 2013 Gorial, Sam. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "PayPalMobile.h"
 
-@interface GetInvolvedViewController : UIViewController
+@interface GetInvolvedViewController : UIViewController<PayPalPaymentDelegate, UIPickerViewDelegate>
+
+@property (weak, nonatomic) IBOutlet UIButton *donateButton;
+
+- (IBAction)donateClick:(id)sender;
 
 @end

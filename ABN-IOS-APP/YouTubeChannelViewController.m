@@ -16,17 +16,26 @@
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
     
     NSString *fullURL = @"https://www.youtube.com/user/ABNSAT2";
     NSURL *url = [NSURL URLWithString:fullURL];
     NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
     [_webView loadRequest:requestObj];
+    
+    [super viewDidLoad];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
+}
+
+- (IBAction)backButtonClick:(id)sender {
+    [_webView goBack];
+}
+
+- (IBAction)forwardButtonClick:(id)sender {
+    [_webView goForward];
 }
 
 @end

@@ -9,6 +9,21 @@
 /* Begin PBXBuildFile section */
 		01119DEB17E2A85800D96130 /* GetInvolvedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01119DEA17E2A85800D96130 /* GetInvolvedViewController.m */; };
 		01119DEE17E2A8BF00D96130 /* MoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01119DED17E2A8BF00D96130 /* MoreViewController.m */; };
+		013F393E17E929DA006B5C6C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 013F393D17E929DA006B5C6C /* AVFoundation.framework */; };
+		013F394017E929E1006B5C6C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 013F393F17E929E1006B5C6C /* AudioToolbox.framework */; };
+		013F394217E929EA006B5C6C /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 013F394117E929EA006B5C6C /* CoreMedia.framework */; };
+		013F394417E929F6006B5C6C /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 013F394317E929F6006B5C6C /* CoreVideo.framework */; };
+		013F394617E929FF006B5C6C /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 013F394517E929FF006B5C6C /* libxml2.dylib */; };
+		013F394817E92A09006B5C6C /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 013F394717E92A09006B5C6C /* MessageUI.framework */; };
+		013F394A17E92A19006B5C6C /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 013F394917E92A19006B5C6C /* MobileCoreServices.framework */; };
+		013F394C17E92A22006B5C6C /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 013F394B17E92A22006B5C6C /* OpenGLES.framework */; };
+		013F394E17E92A30006B5C6C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 013F394D17E92A30006B5C6C /* QuartzCore.framework */; };
+		013F395017E92A39006B5C6C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 013F394F17E92A39006B5C6C /* Security.framework */; };
+		013F395917E934CE006B5C6C /* libPayPalMobile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 013F395417E934CE006B5C6C /* libPayPalMobile.a */; };
+		013F395A17E934F5006B5C6C /* libPayPalMobile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 013F395417E934CE006B5C6C /* libPayPalMobile.a */; };
+		013F395C17E9394C006B5C6C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 013F395B17E9394C006B5C6C /* SystemConfiguration.framework */; };
+		013F395E17E93BE7006B5C6C /* paypal-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 013F395D17E93BE7006B5C6C /* paypal-logo.png */; };
+		013F395F17E93BE7006B5C6C /* paypal-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 013F395D17E93BE7006B5C6C /* paypal-logo.png */; };
 		0143427817E15B3200BCE1F2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0143427717E15B3200BCE1F2 /* UIKit.framework */; };
 		0143427A17E15B3200BCE1F2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0143427917E15B3200BCE1F2 /* Foundation.framework */; };
 		0143427C17E15B3200BCE1F2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0143427B17E15B3200BCE1F2 /* CoreGraphics.framework */; };
@@ -31,24 +46,36 @@
 		014342AC17E15B3200BCE1F2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0143427917E15B3200BCE1F2 /* Foundation.framework */; };
 		014342B417E15B3200BCE1F2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 014342B217E15B3200BCE1F2 /* InfoPlist.strings */; };
 		014342B717E15B3200BCE1F2 /* ABN_IOS_APPTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 014342B617E15B3200BCE1F2 /* ABN_IOS_APPTests.m */; };
+		015A340F17E7C583007D83C2 /* facebook-logo-75px.png in Resources */ = {isa = PBXBuildFile; fileRef = 015A340E17E7C583007D83C2 /* facebook-logo-75px.png */; };
+		015A341117E7C5F4007D83C2 /* youtube-logo-75px.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 015A341017E7C5F4007D83C2 /* youtube-logo-75px.jpg */; };
+		015A341317E7C62D007D83C2 /* twitter-logo-75px.png in Resources */ = {isa = PBXBuildFile; fileRef = 015A341217E7C62D007D83C2 /* twitter-logo-75px.png */; };
+		015A341517E7C928007D83C2 /* youtube-thumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 015A341417E7C928007D83C2 /* youtube-thumb.png */; };
+		015A341B17E7CA64007D83C2 /* donate-thumb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 015A341917E7CA64007D83C2 /* donate-thumb@2x.png */; };
+		015A341D17E7CA9F007D83C2 /* donate-thumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 015A341C17E7CA9F007D83C2 /* donate-thumb.png */; };
+		01C4FA8C17E5F829002F3858 /* ContactUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C4FA8B17E5F829002F3858 /* ContactUsViewController.m */; };
+		01C4FA9117E64B38002F3858 /* forward.button.red.png in Resources */ = {isa = PBXBuildFile; fileRef = 01C4FA8D17E64B38002F3858 /* forward.button.red.png */; };
+		01C4FA9217E64B38002F3858 /* forward.button.grey.png in Resources */ = {isa = PBXBuildFile; fileRef = 01C4FA8E17E64B38002F3858 /* forward.button.grey.png */; };
+		01C4FA9317E64B38002F3858 /* back.button.red.png in Resources */ = {isa = PBXBuildFile; fileRef = 01C4FA8F17E64B38002F3858 /* back.button.red.png */; };
+		01C4FA9817E64D03002F3858 /* back.button.grey.png in Resources */ = {isa = PBXBuildFile; fileRef = 01C4FA9717E64D03002F3858 /* back.button.grey.png */; };
+		01C4FA9A17E65568002F3858 /* cloud-air-backdrop.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01C4FA9917E65568002F3858 /* cloud-air-backdrop.jpg */; };
 		01D5C9E217E28E1C00BA90A4 /* abn-globe-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 01D5C9E117E28E1C00BA90A4 /* abn-globe-logo.png */; };
-		01D5C9E417E28FE800BA90A4 /* donate-thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = 01D5C9E317E28FE800BA90A4 /* donate-thumbnail.png */; };
 		01D5C9E617E2904300BA90A4 /* contact-thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = 01D5C9E517E2904300BA90A4 /* contact-thumbnail.png */; };
 		01D5C9E817E290A400BA90A4 /* watch-thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = 01D5C9E717E290A400BA90A4 /* watch-thumbnail.png */; };
 		01D5C9EA17E290E000BA90A4 /* youtube-thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = 01D5C9E917E290E000BA90A4 /* youtube-thumbnail.png */; };
 		01D5C9EC17E2911E00BA90A4 /* elipses-thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = 01D5C9EB17E2911E00BA90A4 /* elipses-thumbnail.png */; };
 		01D5C9F717E2971500BA90A4 /* contact-thumb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 01D5C9ED17E2971500BA90A4 /* contact-thumb@2x.png */; };
 		01D5C9F817E2971500BA90A4 /* contact-thumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 01D5C9EE17E2971500BA90A4 /* contact-thumb.png */; };
-		01D5C9FA17E2971500BA90A4 /* donate-thumb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 01D5C9F017E2971500BA90A4 /* donate-thumb@2x.png */; };
 		01D5C9FB17E2971500BA90A4 /* elipses-thumb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 01D5C9F117E2971500BA90A4 /* elipses-thumb@2x.png */; };
 		01D5C9FC17E2971500BA90A4 /* elipses-thumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 01D5C9F217E2971500BA90A4 /* elipses-thumb.png */; };
 		01D5C9FD17E2971500BA90A4 /* watch-thumb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 01D5C9F317E2971500BA90A4 /* watch-thumb@2x.png */; };
 		01D5C9FE17E2971500BA90A4 /* watch-thumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 01D5C9F417E2971500BA90A4 /* watch-thumb.png */; };
 		01D5C9FF17E2971500BA90A4 /* youtube-thumb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 01D5C9F517E2971500BA90A4 /* youtube-thumb@2x.png */; };
-		01D5CA0617E2984E00BA90A4 /* youtube-thumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 01D5CA0517E2984E00BA90A4 /* youtube-thumb.png */; };
-		01D5CA0817E298D900BA90A4 /* donate-thumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 01D5CA0717E298D900BA90A4 /* donate-thumb.png */; };
 		01D5CA0B17E2A1EA00BA90A4 /* WatchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D5CA0A17E2A1EA00BA90A4 /* WatchViewController.m */; };
 		01D5CA0E17E2A38800BA90A4 /* YouTubeChannelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D5CA0D17E2A38800BA90A4 /* YouTubeChannelViewController.m */; };
+		01DFE9EB17E7CF7500D1122A /* bassim-and-haifa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01DFE9EA17E7CF7500D1122A /* bassim-and-haifa.jpg */; };
+		01DFE9F117E7D84200D1122A /* MeetTheFoundersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01DFE9F017E7D84200D1122A /* MeetTheFoundersViewController.m */; };
+		01DFE9F417E7D9C900D1122A /* ConfessionOfFaithViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01DFE9F317E7D9C900D1122A /* ConfessionOfFaithViewController.m */; };
+		01DFE9F717E7D9D300D1122A /* OurVisionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01DFE9F617E7D9D300D1122A /* OurVisionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +93,22 @@
 		01119DEA17E2A85800D96130 /* GetInvolvedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetInvolvedViewController.m; sourceTree = "<group>"; };
 		01119DEC17E2A8BF00D96130 /* MoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreViewController.h; sourceTree = "<group>"; };
 		01119DED17E2A8BF00D96130 /* MoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreViewController.m; sourceTree = "<group>"; };
+		013F393D17E929DA006B5C6C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		013F393F17E929E1006B5C6C /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		013F394117E929EA006B5C6C /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		013F394317E929F6006B5C6C /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		013F394517E929FF006B5C6C /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		013F394717E92A09006B5C6C /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		013F394917E92A19006B5C6C /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		013F394B17E92A22006B5C6C /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		013F394D17E92A30006B5C6C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		013F394F17E92A39006B5C6C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		013F395417E934CE006B5C6C /* libPayPalMobile.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPayPalMobile.a; sourceTree = "<group>"; };
+		013F395517E934CE006B5C6C /* PayPalMobile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalMobile.h; sourceTree = "<group>"; };
+		013F395617E934CE006B5C6C /* PayPalPayment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalPayment.h; sourceTree = "<group>"; };
+		013F395717E934CE006B5C6C /* PayPalPaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalPaymentViewController.h; sourceTree = "<group>"; };
+		013F395B17E9394C006B5C6C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		013F395D17E93BE7006B5C6C /* paypal-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "paypal-logo.png"; sourceTree = "<group>"; };
 		0143427417E15B3200BCE1F2 /* ABN-IOS-APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ABN-IOS-APP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0143427717E15B3200BCE1F2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0143427917E15B3200BCE1F2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -95,26 +138,43 @@
 		014342B317E15B3200BCE1F2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		014342B517E15B3200BCE1F2 /* ABN_IOS_APPTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ABN_IOS_APPTests.h; sourceTree = "<group>"; };
 		014342B617E15B3200BCE1F2 /* ABN_IOS_APPTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ABN_IOS_APPTests.m; sourceTree = "<group>"; };
+		015A340E17E7C583007D83C2 /* facebook-logo-75px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "facebook-logo-75px.png"; sourceTree = "<group>"; };
+		015A341017E7C5F4007D83C2 /* youtube-logo-75px.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "youtube-logo-75px.jpg"; sourceTree = "<group>"; };
+		015A341217E7C62D007D83C2 /* twitter-logo-75px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "twitter-logo-75px.png"; sourceTree = "<group>"; };
+		015A341417E7C928007D83C2 /* youtube-thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "youtube-thumb.png"; sourceTree = "<group>"; };
+		015A341917E7CA64007D83C2 /* donate-thumb@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "donate-thumb@2x.png"; sourceTree = "<group>"; };
+		015A341C17E7CA9F007D83C2 /* donate-thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "donate-thumb.png"; sourceTree = "<group>"; };
+		015A341E17E7CAA5007D83C2 /* donate-thumb@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "donate-thumb@2x.png"; sourceTree = "<group>"; };
+		01C4FA8A17E5F829002F3858 /* ContactUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactUsViewController.h; sourceTree = "<group>"; };
+		01C4FA8B17E5F829002F3858 /* ContactUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactUsViewController.m; sourceTree = "<group>"; };
+		01C4FA8D17E64B38002F3858 /* forward.button.red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = forward.button.red.png; sourceTree = "<group>"; };
+		01C4FA8E17E64B38002F3858 /* forward.button.grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = forward.button.grey.png; sourceTree = "<group>"; };
+		01C4FA8F17E64B38002F3858 /* back.button.red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.button.red.png; sourceTree = "<group>"; };
+		01C4FA9717E64D03002F3858 /* back.button.grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.button.grey.png; sourceTree = "<group>"; };
+		01C4FA9917E65568002F3858 /* cloud-air-backdrop.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "cloud-air-backdrop.jpg"; sourceTree = "<group>"; };
 		01D5C9E117E28E1C00BA90A4 /* abn-globe-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "abn-globe-logo.png"; sourceTree = "<group>"; };
-		01D5C9E317E28FE800BA90A4 /* donate-thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "donate-thumbnail.png"; sourceTree = "<group>"; };
 		01D5C9E517E2904300BA90A4 /* contact-thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "contact-thumbnail.png"; sourceTree = "<group>"; };
 		01D5C9E717E290A400BA90A4 /* watch-thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "watch-thumbnail.png"; sourceTree = "<group>"; };
 		01D5C9E917E290E000BA90A4 /* youtube-thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "youtube-thumbnail.png"; sourceTree = "<group>"; };
 		01D5C9EB17E2911E00BA90A4 /* elipses-thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "elipses-thumbnail.png"; sourceTree = "<group>"; };
 		01D5C9ED17E2971500BA90A4 /* contact-thumb@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "contact-thumb@2x.png"; sourceTree = "<group>"; };
 		01D5C9EE17E2971500BA90A4 /* contact-thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "contact-thumb.png"; sourceTree = "<group>"; };
-		01D5C9F017E2971500BA90A4 /* donate-thumb@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "donate-thumb@2x.png"; sourceTree = "<group>"; };
 		01D5C9F117E2971500BA90A4 /* elipses-thumb@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "elipses-thumb@2x.png"; sourceTree = "<group>"; };
 		01D5C9F217E2971500BA90A4 /* elipses-thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "elipses-thumb.png"; sourceTree = "<group>"; };
 		01D5C9F317E2971500BA90A4 /* watch-thumb@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "watch-thumb@2x.png"; sourceTree = "<group>"; };
 		01D5C9F417E2971500BA90A4 /* watch-thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "watch-thumb.png"; sourceTree = "<group>"; };
 		01D5C9F517E2971500BA90A4 /* youtube-thumb@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "youtube-thumb@2x.png"; sourceTree = "<group>"; };
-		01D5CA0517E2984E00BA90A4 /* youtube-thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "youtube-thumb.png"; sourceTree = "<group>"; };
-		01D5CA0717E298D900BA90A4 /* donate-thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "donate-thumb.png"; sourceTree = "<group>"; };
 		01D5CA0917E2A1EA00BA90A4 /* WatchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WatchViewController.h; sourceTree = "<group>"; };
 		01D5CA0A17E2A1EA00BA90A4 /* WatchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WatchViewController.m; sourceTree = "<group>"; };
 		01D5CA0C17E2A38800BA90A4 /* YouTubeChannelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YouTubeChannelViewController.h; sourceTree = "<group>"; };
 		01D5CA0D17E2A38800BA90A4 /* YouTubeChannelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YouTubeChannelViewController.m; sourceTree = "<group>"; };
+		01DFE9EA17E7CF7500D1122A /* bassim-and-haifa.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bassim-and-haifa.jpg"; sourceTree = "<group>"; };
+		01DFE9EF17E7D84200D1122A /* MeetTheFoundersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeetTheFoundersViewController.h; sourceTree = "<group>"; };
+		01DFE9F017E7D84200D1122A /* MeetTheFoundersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeetTheFoundersViewController.m; sourceTree = "<group>"; };
+		01DFE9F217E7D9C900D1122A /* ConfessionOfFaithViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfessionOfFaithViewController.h; sourceTree = "<group>"; };
+		01DFE9F317E7D9C900D1122A /* ConfessionOfFaithViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfessionOfFaithViewController.m; sourceTree = "<group>"; };
+		01DFE9F517E7D9D300D1122A /* OurVisionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OurVisionViewController.h; sourceTree = "<group>"; };
+		01DFE9F617E7D9D300D1122A /* OurVisionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OurVisionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,9 +182,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				013F395C17E9394C006B5C6C /* SystemConfiguration.framework in Frameworks */,
 				0143427817E15B3200BCE1F2 /* UIKit.framework in Frameworks */,
+				013F395017E92A39006B5C6C /* Security.framework in Frameworks */,
+				013F394E17E92A30006B5C6C /* QuartzCore.framework in Frameworks */,
+				013F394C17E92A22006B5C6C /* OpenGLES.framework in Frameworks */,
+				013F394A17E92A19006B5C6C /* MobileCoreServices.framework in Frameworks */,
+				013F394817E92A09006B5C6C /* MessageUI.framework in Frameworks */,
+				013F394617E929FF006B5C6C /* libxml2.dylib in Frameworks */,
+				013F394417E929F6006B5C6C /* CoreVideo.framework in Frameworks */,
+				013F394217E929EA006B5C6C /* CoreMedia.framework in Frameworks */,
+				013F394017E929E1006B5C6C /* AudioToolbox.framework in Frameworks */,
+				013F393E17E929DA006B5C6C /* AVFoundation.framework in Frameworks */,
 				0143427A17E15B3200BCE1F2 /* Foundation.framework in Frameworks */,
 				0143427C17E15B3200BCE1F2 /* CoreGraphics.framework in Frameworks */,
+				013F395A17E934F5006B5C6C /* libPayPalMobile.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,15 +207,38 @@
 				014342AA17E15B3200BCE1F2 /* SenTestingKit.framework in Frameworks */,
 				014342AB17E15B3200BCE1F2 /* UIKit.framework in Frameworks */,
 				014342AC17E15B3200BCE1F2 /* Foundation.framework in Frameworks */,
+				013F395917E934CE006B5C6C /* libPayPalMobile.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		013F395317E934CE006B5C6C /* PayPalMobile */ = {
+			isa = PBXGroup;
+			children = (
+				013F395417E934CE006B5C6C /* libPayPalMobile.a */,
+				013F395517E934CE006B5C6C /* PayPalMobile.h */,
+				013F395617E934CE006B5C6C /* PayPalPayment.h */,
+				013F395717E934CE006B5C6C /* PayPalPaymentViewController.h */,
+			);
+			path = PayPalMobile;
+			sourceTree = "<group>";
+		};
 		0143426B17E15B3200BCE1F2 = {
 			isa = PBXGroup;
 			children = (
+				013F395B17E9394C006B5C6C /* SystemConfiguration.framework */,
+				013F394F17E92A39006B5C6C /* Security.framework */,
+				013F394D17E92A30006B5C6C /* QuartzCore.framework */,
+				013F394B17E92A22006B5C6C /* OpenGLES.framework */,
+				013F394917E92A19006B5C6C /* MobileCoreServices.framework */,
+				013F394717E92A09006B5C6C /* MessageUI.framework */,
+				013F394517E929FF006B5C6C /* libxml2.dylib */,
+				013F394317E929F6006B5C6C /* CoreVideo.framework */,
+				013F394117E929EA006B5C6C /* CoreMedia.framework */,
+				013F393F17E929E1006B5C6C /* AudioToolbox.framework */,
+				013F393D17E929DA006B5C6C /* AVFoundation.framework */,
 				0143427D17E15B3200BCE1F2 /* ABN-IOS-APP */,
 				014342AF17E15B3200BCE1F2 /* ABN-IOS-APPTests */,
 				0143427617E15B3200BCE1F2 /* Frameworks */,
@@ -174,8 +269,17 @@
 		0143427D17E15B3200BCE1F2 /* ABN-IOS-APP */ = {
 			isa = PBXGroup;
 			children = (
+				013F395317E934CE006B5C6C /* PayPalMobile */,
+				01DFE9F517E7D9D300D1122A /* OurVisionViewController.h */,
+				01DFE9F617E7D9D300D1122A /* OurVisionViewController.m */,
+				01DFE9F217E7D9C900D1122A /* ConfessionOfFaithViewController.h */,
+				01DFE9F317E7D9C900D1122A /* ConfessionOfFaithViewController.m */,
 				01119DEC17E2A8BF00D96130 /* MoreViewController.h */,
 				01119DED17E2A8BF00D96130 /* MoreViewController.m */,
+				01C4FA8A17E5F829002F3858 /* ContactUsViewController.h */,
+				01C4FA8B17E5F829002F3858 /* ContactUsViewController.m */,
+				01DFE9EF17E7D84200D1122A /* MeetTheFoundersViewController.h */,
+				01DFE9F017E7D84200D1122A /* MeetTheFoundersViewController.m */,
 				01119DE917E2A85800D96130 /* GetInvolvedViewController.h */,
 				01119DEA17E2A85800D96130 /* GetInvolvedViewController.m */,
 				01D5CA0C17E2A38800BA90A4 /* YouTubeChannelViewController.h */,
@@ -232,26 +336,36 @@
 		01D5C9E017E28D2800BA90A4 /* images */ = {
 			isa = PBXGroup;
 			children = (
-				01D5CA0717E298D900BA90A4 /* donate-thumb.png */,
-				01D5CA0517E2984E00BA90A4 /* youtube-thumb.png */,
-				01D5C9ED17E2971500BA90A4 /* contact-thumb@2x.png */,
-				01D5C9EE17E2971500BA90A4 /* contact-thumb.png */,
-				01D5C9F017E2971500BA90A4 /* donate-thumb@2x.png */,
-				01D5C9F117E2971500BA90A4 /* elipses-thumb@2x.png */,
-				01D5C9F217E2971500BA90A4 /* elipses-thumb.png */,
-				01D5C9F317E2971500BA90A4 /* watch-thumb@2x.png */,
-				01D5C9F417E2971500BA90A4 /* watch-thumb.png */,
-				01D5C9F517E2971500BA90A4 /* youtube-thumb@2x.png */,
-				01D5C9EB17E2911E00BA90A4 /* elipses-thumbnail.png */,
-				01D5C9E917E290E000BA90A4 /* youtube-thumbnail.png */,
-				01D5C9E717E290A400BA90A4 /* watch-thumbnail.png */,
-				01D5C9E517E2904300BA90A4 /* contact-thumbnail.png */,
-				01D5C9E317E28FE800BA90A4 /* donate-thumbnail.png */,
+				013F395D17E93BE7006B5C6C /* paypal-logo.png */,
+				01DFE9EA17E7CF7500D1122A /* bassim-and-haifa.jpg */,
 				01D5C9E117E28E1C00BA90A4 /* abn-globe-logo.png */,
+				01C4FA9717E64D03002F3858 /* back.button.grey.png */,
+				01C4FA8F17E64B38002F3858 /* back.button.red.png */,
+				015A341917E7CA64007D83C2 /* donate-thumb@2x.png */,
+				01C4FA9917E65568002F3858 /* cloud-air-backdrop.jpg */,
+				01D5C9EE17E2971500BA90A4 /* contact-thumb.png */,
+				01D5C9ED17E2971500BA90A4 /* contact-thumb@2x.png */,
+				01D5C9E517E2904300BA90A4 /* contact-thumbnail.png */,
+				015A341417E7C928007D83C2 /* youtube-thumb.png */,
+				01D5C9F217E2971500BA90A4 /* elipses-thumb.png */,
+				01D5C9F117E2971500BA90A4 /* elipses-thumb@2x.png */,
+				015A341E17E7CAA5007D83C2 /* donate-thumb@2x.png */,
+				01D5C9EB17E2911E00BA90A4 /* elipses-thumbnail.png */,
+				015A340E17E7C583007D83C2 /* facebook-logo-75px.png */,
 				0143429817E15B3200BCE1F2 /* first.png */,
+				015A341C17E7CA9F007D83C2 /* donate-thumb.png */,
 				0143429A17E15B3200BCE1F2 /* first@2x.png */,
+				01C4FA8E17E64B38002F3858 /* forward.button.grey.png */,
+				01C4FA8D17E64B38002F3858 /* forward.button.red.png */,
 				0143429F17E15B3200BCE1F2 /* second.png */,
 				014342A117E15B3200BCE1F2 /* second@2x.png */,
+				015A341217E7C62D007D83C2 /* twitter-logo-75px.png */,
+				01D5C9F417E2971500BA90A4 /* watch-thumb.png */,
+				01D5C9F317E2971500BA90A4 /* watch-thumb@2x.png */,
+				01D5C9E717E290A400BA90A4 /* watch-thumbnail.png */,
+				015A341017E7C5F4007D83C2 /* youtube-logo-75px.jpg */,
+				01D5C9F517E2971500BA90A4 /* youtube-thumb@2x.png */,
+				01D5C9E917E290E000BA90A4 /* youtube-thumbnail.png */,
 			);
 			name = images;
 			sourceTree = "<group>";
@@ -338,21 +452,30 @@
 				014342A017E15B3200BCE1F2 /* second.png in Resources */,
 				014342A217E15B3200BCE1F2 /* second@2x.png in Resources */,
 				01D5C9E217E28E1C00BA90A4 /* abn-globe-logo.png in Resources */,
-				01D5C9E417E28FE800BA90A4 /* donate-thumbnail.png in Resources */,
 				01D5C9E617E2904300BA90A4 /* contact-thumbnail.png in Resources */,
 				01D5C9E817E290A400BA90A4 /* watch-thumbnail.png in Resources */,
 				01D5C9EA17E290E000BA90A4 /* youtube-thumbnail.png in Resources */,
 				01D5C9EC17E2911E00BA90A4 /* elipses-thumbnail.png in Resources */,
 				01D5C9F717E2971500BA90A4 /* contact-thumb@2x.png in Resources */,
 				01D5C9F817E2971500BA90A4 /* contact-thumb.png in Resources */,
-				01D5C9FA17E2971500BA90A4 /* donate-thumb@2x.png in Resources */,
 				01D5C9FB17E2971500BA90A4 /* elipses-thumb@2x.png in Resources */,
 				01D5C9FC17E2971500BA90A4 /* elipses-thumb.png in Resources */,
 				01D5C9FD17E2971500BA90A4 /* watch-thumb@2x.png in Resources */,
 				01D5C9FE17E2971500BA90A4 /* watch-thumb.png in Resources */,
 				01D5C9FF17E2971500BA90A4 /* youtube-thumb@2x.png in Resources */,
-				01D5CA0617E2984E00BA90A4 /* youtube-thumb.png in Resources */,
-				01D5CA0817E298D900BA90A4 /* donate-thumb.png in Resources */,
+				01C4FA9117E64B38002F3858 /* forward.button.red.png in Resources */,
+				01C4FA9217E64B38002F3858 /* forward.button.grey.png in Resources */,
+				01C4FA9317E64B38002F3858 /* back.button.red.png in Resources */,
+				01C4FA9817E64D03002F3858 /* back.button.grey.png in Resources */,
+				01C4FA9A17E65568002F3858 /* cloud-air-backdrop.jpg in Resources */,
+				015A340F17E7C583007D83C2 /* facebook-logo-75px.png in Resources */,
+				015A341117E7C5F4007D83C2 /* youtube-logo-75px.jpg in Resources */,
+				015A341317E7C62D007D83C2 /* twitter-logo-75px.png in Resources */,
+				015A341517E7C928007D83C2 /* youtube-thumb.png in Resources */,
+				015A341B17E7CA64007D83C2 /* donate-thumb@2x.png in Resources */,
+				015A341D17E7CA9F007D83C2 /* donate-thumb.png in Resources */,
+				01DFE9EB17E7CF7500D1122A /* bassim-and-haifa.jpg in Resources */,
+				013F395E17E93BE7006B5C6C /* paypal-logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,6 +484,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				014342B417E15B3200BCE1F2 /* InfoPlist.strings in Resources */,
+				013F395F17E93BE7006B5C6C /* paypal-logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,6 +519,10 @@
 				01D5CA0E17E2A38800BA90A4 /* YouTubeChannelViewController.m in Sources */,
 				01119DEB17E2A85800D96130 /* GetInvolvedViewController.m in Sources */,
 				01119DEE17E2A8BF00D96130 /* MoreViewController.m in Sources */,
+				01C4FA8C17E5F829002F3858 /* ContactUsViewController.m in Sources */,
+				01DFE9F117E7D84200D1122A /* MeetTheFoundersViewController.m in Sources */,
+				01DFE9F417E7D9C900D1122A /* ConfessionOfFaithViewController.m in Sources */,
+				01DFE9F717E7D9D300D1122A /* OurVisionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,7 +644,16 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ABN-IOS-APP/ABN-IOS-APP-Prefix.pch";
 				INFOPLIST_FILE = "ABN-IOS-APP/ABN-IOS-APP-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/ABN-IOS-APP/PayPalMobile\"",
+				);
+				OTHER_LDFLAGS = (
+					"-lc++",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -527,7 +664,17 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ABN-IOS-APP/ABN-IOS-APP-Prefix.pch";
 				INFOPLIST_FILE = "ABN-IOS-APP/ABN-IOS-APP-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/ABN-IOS-APP/PayPalMobile\"",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-lc++",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -543,6 +690,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ABN-IOS-APP/ABN-IOS-APP-Prefix.pch";
 				INFOPLIST_FILE = "ABN-IOS-APPTests/ABN-IOS-APPTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/ABN-IOS-APP/PayPalMobile\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
@@ -560,6 +711,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ABN-IOS-APP/ABN-IOS-APP-Prefix.pch";
 				INFOPLIST_FILE = "ABN-IOS-APPTests/ABN-IOS-APPTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/ABN-IOS-APP/PayPalMobile\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
