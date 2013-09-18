@@ -16,6 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [self.noteButton resignFirstResponder];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -55,13 +57,49 @@
     return NULL;
 }
 
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    
+    // Any additional checks to ensure you have the correct textField here.
+    [textField resignFirstResponder];
+    return YES;
+}
+
+-(void)textFieldDidBeginEditing:(UITextField *)textField {
+    
+    [UIView beginAnimations:nil context:NULL];
+    [UIView setAnimationDuration:0.35f];
+    CGRect frame = self.view.frame;
+    frame.origin.y = -100;
+    [self.view setFrame:frame];
+    [UIView commitAnimations];
+}
+
+-(BOOL)textFieldShouldEndEditing:(UITextField *)textField {
+    
+    [UIView beginAnimations:nil context:NULL];
+    [UIView setAnimationDuration:0.35f];
+    CGRect frame = self.view.frame;
+    frame.origin.y = 0;
+    [self.view setFrame:frame];
+    [UIView commitAnimations];
+    return YES;
+}
+
 - (IBAction)donateClick:(id)sender {
+
+    // TODO(sgorial): change the names to ***TextField
+    NSString * amount = self.amountButton.text;
+    NSString * note = self.noteButton.text;
+    
+    if(note == NULL || note.length == 0) {
+        note = @"Monetary donation to ABN.";
+    }
     
     // Create a PayPalPayment
     PayPalPayment *payment = [[PayPalPayment alloc] init];
-    payment.amount = [[NSDecimalNumber alloc] initWithString:@"0.01"];
+    payment.amount = [[NSDecimalNumber alloc] initWithString:amount];
     payment.currencyCode = @"USD";
-    payment.shortDescription = @"Just testing...";
+    payment.shortDescription = note;
     
     // Check whether payment is processable.
     if (!payment.processable) {

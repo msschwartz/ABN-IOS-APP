@@ -72,7 +72,10 @@
                                     <constraint firstAttribute="width" constant="220" id="8kd-R2-N1o"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <connections>
+                                    <outlet property="delegate" destination="3" id="rCc-28-4Ry"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="116" translatesAutoresizingMaskIntoConstraints="NO" id="UGw-HO-jUw">
                                 <constraints>
@@ -98,6 +101,9 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TjA-M2-tFg">
                                 <attributedString key="attributedText"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="3" id="cdG-zY-kcp"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="274" translatesAutoresizingMaskIntoConstraints="NO" id="E2i-PO-aDQ">
                                 <constraints>
@@ -148,7 +154,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Donate" image="donate-thumb.png" id="6"/>
                     <connections>
+                        <outlet property="amountButton" destination="brI-xF-t4K" id="4Iy-pi-cB8"/>
                         <outlet property="donateButton" destination="qul-mN-vLi" id="9Ba-EX-v3D"/>
+                        <outlet property="noteButton" destination="TjA-M2-tFg" id="3n3-yD-fpf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="12" sceneMemberID="firstResponder"/>
@@ -433,6 +441,11 @@
                         <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" image="bassim-and-haifa.jpg" highlightedImage="bassim-and-haifa.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="hpG-hr-WaC">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="142" id="4yw-ci-dOx"/>
+                                </constraints>
+                            </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Mu-7O-CpZ">
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -449,11 +462,6 @@
                                 </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" image="bassim-and-haifa.jpg" highlightedImage="bassim-and-haifa.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="hpG-hr-WaC">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="142" id="4yw-ci-dOx"/>
-                                </constraints>
-                            </imageView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Lr-bb-LgX">
                                 <items>
                                     <barButtonItem title="Done" id="zC1-5y-2UM">
@@ -468,9 +476,10 @@
                         <constraints>
                             <constraint firstItem="2Lr-bb-LgX" firstAttribute="top" secondItem="bdT-IT-Is6" secondAttribute="top" type="default" id="7Pp-fW-Icb"/>
                             <constraint firstItem="1Mu-7O-CpZ" firstAttribute="trailing" secondItem="bdT-IT-Is6" secondAttribute="trailing" type="default" id="LCR-Gz-mV5"/>
+                            <constraint firstItem="1Mu-7O-CpZ" firstAttribute="bottom" secondItem="bdT-IT-Is6" secondAttribute="bottom" priority="1" constant="20" symbolic="YES" type="user" id="LZF-U0-3u7"/>
                             <constraint firstItem="hpG-hr-WaC" firstAttribute="trailing" secondItem="bdT-IT-Is6" secondAttribute="trailing" type="default" id="Ltg-7m-oJo"/>
+                            <constraint firstItem="1Mu-7O-CpZ" firstAttribute="bottom" secondItem="bdT-IT-Is6" secondAttribute="bottom" type="default" id="Sed-Q2-fjo"/>
                             <constraint firstItem="hpG-hr-WaC" firstAttribute="top" secondItem="2Lr-bb-LgX" secondAttribute="bottom" type="default" id="dHw-MM-nkB"/>
-                            <constraint firstItem="1Mu-7O-CpZ" firstAttribute="bottom" secondItem="bdT-IT-Is6" secondAttribute="bottom" type="default" id="e6g-j4-4iF"/>
                             <constraint firstItem="1Mu-7O-CpZ" firstAttribute="leading" secondItem="bdT-IT-Is6" secondAttribute="leading" type="default" id="hB8-zc-mrZ"/>
                             <constraint firstItem="2Lr-bb-LgX" firstAttribute="leading" secondItem="bdT-IT-Is6" secondAttribute="leading" type="default" id="kBb-G4-Zbq"/>
                             <constraint firstItem="2Lr-bb-LgX" firstAttribute="trailing" secondItem="bdT-IT-Is6" secondAttribute="trailing" type="default" id="uNg-z3-gSt"/>
@@ -885,7 +894,9 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/GetInvolvedViewController.h"/>
             <relationships>
                 <relationship kind="action" name="donateClick:"/>
+                <relationship kind="outlet" name="amountButton" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="donateButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="noteButton" candidateClass="UITextField"/>
             </relationships>
         </class>
         <class className="MeetTheFoundersViewController" superclassName="UIViewController">
