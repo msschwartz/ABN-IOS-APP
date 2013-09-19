@@ -24,6 +24,10 @@
     [super didReceiveMemoryWarning];
 }
 
+- (BOOL) prefersStatusBarHidden {
+    return YES;
+}
+
 - (int) numberOfColumnsInPickerView:(UIPickerView*)picker {
     return 1;
 }
@@ -111,7 +115,7 @@
     }
     
     // Start out working with the test environment! When you are ready, remove this line to switch to live.
-    [PayPalPaymentViewController setEnvironment:PayPalEnvironmentNoNetwork];
+    //[PayPalPaymentViewController setEnvironment:PayPalEnvironmentNoNetwork];
     
     // Provide a payerId that uniquely identifies a user within the scope of your system,
     // such as an email address or user ID.
@@ -120,7 +124,7 @@
     // Create a PayPalPaymentViewController with the credentials and payerId, the PayPalPayment
     // from the previous step, and a PayPalPaymentDelegate to handle the results.
     PayPalPaymentViewController *paymentViewController;
-    paymentViewController = [[PayPalPaymentViewController alloc] initWithClientId:@"YOUR_CLIENT_ID"
+    paymentViewController = [[PayPalPaymentViewController alloc] initWithClientId:@"AQ7jBBAgVgpeHyrvnXcb8DJ0kiDWQt0D75lXaPPOb4i7673Gb_Xdc7eMZha7"
                                                                         receiverEmail:@"ssgorial@gmail.com"
                                                                           payerId:aPayerId
                                                                           payment:payment

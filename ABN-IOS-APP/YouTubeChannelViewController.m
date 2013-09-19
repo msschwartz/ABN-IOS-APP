@@ -30,6 +30,10 @@
     [super didReceiveMemoryWarning];
 }
 
+- (BOOL) prefersStatusBarHidden {
+    return YES;
+}
+
 - (IBAction)backButtonClick:(id)sender {
     [_webView goBack];
 }

@@ -14,19 +14,20 @@
 
 @implementation OurVisionViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
-    
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
 
 - (IBAction)doneButtonClick:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (BOOL) prefersStatusBarHidden {
+    return YES;
 }
 
 @end

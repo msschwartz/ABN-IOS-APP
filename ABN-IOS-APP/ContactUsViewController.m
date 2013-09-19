@@ -22,6 +22,10 @@
     [super didReceiveMemoryWarning];
 }
 
+- (BOOL) prefersStatusBarHidden {
+    return YES;
+}
+
 - (void) openUrl: (NSString *) url {
     NSLog(url);
     [[UIApplication sharedApplication] openURL: [NSURL URLWithString:url]];
