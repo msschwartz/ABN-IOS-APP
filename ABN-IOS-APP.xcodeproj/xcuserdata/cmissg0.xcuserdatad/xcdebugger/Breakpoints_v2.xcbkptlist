@@ -6,16 +6,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ABN-IOS-APP/MoreViewController.m"
-            timestampString = "401243209.848146"
+            filePath = "ABN-IOS-APP/GetInvolvedViewController.m"
+            timestampString = "401476490.723454"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
-            landmarkName = "-tableView:didSelectRowAtIndexPath:"
+            startingLineNumber = "168"
+            endingLineNumber = "168"
+            landmarkName = "-shouldAutorotateToInterfaceOrientation:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

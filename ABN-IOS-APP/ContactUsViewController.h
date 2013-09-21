@@ -15,5 +15,6 @@
 @property (weak, nonatomic) IBOutlet UITableViewCell *callCell;
 @property (weak, nonatomic) IBOutlet UITableViewCell *websiteCell;
 @property (weak, nonatomic) IBOutlet UITableViewCell *mailCell;
+@property (strong, nonatomic) IBOutlet UITableView *table;
 
 @end

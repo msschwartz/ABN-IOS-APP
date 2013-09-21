@@ -89,11 +89,24 @@
     return YES;
 }
 
+- (void) invalidAmount {
+    UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"" message:@"Please verify your information is correct." delegate:self cancelButtonTitle:@"Close" otherButtonTitles:nil];
+    alert.alertViewStyle = UIAlertViewStyleDefault;
+    [alert show];
+}
+
 - (IBAction)donateClick:(id)sender {
 
-    // TODO(sgorial): change the names to ***TextField
     NSString * amount = self.amountButton.text;
     NSString * note = self.noteButton.text;
+    
+    NSNumberFormatter * formatter = [[NSNumberFormatter alloc] init];
+    [formatter setNumberStyle:NSNumberFormatterDecimalStyle];
+    
+    if([formatter numberFromString:amount] == nil) {
+        [self invalidAmount];
+        return;
+    }
     
     if(note == NULL || note.length == 0) {
         note = @"Monetary donation to ABN.";
@@ -107,11 +120,8 @@
     
     // Check whether payment is processable.
     if (!payment.processable) {
-        // If, for example, the amount was negative or the shortDescription was empty, then
-        // this payment would not be processable. You would want to handle that here.
-        UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"" message:@"Please verify your information is correct." delegate:self cancelButtonTitle:@"Close" otherButtonTitles:nil];
-        alert.alertViewStyle = UIAlertViewStyleDefault;
-        [alert show];
+        [self invalidAmount];
+        return;
     }
     
     // Start out working with the test environment! When you are ready, remove this line to switch to live.
@@ -125,7 +135,7 @@
     // from the previous step, and a PayPalPaymentDelegate to handle the results.
     PayPalPaymentViewController *paymentViewController;
     paymentViewController = [[PayPalPaymentViewController alloc] initWithClientId:@"AQ7jBBAgVgpeHyrvnXcb8DJ0kiDWQt0D75lXaPPOb4i7673Gb_Xdc7eMZha7"
-                                                                        receiverEmail:@"ssgorial@gmail.com"
+                                                                        receiverEmail:@"accountant@abnsat.com"
                                                                           payerId:aPayerId
                                                                           payment:payment
                                                                         delegate:self];
@@ -152,6 +162,14 @@
 - (void)payPalPaymentDidCancel {
     // The payment was canceled; dismiss the PayPalPaymentViewController.
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+    return NO;
+}
+
+- (BOOL) shouldAutorotate {
+    return NO;
 }
 
 @end

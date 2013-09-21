@@ -7,6 +7,7 @@
 //
 
 #import "WatchViewController.h"
+#import "MediaPlayer/MediaPlayer.h"
 
 @interface WatchViewController ()
 
@@ -27,6 +28,27 @@
 
 - (BOOL) prefersStatusBarHidden {
     return YES;
+}
+
+- (IBAction)testButtonClick:(id)sender {
+    
+    NSString *videoPath = [[NSBundle mainBundle] pathForResource:@"sample_video"
+                                                          ofType:@"m4v"];
+    
+    self.player = [[MPMoviePlayerViewController alloc] initWithContentURL:[NSURL
+                                                                      fileURLWithPath:videoPath]];
+    
+    [self presentMoviePlayerViewControllerAnimated:self.player];
+}
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+    if (interfaceOrientation == UIInterfaceOrientationPortrait ||
+        interfaceOrientation == UIInterfaceOrientationLandscapeRight ||
+        interfaceOrientation == UIInterfaceOrientationLandscapeLeft) {
+        return YES;
+    }
+    
+    return NO;
 }
 
 @end

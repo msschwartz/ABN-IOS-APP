@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MediaPlayer/MediaPlayer.h"
 
 @interface WatchViewController : UIViewController
+
+@property (weak, nonatomic) IBOutlet UIButton *testButton;
+@property (strong, nonatomic) MPMoviePlayerViewController *player;
 
 @end

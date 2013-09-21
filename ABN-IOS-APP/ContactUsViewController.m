@@ -15,6 +15,8 @@
 @implementation ContactUsViewController
 
 - (void)viewDidLoad {
+    
+    //[self.tableView setBackgroundView:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"cloud-air-backdrop.jpg"]]];
     [super viewDidLoad];
 }
 
@@ -59,6 +61,10 @@
         default:
             break;
     }
+}
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+    return NO;
 }
 
 @end
