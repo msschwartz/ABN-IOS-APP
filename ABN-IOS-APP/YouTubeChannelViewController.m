@@ -14,8 +14,7 @@
 
 @implementation YouTubeChannelViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     
     NSString *fullURL = @"https://www.youtube.com/user/ABNSAT2";
     NSURL *url = [NSURL URLWithString:fullURL];
@@ -25,8 +24,7 @@
     [super viewDidLoad];
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
 
@@ -42,8 +40,8 @@
     [_webView goForward];
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    return NO;
+- (NSUInteger) supportedInterfaceOrientations {
+    return UIInterfaceOrientationMaskPortrait;
 }
 
 @end

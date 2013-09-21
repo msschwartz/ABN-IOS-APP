@@ -64,6 +64,7 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qul-mN-vLi">
                                 <rect key="frame" x="85" y="323" width="117" height="57"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="57" id="7EL-bf-kdN"/>
                                     <constraint firstAttribute="width" constant="117" id="PwL-Bt-cPw"/>
@@ -693,7 +694,7 @@
                         <sections>
                             <tableViewSection headerTitle="By email..." id="PqN-jQ-dt6">
                                 <cells>
-                                    <tableViewCell opaque="NO" clearsContextBeforeDrawing="NO" tag="100" contentMode="scaleToFill" selectionStyle="gray" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="fFt-uJ-c5o" rowHeight="45" style="IBUITableViewCellStyleDefault" id="zIm-3K-clw">
+                                    <tableViewCell opaque="NO" clearsContextBeforeDrawing="NO" tag="100" contentMode="scaleToFill" selectionStyle="gray" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="fFt-uJ-c5o" imageView="K3z-3n-aCn" rowHeight="45" style="IBUITableViewCellStyleDefault" id="zIm-3K-clw">
                                         <rect key="frame" x="0.0" y="22" width="320" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zIm-3K-clw" id="bLt-ey-ofI">
@@ -701,15 +702,19 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" multipleTouchEnabled="YES" contentMode="left" text="General Email Inbox" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fFt-uJ-c5o">
-                                                    <rect key="frame" x="15" y="0.0" width="270" height="44"/>
+                                                    <rect key="frame" x="65" y="0.0" width="220" height="44"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="email-envelope-35px.png" id="K3z-3n-aCn">
+                                                    <rect key="frame" x="15" y="4" width="35" height="35"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell tag="101" contentMode="scaleToFill" selectionStyle="gray" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="l3B-D3-ZhY" rowHeight="45" style="IBUITableViewCellStyleDefault" id="pdI-xj-91p">
+                                    <tableViewCell tag="101" contentMode="scaleToFill" selectionStyle="gray" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="l3B-D3-ZhY" imageView="3EL-dI-83E" rowHeight="45" style="IBUITableViewCellStyleDefault" id="pdI-xj-91p">
                                         <rect key="frame" x="0.0" y="67" width="320" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pdI-xj-91p" id="q3O-Tj-fR0">
@@ -717,16 +722,20 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Missions Email Inbox" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="l3B-D3-ZhY">
-                                                    <rect key="frame" x="15" y="0.0" width="270" height="44"/>
+                                                    <rect key="frame" x="65" y="0.0" width="220" height="44"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="email-envelope-35px.png" id="3EL-dI-83E">
+                                                    <rect key="frame" x="15" y="4" width="35" height="35"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
-                                    <tableViewCell tag="102" contentMode="scaleToFill" selectionStyle="gray" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="Xso-D2-urb" rowHeight="45" style="IBUITableViewCellStyleDefault" id="0Im-Dl-CoE">
+                                    <tableViewCell tag="102" contentMode="scaleToFill" selectionStyle="gray" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="Xso-D2-urb" imageView="bl8-vA-jog" rowHeight="45" style="IBUITableViewCellStyleDefault" id="0Im-Dl-CoE">
                                         <rect key="frame" x="0.0" y="112" width="320" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0Im-Dl-CoE" id="Jf4-UL-tb1">
@@ -734,11 +743,15 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Dr. Bassim Gorial's Inbox" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Xso-D2-urb">
-                                                    <rect key="frame" x="15" y="0.0" width="270" height="44"/>
+                                                    <rect key="frame" x="65" y="0.0" width="220" height="44"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="email-envelope-35px.png" id="bl8-vA-jog">
+                                                    <rect key="frame" x="15" y="4" width="35" height="35"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -747,7 +760,7 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="By phone..." id="x86-VH-qgt">
                                 <cells>
-                                    <tableViewCell tag="110" contentMode="scaleToFill" selectionStyle="gray" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="gmg-Ri-YrS" rowHeight="45" style="IBUITableViewCellStyleDefault" id="Mv3-ji-vQu">
+                                    <tableViewCell tag="110" contentMode="scaleToFill" selectionStyle="gray" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="gmg-Ri-YrS" imageView="CIv-SS-1YD" rowHeight="45" style="IBUITableViewCellStyleDefault" id="Mv3-ji-vQu">
                                         <rect key="frame" x="0.0" y="179" width="320" height="45"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Mv3-ji-vQu" id="hYG-AV-LWr">
@@ -755,11 +768,15 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Call Main Office" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gmg-Ri-YrS">
-                                                    <rect key="frame" x="15" y="0.0" width="270" height="44"/>
+                                                    <rect key="frame" x="65" y="0.0" width="220" height="44"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="phone-35px.jpg" id="CIv-SS-1YD">
+                                                    <rect key="frame" x="15" y="10" width="35" height="24"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -768,7 +785,7 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="On the web..." id="A6r-3k-sAY">
                                 <cells>
-                                    <tableViewCell tag="120" contentMode="scaleToFill" selectionStyle="gray" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="Peg-Dq-Rw2" rowHeight="45" style="IBUITableViewCellStyleDefault" id="alx-FH-4Xo">
+                                    <tableViewCell tag="120" contentMode="scaleToFill" selectionStyle="gray" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="Peg-Dq-Rw2" imageView="Cwd-bh-rne" rowHeight="45" style="IBUITableViewCellStyleDefault" id="alx-FH-4Xo">
                                         <rect key="frame" x="0.0" y="246" width="320" height="45"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="alx-FH-4Xo" id="686-9n-sDW">
@@ -776,12 +793,16 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Visit www.abnsat.com" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Peg-Dq-Rw2">
-                                                    <rect key="frame" x="15" y="0.0" width="270" height="44"/>
+                                                    <rect key="frame" x="65" y="0.0" width="220" height="44"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="ie-35px.png" id="Cwd-bh-rne">
+                                                    <rect key="frame" x="15" y="4" width="35" height="35"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -797,16 +818,16 @@
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="94"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="P.O. Box 724 Walled Lake, MI 48390 USA" lineBreakMode="characterWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="275" translatesAutoresizingMaskIntoConstraints="NO" id="JTp-na-UUl">
-                                                    <rect key="frame" x="13" y="2" width="275" height="84"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="275" id="5lG-B3-xWg"/>
-                                                        <constraint firstAttribute="height" constant="84" id="CMj-3r-4zG"/>
-                                                    </constraints>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" ambiguous="YES" misplaced="YES" text="P.O. Box 724 Walled Lake, MI 48390 USA" lineBreakMode="characterWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="207" translatesAutoresizingMaskIntoConstraints="NO" id="JTp-na-UUl">
+                                                    <rect key="frame" x="67" y="5" width="207" height="84"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="home-35px.png" translatesAutoresizingMaskIntoConstraints="NO" id="K3U-z8-dQ7">
+                                                    <rect key="frame" x="11" y="20" width="40" height="38"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -814,8 +835,7 @@
                                             <accessibilityTraits key="traits" none="YES" staticText="YES"/>
                                         </accessibility>
                                         <constraints>
-                                            <constraint firstItem="JTp-na-UUl" firstAttribute="leading" secondItem="fpw-vV-BCL" secondAttribute="leading" constant="13" id="KSm-eX-QPN"/>
-                                            <constraint firstItem="JTp-na-UUl" firstAttribute="top" secondItem="fpw-vV-BCL" secondAttribute="top" constant="2" id="bYg-3G-Edb"/>
+                                            <constraint firstItem="JTp-na-UUl" firstAttribute="leading" secondItem="fpw-vV-BCL" secondAttribute="leading" priority="1" constant="13" id="KSm-eX-QPN"/>
                                         </constraints>
                                     </tableViewCell>
                                 </cells>
@@ -868,19 +888,20 @@
     </scenes>
     <resources>
         <image name="back.button.grey.png" width="51" height="51"/>
-        <image name="back.button.grey.png" width="51" height="51"/>
         <image name="back.button.red.png" width="51" height="51"/>
-        <image name="bassim-and-haifa.jpg" width="271" height="184"/>
         <image name="bassim-and-haifa.jpg" width="271" height="184"/>
         <image name="cloud-air-backdrop.jpg" width="407" height="451"/>
         <image name="contact-thumb.png" width="28" height="28"/>
         <image name="donate-thumb.png" width="40" height="40"/>
         <image name="elipses-thumb.png" width="30" height="24"/>
+        <image name="email-envelope-35px.png" width="35" height="35"/>
         <image name="facebook-logo-35px.png" width="35" height="35"/>
         <image name="forward.button.grey.png" width="51" height="51"/>
-        <image name="forward.button.grey.png" width="51" height="51"/>
         <image name="forward.button.red.png" width="51" height="51"/>
+        <image name="home-35px.png" width="35" height="35"/>
+        <image name="ie-35px.png" width="35" height="35"/>
         <image name="paypal-logo.png" width="169" height="88"/>
+        <image name="phone-35px.jpg" width="35" height="24"/>
         <image name="play_icon.png" width="64" height="64"/>
         <image name="twitter-logo-35px.png" width="35" height="35"/>
         <image name="watch-thumb.png" width="30" height="30"/>
