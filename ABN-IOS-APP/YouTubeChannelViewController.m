@@ -40,6 +40,10 @@
     [_webView goForward];
 }
 
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+    return interfaceOrientation == UIInterfaceOrientationPortrait;
+}
+
 - (NSUInteger) supportedInterfaceOrientations {
     return UIInterfaceOrientationMaskPortrait;
 }

@@ -1,69 +1,30 @@
 //
-//  GetInvolvedViewController.m
+//  IPadViewController.m
 //  ABN-IOS-APP
 //
-//  Created by Gorial, Sam on 9/12/13.
+//  Created by Gorial, Sam on 9/22/13.
 //  Copyright (c) 2013 Gorial, Sam. All rights reserved.
 //
 
-#import "GetInvolvedViewController.h"
+#import "IPadViewController.h"
 
-@interface GetInvolvedViewController ()
+@interface IPadViewController ()
 
 @end
 
-@implementation GetInvolvedViewController
+@implementation IPadViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    [self.noteButton resignFirstResponder];
+    [[self noteTextField] resignFirstResponder];
+    [self loadVotd];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
 
-- (BOOL) prefersStatusBarHidden {
-    return YES;
-}
-
-- (int) numberOfColumnsInPickerView:(UIPickerView*)picker {
-    return 1;
-}
-
-- (int) pickerView:(UIPickerView*)picker numberOfRowsInColumn:(int)col {
-    return 3;
-}
-
-- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row {
-
-    if(row == 1) {
-        return @"$ (USD)";
-    } else if(row == 2) {
-        return @"$ (CAD)";
-    } else if(row == 3) {
-        return @"£ (GBP)";
-    }
-    
-    return NULL;
-
-}
-
-- (UIPickerView *) pickerView:(UIPickerView *)picker tableCellForRow:(int)row inColumn:(int)col {
-
-    if(row == 1) {
-        return NULL;
-    } else if(row == 2) {
-        return NULL;
-    }
-    
-    return NULL;
-}
-
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
-    
-    // Any additional checks to ensure you have the correct textField here.
     [textField resignFirstResponder];
     return YES;
 }
@@ -95,10 +56,9 @@
     [alert show];
 }
 
-- (IBAction)donateClick:(id)sender {
-
-    NSString * amount = self.amountButton.text;
-    NSString * note = self.noteButton.text;
+- (IBAction)donateButtonClick:(id)sender {
+    NSString * amount = self.amountTextField.text;
+    NSString * note = self.noteTextField.text;
     
     NSNumberFormatter * formatter = [[NSNumberFormatter alloc] init];
     [formatter setNumberStyle:NSNumberFormatterDecimalStyle];
@@ -135,14 +95,14 @@
     // from the previous step, and a PayPalPaymentDelegate to handle the results.
     PayPalPaymentViewController *paymentViewController;
     paymentViewController = [[PayPalPaymentViewController alloc] initWithClientId:@"AQ7jBBAgVgpeHyrvnXcb8DJ0kiDWQt0D75lXaPPOb4i7673Gb_Xdc7eMZha7"
-                                                                        receiverEmail:@"accountant@abnsat.com"
+                                                                    receiverEmail:@"accountant@abnsat.com"
                                                                           payerId:aPayerId
                                                                           payment:payment
-                                                                        delegate:self];
+                                                                         delegate:self];
     
     // Present the PayPalPaymentViewController.
     [self presentViewController:paymentViewController animated:YES completion:nil];
-    
+
 }
 
 #pragma mark - PayPalPaymentDelegate methods
@@ -150,7 +110,7 @@
 - (void)payPalPaymentDidComplete:(PayPalPayment *)completedPayment {
     // Payment was processed successfully; send to server for verification and fulfillment.
     //[self verifyCompletedPayment:completedPayment];
-
+    
     UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"Thank You" message:@"Your donation was accepted!  Thank you and God bless you!" delegate:self cancelButtonTitle:@"Close" otherButtonTitles:nil];
     alert.alertViewStyle = UIAlertViewStyleDefault;
     [alert show];
@@ -164,12 +124,75 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    return interfaceOrientation == UIInterfaceOrientationPortrait;
+- (void) openUrl: (NSString *) url {
+    NSLog(url);
+    [[UIApplication sharedApplication] openURL: [NSURL URLWithString:url]];
 }
 
-- (NSUInteger) supportedInterfaceOrientations {
-    return UIInterfaceOrientationMaskPortrait;
+- (IBAction)facebookButtonClick:(id)sender {
+    [self openUrl:@"https://www.facebook.com/pages/ABNSAT/112926788749272"];
+}
+
+- (IBAction)youtubeButtonClick:(id)sender {
+    [self openUrl:@"http://www.youtube.com/user/ABNSAT2"];
+}
+
+- (IBAction)twitterButtonClick:(id)sender {
+    [self openUrl:@"http://www.twitter.com/abnsat"];
+}
+
+- (IBAction)emailGeneralButtonClick:(id)sender {
+    [self openUrl:@"mailto:abn@abnsat.com"];
+}
+
+- (IBAction)emailMissionsButtonClick:(id)sender {
+    [self openUrl:@"mailto:missions@abnsat.com"];
+}
+
+- (IBAction)emailBassimButtonClick:(id)sender {
+    [self openUrl:@"mailto:bassim@abnsat.com"];
+}
+
+- (IBAction)callUsButtonClick:(id)sender {
+    [self openUrl:@"tel:2484161300"];
+}
+
+- (IBAction)visitSiteButtonClick:(id)sender {
+    [self openUrl:@"http://www.abnsat.com"];
+}
+
+- (IBAction)addressButtonClick:(id)sender {
+    [self openUrl:@"http://maps.google.com/maps?q=48390"];
+}
+
+- (void) loadVotd {
+    
+    NSURL *url = [NSURL URLWithString:@"http://www.biblegateway.com/votd/get/?format=json&version=31"];
+    
+    NSData *jsonData = [NSData dataWithContentsOfURL:url];
+    
+    
+    if(jsonData != nil) {
+
+        NSError *error = nil;
+        id result = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingMutableContainers error:&error];
+        
+        if (error == nil) {
+            NSLog(@"%@", result);
+        
+            NSDictionary *res = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingMutableLeaves error:&error];
+            
+            NSDictionary *votd = [res objectForKey:@"votd"];
+            
+            NSString *verse = [votd objectForKey:@"content"];
+            NSString *reference = [votd objectForKey:@"display_ref"];
+            
+            NSLog(verse);
+            
+            [[self votdLabel] setText: [NSString stringWithFormat: @"%@\n- %@", verse, reference]];
+        }
+    }
+    
 }
 
 @end
