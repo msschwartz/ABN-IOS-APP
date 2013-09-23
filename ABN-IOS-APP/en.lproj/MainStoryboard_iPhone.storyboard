@@ -320,21 +320,24 @@
                                             <segue destination="ILr-pb-3mc" kind="modal" id="lCa-n2-sAV"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="zPx-ea-6MU">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="zPx-ea-6MU">
                                         <rect key="frame" x="0.0" y="150" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zPx-ea-6MU" id="SEk-fq-G8d">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" fixedFrame="YES" text="Bible Verse of the Day" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tRe-jt-nMq">
-                                                    <rect key="frame" x="25" y="-3" width="270" height="49"/>
+                                                    <rect key="frame" x="14" y="-3" width="270" height="49"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="gB5-G0-ukv" kind="modal" id="Muz-O9-nL0"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="gYA-Co-u17">
                                         <rect key="frame" x="0.0" y="194" width="320" height="44"/>
@@ -519,18 +522,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cloud-air-backdrop.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="HpF-Oj-bMI">
+                                <rect key="frame" x="0.0" y="44" width="320" height="524"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RMF-AM-HpT">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <items>
                                     <barButtonItem title="Done" id="Y7U-Ge-Y2D">
                                         <connections>
-                                            <action selector="doneButtonClick:" destination="YGk-eV-pIf" id="sqz-KF-lpo"/>
+                                            <action selector="doneButtonClick:" destination="gB5-G0-ukv" id="pGp-fz-BvB"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="304" translatesAutoresizingMaskIntoConstraints="NO" id="nio-LJ-Afc">
-                                <rect key="frame" x="10" y="60" width="304" height="488"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="320" translatesAutoresizingMaskIntoConstraints="NO" id="nio-LJ-Afc">
+                                <rect key="frame" x="0.0" y="44" width="320" height="524"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText"/>
                                 <nil key="highlightedColor"/>
@@ -543,6 +550,12 @@
                             <constraint firstItem="RMF-AM-HpT" firstAttribute="trailing" secondItem="Bl2-dh-pMT" secondAttribute="trailing" id="Xxg-Kv-jvT"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="UdG-hs-0Lv"/>
+                    <connections>
+                        <outlet property="doneButton" destination="Y7U-Ge-Y2D" id="567-tL-F9T"/>
+                        <outlet property="toolbar" destination="RMF-AM-HpT" id="GxM-Xj-o0d"/>
+                        <outlet property="votdLabel" destination="nio-LJ-Afc" id="bm5-JX-5Hq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iUI-AF-phc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -10,8 +10,10 @@
 
 @interface VotdViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIToolbar *toolbar;
 
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *doneButton;
 
-
+@property (weak, nonatomic) IBOutlet UILabel *votdLabel;
 
 @end
