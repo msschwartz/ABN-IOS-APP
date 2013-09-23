@@ -61,11 +61,17 @@
                                     <action selector="forwardButtonClick:" destination="AeP-Po-mj9" eventType="touchUpInside" id="tT2-sP-mim"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="KVa-Tq-XBH">
+                                <rect key="frame" x="374" y="503" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="YouTube Channel" image="youtube-thumb.png" id="oak-FJ-gkt"/>
                     <connections>
+                        <outlet property="activitySpinner" destination="KVa-Tq-XBH" id="EyU-4F-Rxc"/>
                         <outlet property="backButton" destination="eUk-Bs-XmT" id="Fm9-Ol-0b5"/>
                         <outlet property="forwardButton" destination="0X4-57-P4S" id="46U-Mc-ibv"/>
                         <outlet property="webView" destination="nrh-bE-Xob" id="aF0-2A-PFR"/>
@@ -436,6 +442,8 @@
         <image name="back.button.red.png" width="51" height="51"/>
         <image name="bassim-and-haifa-240px.jpg" width="240" height="320"/>
         <image name="elipses-thumb.png" width="30" height="24"/>
+        <image name="email-icon-110px.png" width="110" height="110"/>
+        <image name="email-icon-110px.png" width="110" height="110"/>
         <image name="email-icon-110px.png" width="110" height="110"/>
         <image name="facebook-icon-110px.png" width="110" height="110"/>
         <image name="forward.button.red.png" width="51" height="51"/>

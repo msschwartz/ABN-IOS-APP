@@ -8,11 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
-@interface YouTubeChannelViewController : UIViewController
+@interface YouTubeChannelViewController : UIViewController<UIWebViewDelegate>
+
 @property (strong, nonatomic) IBOutlet UIWebView *webView;
+
 @property (weak, nonatomic) IBOutlet UIButton *backButton;
+
 @property (weak, nonatomic) IBOutlet UIButton *forwardButton;
+
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activitySpinner;
+
 - (IBAction)backButtonClick:(id)sender;
+
 - (IBAction)forwardButtonClick:(id)sender;
 
 @end

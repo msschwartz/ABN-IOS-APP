@@ -231,6 +231,10 @@
                                     <action selector="forwardButtonClick:" destination="zPj-FY-AZa" eventType="touchUpInside" id="fJn-eE-N44"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="o7x-hD-Rph">
+                                <rect key="frame" x="144" y="244" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -243,6 +247,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="YouTube" image="youtube-thumb.png" id="44b-lu-2mN"/>
                     <connections>
+                        <outlet property="activitySpinner" destination="o7x-hD-Rph" id="Rcf-xf-u8S"/>
                         <outlet property="backButton" destination="J5r-Tn-Tgm" id="4Bw-iq-Drc"/>
                         <outlet property="forwardButton" destination="JJa-Xr-ER1" id="JqM-Zy-u8D"/>
                         <outlet property="webView" destination="clC-cl-bNs" id="cXe-7q-ZDM"/>
@@ -951,20 +956,14 @@
     </scenes>
     <resources>
         <image name="back.button.grey.png" width="51" height="51"/>
-        <image name="back.button.grey.png" width="51" height="51"/>
         <image name="back.button.red.png" width="51" height="51"/>
         <image name="bassim-and-haifa.jpg" width="271" height="184"/>
-        <image name="bassim-and-haifa.jpg" width="271" height="184"/>
-        <image name="cloud-air-backdrop.jpg" width="407" height="451"/>
         <image name="cloud-air-backdrop.jpg" width="407" height="451"/>
         <image name="contact-thumb.png" width="28" height="28"/>
         <image name="donate-thumb.png" width="40" height="40"/>
         <image name="elipses-thumb.png" width="30" height="24"/>
         <image name="email-envelope-35px.png" width="35" height="35"/>
-        <image name="email-envelope-35px.png" width="35" height="35"/>
-        <image name="email-envelope-35px.png" width="35" height="35"/>
         <image name="facebook-logo-35px.png" width="35" height="35"/>
-        <image name="forward.button.grey.png" width="51" height="51"/>
         <image name="forward.button.grey.png" width="51" height="51"/>
         <image name="forward.button.red.png" width="51" height="51"/>
         <image name="home-35px.png" width="35" height="35"/>

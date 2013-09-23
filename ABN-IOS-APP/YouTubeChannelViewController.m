@@ -19,9 +19,17 @@
     NSString *fullURL = @"https://www.youtube.com/user/ABNSAT2";
     NSURL *url = [NSURL URLWithString:fullURL];
     NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
+    
     [_webView loadRequest:requestObj];
+    [_webView setDelegate:self];
+    
+    [[self activitySpinner] setHidesWhenStopped:YES];
     
     [super viewDidLoad];
+}
+
+- (void)webViewDidFinishLoad:(UIWebView *)webView {
+    [[self activitySpinner] stopAnimating];
 }
 
 - (void)didReceiveMemoryWarning {
