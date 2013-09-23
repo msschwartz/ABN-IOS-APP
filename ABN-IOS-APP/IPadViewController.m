@@ -7,6 +7,7 @@
 //
 
 #import "IPadViewController.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface IPadViewController ()
 
@@ -16,7 +17,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.paypalView.layer.cornerRadius = 10;
+    self.paypalView.layer.masksToBounds = YES;
+
+    self.contactUsView.layer.cornerRadius = 10;
+    self.contactUsView.layer.masksToBounds = YES;
+
+    [[self noteTextField] setReturnKeyType:UIReturnKeyDone];
     [[self noteTextField] resignFirstResponder];
+    [[self noteTextField] setDelegate:self];
+    
     [self loadVotd];
 }
 
@@ -56,7 +67,8 @@
     [alert show];
 }
 
-- (IBAction)donateButtonClick:(id)sender {
+- (void) doDonate {
+    
     NSString * amount = self.amountTextField.text;
     NSString * note = self.noteTextField.text;
     
@@ -102,7 +114,11 @@
     
     // Present the PayPalPaymentViewController.
     [self presentViewController:paymentViewController animated:YES completion:nil];
+    
+}
 
+- (IBAction)donateButtonClick:(id)sender {
+    [self doDonate];
 }
 
 #pragma mark - PayPalPaymentDelegate methods

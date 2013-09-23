@@ -10,6 +10,10 @@
 
 @interface IPadViewController : UIViewController<PayPalPaymentDelegate, UIPickerViewDelegate, UITextFieldDelegate>
 
+@property (weak, nonatomic) IBOutlet UIView *paypalView;
+
+@property (weak, nonatomic) IBOutlet UIView *contactUsView;
+
 @property (weak, nonatomic) IBOutlet UITextField *amountTextField;
 
 @property (weak, nonatomic) IBOutlet UITextField *noteTextField;

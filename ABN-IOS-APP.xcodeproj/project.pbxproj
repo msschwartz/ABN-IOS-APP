@@ -66,6 +66,7 @@
 		015A341517E7C928007D83C2 /* youtube-thumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 015A341417E7C928007D83C2 /* youtube-thumb.png */; };
 		015A341B17E7CA64007D83C2 /* donate-thumb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 015A341917E7CA64007D83C2 /* donate-thumb@2x.png */; };
 		015A341D17E7CA9F007D83C2 /* donate-thumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 015A341C17E7CA9F007D83C2 /* donate-thumb.png */; };
+		01BE423F17F0F81A000E2370 /* bassim-and-haifa-240px.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01BE423E17F0F81A000E2370 /* bassim-and-haifa-240px.jpg */; };
 		01C4FA8C17E5F829002F3858 /* ContactUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C4FA8B17E5F829002F3858 /* ContactUsViewController.m */; };
 		01C4FA9117E64B38002F3858 /* forward.button.red.png in Resources */ = {isa = PBXBuildFile; fileRef = 01C4FA8D17E64B38002F3858 /* forward.button.red.png */; };
 		01C4FA9217E64B38002F3858 /* forward.button.grey.png in Resources */ = {isa = PBXBuildFile; fileRef = 01C4FA8E17E64B38002F3858 /* forward.button.grey.png */; };
@@ -185,6 +186,7 @@
 		015A341917E7CA64007D83C2 /* donate-thumb@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "donate-thumb@2x.png"; sourceTree = "<group>"; };
 		015A341C17E7CA9F007D83C2 /* donate-thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "donate-thumb.png"; sourceTree = "<group>"; };
 		015A341E17E7CAA5007D83C2 /* donate-thumb@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "donate-thumb@2x.png"; sourceTree = "<group>"; };
+		01BE423E17F0F81A000E2370 /* bassim-and-haifa-240px.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bassim-and-haifa-240px.jpg"; sourceTree = "<group>"; };
 		01C4FA8A17E5F829002F3858 /* ContactUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactUsViewController.h; sourceTree = "<group>"; };
 		01C4FA8B17E5F829002F3858 /* ContactUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactUsViewController.m; sourceTree = "<group>"; };
 		01C4FA8D17E64B38002F3858 /* forward.button.red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = forward.button.red.png; sourceTree = "<group>"; };
@@ -388,6 +390,7 @@
 		01D5C9E017E28D2800BA90A4 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				01BE423E17F0F81A000E2370 /* bassim-and-haifa-240px.jpg */,
 				01D5C9E117E28E1C00BA90A4 /* abn-globe-logo.png.bak */,
 				01F6595C17EFC9EF0087936E /* abn-globe-logo~iphone.png.bak */,
 				01C4FA9717E64D03002F3858 /* back.button.grey.png */,
@@ -546,6 +549,7 @@
 				01F6596F17EFD6DF0087936E /* app-icon-76px.png in Resources */,
 				013C1B4017EF88A40083D177 /* facebook-icon-110px.png in Resources */,
 				01D5C9F817E2971500BA90A4 /* contact-thumb.png in Resources */,
+				01BE423F17F0F81A000E2370 /* bassim-and-haifa-240px.jpg in Resources */,
 				013C1B2A17EDCB820083D177 /* play_icon.png in Resources */,
 				01D5C9FB17E2971500BA90A4 /* elipses-thumb@2x.png in Resources */,
 				01F6595F17EFC9EF0087936E /* Default~iphone.png in Resources */,

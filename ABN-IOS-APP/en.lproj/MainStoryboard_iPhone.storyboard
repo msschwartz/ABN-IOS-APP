@@ -522,7 +522,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cloud-air-backdrop.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="HpF-Oj-bMI">
+                            <imageView userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cloud-air-backdrop.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="HpF-Oj-bMI">
                                 <rect key="frame" x="0.0" y="44" width="320" height="524"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -536,10 +536,10 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="320" translatesAutoresizingMaskIntoConstraints="NO" id="nio-LJ-Afc">
-                                <rect key="frame" x="0.0" y="44" width="320" height="524"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="300" translatesAutoresizingMaskIntoConstraints="NO" id="nio-LJ-Afc">
+                                <rect key="frame" x="10" y="58" width="300" height="365"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <attributedString key="attributedText"/>
+                                <fontDescription key="fontDescription" name="LucidaGrande" family="Lucida Grande" pointSize="11"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -951,14 +951,20 @@
     </scenes>
     <resources>
         <image name="back.button.grey.png" width="51" height="51"/>
+        <image name="back.button.grey.png" width="51" height="51"/>
         <image name="back.button.red.png" width="51" height="51"/>
         <image name="bassim-and-haifa.jpg" width="271" height="184"/>
+        <image name="bassim-and-haifa.jpg" width="271" height="184"/>
+        <image name="cloud-air-backdrop.jpg" width="407" height="451"/>
         <image name="cloud-air-backdrop.jpg" width="407" height="451"/>
         <image name="contact-thumb.png" width="28" height="28"/>
         <image name="donate-thumb.png" width="40" height="40"/>
         <image name="elipses-thumb.png" width="30" height="24"/>
         <image name="email-envelope-35px.png" width="35" height="35"/>
+        <image name="email-envelope-35px.png" width="35" height="35"/>
+        <image name="email-envelope-35px.png" width="35" height="35"/>
         <image name="facebook-logo-35px.png" width="35" height="35"/>
+        <image name="forward.button.grey.png" width="51" height="51"/>
         <image name="forward.button.grey.png" width="51" height="51"/>
         <image name="forward.button.red.png" width="51" height="51"/>
         <image name="home-35px.png" width="35" height="35"/>

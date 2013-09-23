@@ -16,8 +16,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    [self.noteButton resignFirstResponder];
+
+    [[self noteButton] setReturnKeyType:UIReturnKeyDone];
+    [[self noteButton] resignFirstResponder];
+    [[self noteButton] setDelegate:self];
 }
 
 - (void)didReceiveMemoryWarning {

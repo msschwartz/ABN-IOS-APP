@@ -37,6 +37,9 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
     
     NSArray *items = [[NSArray alloc] initWithObjects:self.doneButton, toolBarTitle, nil];
     
+    [[self votdLabel] setNumberOfLines:0];
+    [[self votdLabel] setFont:[UIFont boldSystemFontOfSize:18]];
+    
     [[self toolbar] setItems:items];
 
     [super viewDidLoad];
@@ -76,6 +79,8 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
             NSLog(verse);
             
             [[self votdLabel] setText: [NSString stringWithFormat: @"%@\n\n- %@", verse, reference]];
+            [[self votdLabel] sizeToFit];
+
         }
     }
     
