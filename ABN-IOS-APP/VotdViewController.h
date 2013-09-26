@@ -14,6 +14,6 @@
 
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *doneButton;
 
-@property (weak, nonatomic) IBOutlet UILabel *votdLabel;
+@property (weak, nonatomic) IBOutlet UIWebView *votdWebView;
 
 @end

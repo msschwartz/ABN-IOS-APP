@@ -37,9 +37,6 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
     
     NSArray *items = [[NSArray alloc] initWithObjects:self.doneButton, toolBarTitle, nil];
     
-    [[self votdLabel] setNumberOfLines:0];
-    [[self votdLabel] setFont:[UIFont boldSystemFontOfSize:18]];
-    
     [[self toolbar] setItems:items];
 
     [super viewDidLoad];
@@ -78,8 +75,17 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
             
             NSLog(verse);
             
-            [[self votdLabel] setText: [NSString stringWithFormat: @"%@\n\n- %@", verse, reference]];
-            [[self votdLabel] sizeToFit];
+            NSString * html = [NSString stringWithFormat:@"<html> \n"
+             "<head> \n"
+             "<style type=\"text/css\"> \n"
+             "body {font-family: \"%@\"; font-size: %@;}\n"
+             "</style> \n"
+             "</head> \n"
+             "<body>%@<p>- %@</body> \n"
+             "</html>", @"helvetica", [NSNumber numberWithInt:20], verse, reference];
+
+            //[[self votdWebView] loadHTMLString: [NSString stringWithFormat: @"%@<p>- %@", verse, reference] baseURL:NULL];
+            [[self votdWebView] loadHTMLString:html baseURL:NULL];
 
         }
     }

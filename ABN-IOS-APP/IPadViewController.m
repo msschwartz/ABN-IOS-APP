@@ -187,7 +187,6 @@
     
     NSData *jsonData = [NSData dataWithContentsOfURL:url];
     
-    
     if(jsonData != nil) {
 
         NSError *error = nil;
@@ -200,12 +199,12 @@
             
             NSDictionary *votd = [res objectForKey:@"votd"];
             
-            NSString *verse = [votd objectForKey:@"content"];
+            NSMutableString *verse = [votd objectForKey:@"content"];
             NSString *reference = [votd objectForKey:@"display_ref"];
-            
+
             NSLog(verse);
             
-            [[self votdLabel] setText: [NSString stringWithFormat: @"%@\n- %@", verse, reference]];
+            [[self votdWebView] loadHTMLString: [NSString stringWithFormat: @"%@<p>- %@", verse, reference] baseURL:NULL];
         }
     }
     

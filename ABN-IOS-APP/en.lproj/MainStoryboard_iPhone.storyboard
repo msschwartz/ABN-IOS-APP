@@ -541,12 +541,11 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="300" translatesAutoresizingMaskIntoConstraints="NO" id="nio-LJ-Afc">
-                                <rect key="frame" x="10" y="58" width="300" height="365"/>
+                            <webView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e2o-DE-3Pc">
+                                <rect key="frame" x="20" y="59" width="280" height="489"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="LucidaGrande" family="Lucida Grande" pointSize="11"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -559,7 +558,7 @@
                     <connections>
                         <outlet property="doneButton" destination="Y7U-Ge-Y2D" id="567-tL-F9T"/>
                         <outlet property="toolbar" destination="RMF-AM-HpT" id="GxM-Xj-o0d"/>
-                        <outlet property="votdLabel" destination="nio-LJ-Afc" id="bm5-JX-5Hq"/>
+                        <outlet property="votdWebView" destination="e2o-DE-3Pc" id="znP-Fe-1Da"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iUI-AF-phc" userLabel="First Responder" sceneMemberID="firstResponder"/>
