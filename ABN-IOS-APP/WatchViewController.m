@@ -15,14 +15,11 @@
 
 @implementation WatchViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
-
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
 
@@ -30,13 +27,15 @@
     return YES;
 }
 
-- (IBAction)testButtonClick:(id)sender {
+- (IBAction)arabicButtonClick:(id)sender {
+
+    self.player = [[MPMoviePlayerViewController alloc] initWithContentURL:[NSURL URLWithString:@"http://abnarabic-live.hls.adaptive.level3.net/hls-live/abnarabic-live/_definst_/live.m3u8"]];
+    [self presentMoviePlayerViewControllerAnimated:self.player];
+}
+
+- (IBAction)englishButtonClick:(id)sender {
     
-    NSString *videoPath = [[NSBundle mainBundle] pathForResource:@"sample_video"
-                                                          ofType:@"m4v"];
-    
-    self.player = [[MPMoviePlayerViewController alloc] initWithContentURL:[NSURL
-                                                                      fileURLWithPath:videoPath]];
+    self.player = [[MPMoviePlayerViewController alloc] initWithContentURL:[NSURL URLWithString:@"http://abnenglish-live.hls.adaptive.level3.net/hls-live/abnenglish-live/_definst_/live.m3u8"]];
     
     [self presentMoviePlayerViewControllerAnimated:self.player];
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="4">
     <dependencies>
         <deployment defaultVersion="1552" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
@@ -17,29 +17,62 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.25" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cloud-air-backdrop.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="i5s-b8-56x">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OpA-TP-qMU">
-                                <rect key="frame" x="47" y="43" width="55" height="52"/>
+                                <rect key="frame" x="27" y="108" width="55" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="play_icon.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="testButtonClick:" destination="2" eventType="touchUpInside" id="ujM-Nq-ITY"/>
+                                    <action selector="arabicButtonClick:" destination="2" eventType="touchUpInside" id="czG-FS-g4m"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Play live stream" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OOy-Kn-Ixg">
-                                <rect key="frame" x="110" y="58" width="121" height="21"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wIh-JL-vU3">
+                                <rect key="frame" x="27" y="196" width="55" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" backgroundImage="play_icon.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="englishButtonClick:" destination="2" eventType="touchUpInside" id="0Rd-em-bhn"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ARABIC STREAM" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="190" translatesAutoresizingMaskIntoConstraints="NO" id="OOy-Kn-Ixg">
+                                <rect key="frame" x="101" y="75" width="190" height="117"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ENGLISH STREAM" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="199" translatesAutoresizingMaskIntoConstraints="NO" id="LC9-Ym-CNp">
+                                <rect key="frame" x="101" y="163" width="199" height="117"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Watch ABN " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J4L-uv-6Ba">
+                                <rect key="frame" x="54" y="39" width="236" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="live-100x100.png" translatesAutoresizingMaskIntoConstraints="NO" id="7Yi-uB-ZKm">
+                                <rect key="frame" x="200" y="10" width="109" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Watch Live" image="watch-thumb.png" id="7"/>
                     <connections>
-                        <outlet property="testButton" destination="OpA-TP-qMU" id="ZbQ-3I-3zB"/>
+                        <outlet property="arabicButton" destination="OpA-TP-qMU" id="QAl-fh-GYg"/>
+                        <outlet property="englishButton" destination="wIh-JL-vU3" id="2Zy-Bd-PR2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="10" sceneMemberID="firstResponder"/>
@@ -94,7 +127,7 @@
                                     <constraint firstAttribute="height" constant="53" id="k8K-Yf-qvg"/>
                                 </constraints>
                                 <attributedString key="attributedText">
-                                    <fragment content="Amount  (USD):">
+                                    <fragment content="Amount  (USD):">
                                         <attributes>
                                             <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <font key="NSFont" size="17" name="Helvetica"/>
@@ -125,7 +158,11 @@
                                 </constraints>
                                 <attributedString key="attributedText">
                                     <fragment>
-                                        <string key="content">  Without donations from supporters just like you, we wouldn't be able to keep our doors open.    Please consider a one-time financial gift.  Your donations are tax-deductible. </string>
+                                        <string key="content">
+
+Without donations from supporters just like you, we wouldn't be able to keep our doors open.  
+
+Please consider a one-time financial gift.  Your donations are tax-deductible. </string>
                                         <attributes>
                                             <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <font key="NSFont" size="17" name="Helvetica"/>
@@ -471,7 +508,11 @@
                                 </constraints>
                                 <attributedString key="attributedText">
                                     <fragment>
-                                        <string key="content">Dr. Bassim and Haifa Gorial are Iraqi missionaries. They surrendered their life to the Lord in 1989, and then attended Bible College in Berwick Upon Tweed, England.   They heard the Lord’s calling on their life to serve Him among Chaldeans and Arabs. After moving to the U.S., they began an outreach to the community through Bible translation into the Chaldean language, and through directing and dubbing 12 biblical movies in the Chaldean language.   They then expanded their ministry to a weekly local radio program in Chaldean, which then developed into a weekly TV program on local cable. In 2005, ABN satellite TV was launched.</string>
+                                        <string key="content">Dr. Bassim and Haifa Gorial are Iraqi missionaries. They surrendered their life to the Lord in 1989, and then attended Bible College in Berwick Upon Tweed, England. 
+
+They heard the Lord’s calling on their life to serve Him among Chaldeans and Arabs. After moving to the U.S., they began an outreach to the community through Bible translation into the Chaldean language, and through directing and dubbing 12 biblical movies in the Chaldean language. 
+
+They then expanded their ministry to a weekly local radio program in Chaldean, which then developed into a weekly TV program on local cable. In 2005, ABN satellite TV was launched.</string>
                                         <attributes>
                                             <font key="NSFont" size="20" name="Helvetica"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
@@ -885,7 +926,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="94"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" ambiguous="YES" misplaced="YES" text="P.O. Box 724 Walled Lake, MI 48390 USA" lineBreakMode="characterWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="207" translatesAutoresizingMaskIntoConstraints="NO" id="JTp-na-UUl">
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" ambiguous="YES" misplaced="YES" text="P.O. Box 724 Walled Lake, MI 48390 USA" lineBreakMode="characterWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="207" translatesAutoresizingMaskIntoConstraints="NO" id="JTp-na-UUl">
                                                     <rect key="frame" x="67" y="5" width="207" height="84"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -967,6 +1008,7 @@
         <image name="forward.button.red.png" width="51" height="51"/>
         <image name="home-35px.png" width="35" height="35"/>
         <image name="ie-35px.png" width="35" height="35"/>
+        <image name="live-100x100.png" width="100" height="100"/>
         <image name="paypal-logo.png" width="169" height="88"/>
         <image name="phone-35px.jpg" width="35" height="24"/>
         <image name="play_icon.png" width="64" height="64"/>

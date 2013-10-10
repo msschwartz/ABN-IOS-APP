@@ -11,7 +11,12 @@
 
 @interface WatchViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UIButton *testButton;
+@property (weak, nonatomic) IBOutlet UIButton *arabicButton;
+@property (weak, nonatomic) IBOutlet UIButton *englishButton;
+
 @property (strong, nonatomic) MPMoviePlayerViewController *player;
+
+extern const NSString * ARABIC_HLS_URL;
+extern const NSString * ENGLISH_HLS_URL;
 
 @end
