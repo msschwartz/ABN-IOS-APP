@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01117DA2180790E30089831F /* canadian-flag.png in Resources */ = {isa = PBXBuildFile; fileRef = 01117DA1180790E30089831F /* canadian-flag.png */; };
 		01119DEB17E2A85800D96130 /* GetInvolvedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01119DEA17E2A85800D96130 /* GetInvolvedViewController.m */; };
 		01119DEE17E2A8BF00D96130 /* MoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01119DED17E2A8BF00D96130 /* MoreViewController.m */; };
 		013C1B2A17EDCB820083D177 /* play_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 013C1B2917EDCB820083D177 /* play_icon.png */; };
@@ -123,6 +124,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01117DA1180790E30089831F /* canadian-flag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "canadian-flag.png"; sourceTree = "<group>"; };
 		01119DE917E2A85800D96130 /* GetInvolvedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetInvolvedViewController.h; sourceTree = "<group>"; };
 		01119DEA17E2A85800D96130 /* GetInvolvedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetInvolvedViewController.m; sourceTree = "<group>"; };
 		01119DEC17E2A8BF00D96130 /* MoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreViewController.h; sourceTree = "<group>"; };
@@ -402,6 +404,7 @@
 		01D5C9E017E28D2800BA90A4 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				01117DA1180790E30089831F /* canadian-flag.png */,
 				01491BC51806295D007BEADA /* live-100x100.png */,
 				016C72D51807644F0058FD4F /* abn-new-logo-50pct.png */,
 				016C72D61807644F0058FD4F /* abn-new-logo.png */,
@@ -576,6 +579,7 @@
 				013C1B2A17EDCB820083D177 /* play_icon.png in Resources */,
 				01D5C9FB17E2971500BA90A4 /* elipses-thumb@2x.png in Resources */,
 				01F6595F17EFC9EF0087936E /* Default~iphone.png in Resources */,
+				01117DA2180790E30089831F /* canadian-flag.png in Resources */,
 				01D5C9FC17E2971500BA90A4 /* elipses-thumb.png in Resources */,
 				01D5C9FD17E2971500BA90A4 /* watch-thumb@2x.png in Resources */,
 				01F6596117EFC9EF0087936E /* abn-globe-logo~iphone.png.bak in Resources */,

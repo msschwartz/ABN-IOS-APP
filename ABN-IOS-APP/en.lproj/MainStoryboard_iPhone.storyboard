@@ -106,8 +106,8 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="520"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qul-mN-vLi">
-                                <rect key="frame" x="85" y="323" width="117" height="57"/>
+                            <button opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qul-mN-vLi">
+                                <rect key="frame" x="84" y="315" width="117" height="57"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="57" id="7EL-bf-kdN"/>
@@ -120,8 +120,8 @@
                                     <action selector="donateClick:" destination="3" eventType="touchUpInside" id="p6N-V1-sv3"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="brI-xF-t4K">
-                                <rect key="frame" x="85" y="247" width="220" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="brI-xF-t4K">
+                                <rect key="frame" x="84" y="239" width="220" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="220" id="8kd-R2-N1o"/>
                                 </constraints>
@@ -131,8 +131,8 @@
                                     <outlet property="delegate" destination="3" id="rCc-28-4Ry"/>
                                 </connections>
                             </textField>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="116" translatesAutoresizingMaskIntoConstraints="NO" id="UGw-HO-jUw">
-                                <rect key="frame" x="7" y="235" width="116" height="53"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="116" translatesAutoresizingMaskIntoConstraints="NO" id="UGw-HO-jUw">
+                                <rect key="frame" x="6" y="227" width="116" height="53"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="116" id="blZ-JC-Kg3"/>
                                     <constraint firstAttribute="height" constant="53" id="k8K-Yf-qvg"/>
@@ -149,7 +149,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="116" translatesAutoresizingMaskIntoConstraints="NO" id="Qic-FP-45P">
-                                <rect key="frame" x="7" y="280" width="116" height="53"/>
+                                <rect key="frame" x="6" y="272" width="116" height="53"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="53" id="IGE-b1-3uF"/>
                                     <constraint firstAttribute="width" constant="116" id="Ul3-SI-nC8"/>
@@ -165,8 +165,8 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TjA-M2-tFg">
-                                <rect key="frame" x="85" y="285" width="220" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TjA-M2-tFg">
+                                <rect key="frame" x="84" y="277" width="220" height="30"/>
                                 <attributedString key="attributedText"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
@@ -194,8 +194,8 @@ Please consider a one-time financial gift.  Your donations are tax-deductible. <
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Donate Now" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kKT-oa-NVw">
-                                <rect key="frame" x="15" y="216" width="280" height="27"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" misplaced="YES" text="Donate Now" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kKT-oa-NVw">
+                                <rect key="frame" x="15" y="212" width="280" height="27"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="280" id="r2J-pU-2LQ"/>
                                 </constraints>
@@ -209,6 +209,22 @@ Please consider a one-time financial gift.  Your donations are tax-deductible. <
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="canadian-flag.png" translatesAutoresizingMaskIntoConstraints="NO" id="qh8-nf-w5T">
+                                <rect key="frame" x="15" y="385" width="49" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kLi-cK-ZKh">
+                                <rect key="frame" x="66" y="390" width="217" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="Canadian Donor?  Click here!">
+                                    <color key="titleColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="canadianDonorsClicked:" destination="3" eventType="touchUpInside" id="ctj-7V-O8Z"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -231,6 +247,7 @@ Please consider a one-time financial gift.  Your donations are tax-deductible. <
                     <tabBarItem key="tabBarItem" title="Donate" image="donate-thumb.png" id="6"/>
                     <connections>
                         <outlet property="amountButton" destination="brI-xF-t4K" id="4Iy-pi-cB8"/>
+                        <outlet property="canadianDonorButton" destination="kLi-cK-ZKh" id="rJI-CQ-618"/>
                         <outlet property="donateButton" destination="qul-mN-vLi" id="9Ba-EX-v3D"/>
                         <outlet property="noteButton" destination="TjA-M2-tFg" id="3n3-yD-fpf"/>
                     </connections>
@@ -1023,6 +1040,7 @@ They then expanded their ministry to a weekly local radio program in Chaldean, w
         <image name="back.button.grey.png" width="51" height="51"/>
         <image name="back.button.red.png" width="51" height="51"/>
         <image name="bassim-and-haifa.jpg" width="271" height="184"/>
+        <image name="canadian-flag.png" width="65" height="50"/>
         <image name="cloud-air-backdrop.jpg" width="407" height="451"/>
         <image name="contact-thumb.png" width="28" height="28"/>
         <image name="donate-thumb.png" width="40" height="40"/>

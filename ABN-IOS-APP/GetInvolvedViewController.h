@@ -13,6 +13,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *amountButton;
 @property (weak, nonatomic) IBOutlet UITextField *noteButton;
 @property (weak, nonatomic) IBOutlet UIButton *donateButton;
+@property (weak, nonatomic) IBOutlet UIButton *canadianDonorButton;
 
 - (IBAction)donateClick:(id)sender;
 

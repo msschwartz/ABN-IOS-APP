@@ -42,5 +42,7 @@
 
 @property (weak, nonatomic) IBOutlet UIWebView *votdWebView;
 
+@property (weak, nonatomic) IBOutlet UIButton *canadianDonorsButton;
+
 
 @end

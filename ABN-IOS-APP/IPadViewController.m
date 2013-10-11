@@ -209,5 +209,9 @@
     }
     
 }
+- (IBAction)canadianDonorsButton:(id)sender {
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"Canadian Donors" message: @"Make checks out to \"GNTCA\"\nABN Inc.\nP.O Box 34085\n446 Holland Trail\nAurora ON, L4G 7T6 Canada" delegate: nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [alert show];
+}
 
 @end
