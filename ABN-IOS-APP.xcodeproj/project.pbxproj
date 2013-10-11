@@ -70,6 +70,8 @@
 		015A341517E7C928007D83C2 /* youtube-thumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 015A341417E7C928007D83C2 /* youtube-thumb.png */; };
 		015A341B17E7CA64007D83C2 /* donate-thumb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 015A341917E7CA64007D83C2 /* donate-thumb@2x.png */; };
 		015A341D17E7CA9F007D83C2 /* donate-thumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 015A341C17E7CA9F007D83C2 /* donate-thumb.png */; };
+		016C72D71807644F0058FD4F /* abn-new-logo-50pct.png in Resources */ = {isa = PBXBuildFile; fileRef = 016C72D51807644F0058FD4F /* abn-new-logo-50pct.png */; };
+		016C72D81807644F0058FD4F /* abn-new-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 016C72D61807644F0058FD4F /* abn-new-logo.png */; };
 		01BE423F17F0F81A000E2370 /* bassim-and-haifa-240px.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01BE423E17F0F81A000E2370 /* bassim-and-haifa-240px.jpg */; };
 		01C4FA8C17E5F829002F3858 /* ContactUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C4FA8B17E5F829002F3858 /* ContactUsViewController.m */; };
 		01C4FA9117E64B38002F3858 /* forward.button.red.png in Resources */ = {isa = PBXBuildFile; fileRef = 01C4FA8D17E64B38002F3858 /* forward.button.red.png */; };
@@ -194,6 +196,8 @@
 		015A341917E7CA64007D83C2 /* donate-thumb@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "donate-thumb@2x.png"; sourceTree = "<group>"; };
 		015A341C17E7CA9F007D83C2 /* donate-thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "donate-thumb.png"; sourceTree = "<group>"; };
 		015A341E17E7CAA5007D83C2 /* donate-thumb@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "donate-thumb@2x.png"; sourceTree = "<group>"; };
+		016C72D51807644F0058FD4F /* abn-new-logo-50pct.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "abn-new-logo-50pct.png"; sourceTree = "<group>"; };
+		016C72D61807644F0058FD4F /* abn-new-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "abn-new-logo.png"; sourceTree = "<group>"; };
 		01BE423E17F0F81A000E2370 /* bassim-and-haifa-240px.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bassim-and-haifa-240px.jpg"; sourceTree = "<group>"; };
 		01C4FA8A17E5F829002F3858 /* ContactUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactUsViewController.h; sourceTree = "<group>"; };
 		01C4FA8B17E5F829002F3858 /* ContactUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactUsViewController.m; sourceTree = "<group>"; };
@@ -399,6 +403,8 @@
 			isa = PBXGroup;
 			children = (
 				01491BC51806295D007BEADA /* live-100x100.png */,
+				016C72D51807644F0058FD4F /* abn-new-logo-50pct.png */,
+				016C72D61807644F0058FD4F /* abn-new-logo.png */,
 				01491BC918062E74007BEADA /* camera-live-large.png */,
 				01491BC718062DB9007BEADA /* ipad-play-button-75x75.png */,
 				01491BC318062904007BEADA /* live-90x40.png */,
@@ -544,6 +550,7 @@
 				0143429417E15B3200BCE1F2 /* MainStoryboard_iPad.storyboard in Resources */,
 				013C1B3A17EE1BFC0083D177 /* home-35px.png in Resources */,
 				013C1B3217EE18C10083D177 /* twitter-logo-35px.png in Resources */,
+				016C72D81807644F0058FD4F /* abn-new-logo.png in Resources */,
 				013C1B4517EF8D330083D177 /* pin-icon-110px.png in Resources */,
 				01491BCA18062E74007BEADA /* camera-live-large.png in Resources */,
 				0143429917E15B3200BCE1F2 /* first.png in Resources */,
@@ -572,6 +579,7 @@
 				01D5C9FC17E2971500BA90A4 /* elipses-thumb.png in Resources */,
 				01D5C9FD17E2971500BA90A4 /* watch-thumb@2x.png in Resources */,
 				01F6596117EFC9EF0087936E /* abn-globe-logo~iphone.png.bak in Resources */,
+				016C72D71807644F0058FD4F /* abn-new-logo-50pct.png in Resources */,
 				013C1B4617EF8D330083D177 /* internet-icon-110px.png in Resources */,
 				01F6595E17EFC9EF0087936E /* Default-Portrait~ipad.png in Resources */,
 				01D5C9FE17E2971500BA90A4 /* watch-thumb.png in Resources */,

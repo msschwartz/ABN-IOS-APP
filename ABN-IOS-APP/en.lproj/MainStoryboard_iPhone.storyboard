@@ -22,7 +22,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OpA-TP-qMU">
-                                <rect key="frame" x="27" y="108" width="55" height="52"/>
+                                <rect key="frame" x="27" y="295" width="55" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="play_icon.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -32,7 +32,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wIh-JL-vU3">
-                                <rect key="frame" x="27" y="196" width="55" height="52"/>
+                                <rect key="frame" x="27" y="361" width="55" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="play_icon.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -42,30 +42,41 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ARABIC STREAM" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="190" translatesAutoresizingMaskIntoConstraints="NO" id="OOy-Kn-Ixg">
-                                <rect key="frame" x="101" y="75" width="190" height="117"/>
+                                <rect key="frame" x="101" y="262" width="190" height="117"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ENGLISH STREAM" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="199" translatesAutoresizingMaskIntoConstraints="NO" id="LC9-Ym-CNp">
-                                <rect key="frame" x="101" y="163" width="199" height="117"/>
+                                <rect key="frame" x="101" y="328" width="199" height="117"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Watch ABN " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J4L-uv-6Ba">
-                                <rect key="frame" x="54" y="39" width="236" height="39"/>
+                                <rect key="frame" x="50" y="20" width="236" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="29"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="live-100x100.png" translatesAutoresizingMaskIntoConstraints="NO" id="7Yi-uB-ZKm">
-                                <rect key="frame" x="200" y="10" width="109" height="97"/>
+                                <rect key="frame" x="200" y="-9" width="109" height="97"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="abn-new-logo-50pct.png" translatesAutoresizingMaskIntoConstraints="NO" id="NGt-0k-rWd">
+                                <rect key="frame" x="66" y="60" width="189" height="161"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bringing the Light of God's Truth  to Middle Eastern People" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="294" translatesAutoresizingMaskIntoConstraints="NO" id="eOH-Zh-e8s">
+                                <rect key="frame" x="15" y="229" width="294" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.23915553404911893" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -137,10 +148,21 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Note:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="egW-6E-fEp">
-                                <rect key="frame" x="31" y="294" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="116" translatesAutoresizingMaskIntoConstraints="NO" id="Qic-FP-45P">
+                                <rect key="frame" x="7" y="280" width="116" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="IGE-b1-3uF"/>
+                                    <constraint firstAttribute="width" constant="116" id="Ul3-SI-nC8"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Message (Optional):">
+                                        <attributes>
+                                            <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <font key="NSFont" size="17" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TjA-M2-tFg">
@@ -196,16 +218,12 @@ Please consider a one-time financial gift.  Your donations are tax-deductible. <
                             <constraint firstItem="kKT-oa-NVw" firstAttribute="leading" secondItem="17" secondAttribute="leading" constant="15" id="Bhj-qD-1yn"/>
                             <constraint firstItem="TjA-M2-tFg" firstAttribute="trailing" secondItem="brI-xF-t4K" secondAttribute="trailing" id="BxQ-We-Iuy"/>
                             <constraint firstItem="brI-xF-t4K" firstAttribute="leading" secondItem="17" secondAttribute="leading" constant="85" id="DPc-GS-7Rz"/>
-                            <constraint firstItem="egW-6E-fEp" firstAttribute="bottom" secondItem="TjA-M2-tFg" secondAttribute="bottom" id="EBn-ME-lVh"/>
-                            <constraint firstAttribute="bottom" secondItem="egW-6E-fEp" secondAttribute="bottom" priority="1" constant="20" symbolic="YES" id="VrO-Ce-ijV"/>
                             <constraint firstItem="brI-xF-t4K" firstAttribute="top" secondItem="17" secondAttribute="top" constant="247" id="WDW-mf-epw"/>
                             <constraint firstItem="E2i-PO-aDQ" firstAttribute="top" secondItem="17" secondAttribute="top" id="XFy-z0-iFC"/>
                             <constraint firstItem="brI-xF-t4K" firstAttribute="leading" secondItem="TjA-M2-tFg" secondAttribute="leading" id="YIi-pB-jWq"/>
                             <constraint firstItem="UGw-HO-jUw" firstAttribute="top" secondItem="17" secondAttribute="top" constant="235" id="auM-SR-nlk"/>
-                            <constraint firstItem="qul-mN-vLi" firstAttribute="leading" secondItem="egW-6E-fEp" secondAttribute="trailing" priority="1" constant="8" symbolic="YES" id="gyS-kV-we9"/>
                             <constraint firstItem="TjA-M2-tFg" firstAttribute="top" secondItem="brI-xF-t4K" secondAttribute="bottom" constant="8" symbolic="YES" id="q1t-SG-G0m"/>
                             <constraint firstItem="UGw-HO-jUw" firstAttribute="leading" secondItem="17" secondAttribute="leading" constant="7" id="sy8-ez-Apm"/>
-                            <constraint firstItem="egW-6E-fEp" firstAttribute="leading" secondItem="17" secondAttribute="leading" constant="31" id="xvA-hK-vnY"/>
                             <constraint firstAttribute="bottom" secondItem="qul-mN-vLi" secondAttribute="bottom" priority="127" constant="20" symbolic="YES" id="yfx-1G-kNw"/>
                             <constraint firstItem="qul-mN-vLi" firstAttribute="leading" secondItem="TjA-M2-tFg" secondAttribute="leading" id="ynD-er-lsx"/>
                         </constraints>
@@ -234,10 +252,15 @@ Please consider a one-time financial gift.  Your donations are tax-deductible. <
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="clC-cl-bNs">
-                                <rect key="frame" x="0.0" y="0.0" width="321" height="568"/>
+                                <rect key="frame" x="0.0" y="45" width="321" height="476"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" calendarEvent="YES"/>
                             </webView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9eS-KQ-jKW">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </view>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J5r-Tn-Tgm">
                                 <rect key="frame" x="38" y="0.0" width="42" height="43"/>
                                 <fontDescription key="fontDescription" type="boldSystem" size="button"/>
@@ -272,6 +295,27 @@ Please consider a one-time financial gift.  Your donations are tax-deductible. <
                                 <rect key="frame" x="144" y="244" width="20" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </activityIndicatorView>
+                            <pickerView hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TiQ-a0-uJN">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="162"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="zPj-FY-AZa" id="Lun-5J-0xa"/>
+                                    <outlet property="delegate" destination="zPj-FY-AZa" id="6QT-Vg-mSd"/>
+                                </connections>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w4h-ke-7mV">
+                                <rect key="frame" x="102" y="7" width="117" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <state key="normal" title="Select Channel">
+                                    <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.78358179210000001" green="0.78358179210000001" blue="0.78358179210000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectChannelClick:" destination="zPj-FY-AZa" eventType="touchUpInside" id="qej-qN-6wI"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -286,7 +330,9 @@ Please consider a one-time financial gift.  Your donations are tax-deductible. <
                     <connections>
                         <outlet property="activitySpinner" destination="o7x-hD-Rph" id="Rcf-xf-u8S"/>
                         <outlet property="backButton" destination="J5r-Tn-Tgm" id="4Bw-iq-Drc"/>
+                        <outlet property="channelPicker" destination="TiQ-a0-uJN" id="S8h-7c-Nxf"/>
                         <outlet property="forwardButton" destination="JJa-Xr-ER1" id="JqM-Zy-u8D"/>
+                        <outlet property="selectChannelButton" destination="w4h-ke-7mV" id="hkw-cH-I3C"/>
                         <outlet property="webView" destination="clC-cl-bNs" id="cXe-7q-ZDM"/>
                     </connections>
                 </viewController>
@@ -809,7 +855,7 @@ They then expanded their ministry to a weekly local radio program in Chaldean, w
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" multipleTouchEnabled="YES" contentMode="left" text="General Email Inbox" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fFt-uJ-c5o">
+                                                <label opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" multipleTouchEnabled="YES" contentMode="left" text="abn@abnsat.com" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fFt-uJ-c5o">
                                                     <rect key="frame" x="65" y="0.0" width="220" height="44"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -822,35 +868,14 @@ They then expanded their ministry to a weekly local radio program in Chaldean, w
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell tag="101" contentMode="scaleToFill" selectionStyle="gray" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="l3B-D3-ZhY" imageView="3EL-dI-83E" rowHeight="45" style="IBUITableViewCellStyleDefault" id="pdI-xj-91p">
-                                        <rect key="frame" x="0.0" y="67" width="320" height="45"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pdI-xj-91p" id="q3O-Tj-fR0">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="44"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Missions Email Inbox" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="l3B-D3-ZhY">
-                                                    <rect key="frame" x="65" y="0.0" width="220" height="44"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                </label>
-                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="email-envelope-35px.png" id="3EL-dI-83E">
-                                                    <rect key="frame" x="15" y="4" width="35" height="35"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                </imageView>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    </tableViewCell>
                                     <tableViewCell tag="102" contentMode="scaleToFill" selectionStyle="gray" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="Xso-D2-urb" imageView="bl8-vA-jog" rowHeight="45" style="IBUITableViewCellStyleDefault" id="0Im-Dl-CoE">
-                                        <rect key="frame" x="0.0" y="112" width="320" height="45"/>
+                                        <rect key="frame" x="0.0" y="67" width="320" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0Im-Dl-CoE" id="Jf4-UL-tb1">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Dr. Bassim Gorial's Inbox" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Xso-D2-urb">
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Dr. Bassim Gorial" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Xso-D2-urb">
                                                     <rect key="frame" x="65" y="0.0" width="220" height="44"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -869,7 +894,7 @@ They then expanded their ministry to a weekly local radio program in Chaldean, w
                             <tableViewSection headerTitle="By phone..." id="x86-VH-qgt">
                                 <cells>
                                     <tableViewCell tag="110" contentMode="scaleToFill" selectionStyle="gray" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="gmg-Ri-YrS" imageView="CIv-SS-1YD" rowHeight="45" style="IBUITableViewCellStyleDefault" id="Mv3-ji-vQu">
-                                        <rect key="frame" x="0.0" y="179" width="320" height="45"/>
+                                        <rect key="frame" x="0.0" y="134" width="320" height="45"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Mv3-ji-vQu" id="hYG-AV-LWr">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="44"/>
@@ -894,7 +919,7 @@ They then expanded their ministry to a weekly local radio program in Chaldean, w
                             <tableViewSection headerTitle="On the web..." id="A6r-3k-sAY">
                                 <cells>
                                     <tableViewCell tag="120" contentMode="scaleToFill" selectionStyle="gray" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="Peg-Dq-Rw2" imageView="Cwd-bh-rne" rowHeight="45" style="IBUITableViewCellStyleDefault" id="alx-FH-4Xo">
-                                        <rect key="frame" x="0.0" y="246" width="320" height="45"/>
+                                        <rect key="frame" x="0.0" y="201" width="320" height="45"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="alx-FH-4Xo" id="686-9n-sDW">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="44"/>
@@ -920,7 +945,7 @@ They then expanded their ministry to a weekly local radio program in Chaldean, w
                             <tableViewSection headerTitle="Via mail..." id="Rmi-EA-2zv">
                                 <cells>
                                     <tableViewCell tag="130" contentMode="scaleToFill" selectionStyle="gray" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="95" id="fpw-vV-BCL">
-                                        <rect key="frame" x="0.0" y="313" width="320" height="95"/>
+                                        <rect key="frame" x="0.0" y="268" width="320" height="95"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fpw-vV-BCL" id="0To-Cx-3lz">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="94"/>
@@ -961,7 +986,6 @@ They then expanded their ministry to a weekly local radio program in Chaldean, w
                         <outlet property="callCell" destination="Mv3-ji-vQu" id="27O-8g-hVE"/>
                         <outlet property="emailBassimCell" destination="0Im-Dl-CoE" id="Uax-Nq-V5j"/>
                         <outlet property="emailGeneralCell" destination="zIm-3K-clw" id="Mvp-ps-ynB"/>
-                        <outlet property="emailMissionsCell" destination="pdI-xj-91p" id="ajU-uY-blo"/>
                         <outlet property="mailCell" destination="fpw-vV-BCL" id="twM-HG-1bv"/>
                         <outlet property="table" destination="dui-fH-OSk" id="f4B-FB-qxp"/>
                         <outlet property="websiteCell" destination="alx-FH-4Xo" id="o4g-gY-Teo"/>
@@ -995,6 +1019,7 @@ They then expanded their ministry to a weekly local radio program in Chaldean, w
         </scene>
     </scenes>
     <resources>
+        <image name="abn-new-logo-50pct.png" width="315" height="320"/>
         <image name="back.button.grey.png" width="51" height="51"/>
         <image name="back.button.red.png" width="51" height="51"/>
         <image name="bassim-and-haifa.jpg" width="271" height="184"/>

@@ -7,6 +7,7 @@
 //
 
 #import "YouTubeChannelViewController.h"
+#import "QuartzCore/QuartzCore.h"
 
 @interface YouTubeChannelViewController ()
 
@@ -24,6 +25,31 @@
     [_webView setDelegate:self];
     
     [[self activitySpinner] setHidesWhenStopped:YES];
+
+    channelsArray = [[NSMutableArray alloc] init];
+    [channelsArray addObject:@"ABNSAT"];
+    [channelsArray addObject:@"English Gospel"];
+    [channelsArray addObject:@"Arabic Gospel"];
+    [channelsArray addObject:@"Kurdish Gospel"];
+    [channelsArray addObject:@"Arabs for Christ"];
+    [channelsArray addObject:@"Jesus or Mohammed"];
+    [channelsArray addObject:@"Jihad Exposed"];
+    [channelsArray addObject:@"Arabs for Jesus"];
+
+    urlsArray = [[NSMutableArray alloc] init];
+    [urlsArray addObject:@"ABNSAT2"];
+    [urlsArray addObject:@"englishgospel"];
+    [urlsArray addObject:@"arabicgospel"];
+    [urlsArray addObject:@"kurdishgospel"];
+    [urlsArray addObject:@"arabsforchristabn"];
+    [urlsArray addObject:@"JesusOrMuhammad"];
+    [urlsArray addObject:@"JihadExpose"];
+    [urlsArray addObject:@"arabsforjesus"];
+
+    [[self.selectChannelButton layer] setBorderWidth:2.0f];
+    [[self.selectChannelButton layer] setCornerRadius:5.0f];
+    [[self.selectChannelButton layer] setBorderColor:[UIColor whiteColor].CGColor];
+    [[self.selectChannelButton layer] setBackgroundColor:[UIColor lightGrayColor].CGColor];
     
     [super viewDidLoad];
 }
@@ -54,6 +80,35 @@
 
 - (NSUInteger) supportedInterfaceOrientations {
     return UIInterfaceOrientationMaskPortrait;
+}
+
+- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
+    return [channelsArray count];
+}
+
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
+    return 1;
+}
+
+- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
+    return [channelsArray objectAtIndex: row];
+}
+
+- (void)pickerView:(UIPickerView *)pv didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
+    
+    NSString * baseUrl = @"https://www.youtube.com/user/";
+    NSString * path = [urlsArray objectAtIndex: row];
+    NSString * url = [NSString stringWithFormat:@"%@%@", baseUrl, path];
+    
+    NSURLRequest *requestObj = [NSURLRequest requestWithURL:[NSURL URLWithString:url]];
+    [_webView loadRequest:requestObj];
+    
+    self.channelPicker.hidden = YES;
+
+}
+
+- (IBAction)selectChannelClick:(id)sender {
+    self.channelPicker.hidden = NO;
 }
 
 @end

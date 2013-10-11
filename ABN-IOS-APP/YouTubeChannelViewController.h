@@ -8,7 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface YouTubeChannelViewController : UIViewController<UIWebViewDelegate>
+@interface YouTubeChannelViewController : UIViewController<UIWebViewDelegate, UIPickerViewDataSource, UIPickerViewDelegate> {
+    NSMutableArray * channelsArray;
+    NSMutableArray * urlsArray;
+}
 
 @property (strong, nonatomic) IBOutlet UIWebView *webView;
 
@@ -17,6 +20,13 @@
 @property (weak, nonatomic) IBOutlet UIButton *forwardButton;
 
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activitySpinner;
+
+@property (weak, nonatomic) IBOutlet UIPickerView *channelPicker;
+
+@property (weak, nonatomic) IBOutlet UIButton *selectChannelButton;
+
+@property (nonatomic, retain) NSMutableArray * channelsArray;
+@property (nonatomic, retain) NSMutableArray * urlsArray;
 
 - (IBAction)backButtonClick:(id)sender;
 
