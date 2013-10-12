@@ -73,6 +73,7 @@
 		015A341D17E7CA9F007D83C2 /* donate-thumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 015A341C17E7CA9F007D83C2 /* donate-thumb.png */; };
 		016C72D71807644F0058FD4F /* abn-new-logo-50pct.png in Resources */ = {isa = PBXBuildFile; fileRef = 016C72D51807644F0058FD4F /* abn-new-logo-50pct.png */; };
 		016C72D81807644F0058FD4F /* abn-new-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 016C72D61807644F0058FD4F /* abn-new-logo.png */; };
+		01AE0F9218087CF5008B7120 /* ipad-background-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01AE0F9118087CF5008B7120 /* ipad-background-1.jpg */; };
 		01BE423F17F0F81A000E2370 /* bassim-and-haifa-240px.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01BE423E17F0F81A000E2370 /* bassim-and-haifa-240px.jpg */; };
 		01C4FA8C17E5F829002F3858 /* ContactUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C4FA8B17E5F829002F3858 /* ContactUsViewController.m */; };
 		01C4FA9117E64B38002F3858 /* forward.button.red.png in Resources */ = {isa = PBXBuildFile; fileRef = 01C4FA8D17E64B38002F3858 /* forward.button.red.png */; };
@@ -200,6 +201,7 @@
 		015A341E17E7CAA5007D83C2 /* donate-thumb@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "donate-thumb@2x.png"; sourceTree = "<group>"; };
 		016C72D51807644F0058FD4F /* abn-new-logo-50pct.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "abn-new-logo-50pct.png"; sourceTree = "<group>"; };
 		016C72D61807644F0058FD4F /* abn-new-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "abn-new-logo.png"; sourceTree = "<group>"; };
+		01AE0F9118087CF5008B7120 /* ipad-background-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ipad-background-1.jpg"; sourceTree = "<group>"; };
 		01BE423E17F0F81A000E2370 /* bassim-and-haifa-240px.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bassim-and-haifa-240px.jpg"; sourceTree = "<group>"; };
 		01C4FA8A17E5F829002F3858 /* ContactUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactUsViewController.h; sourceTree = "<group>"; };
 		01C4FA8B17E5F829002F3858 /* ContactUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactUsViewController.m; sourceTree = "<group>"; };
@@ -404,6 +406,7 @@
 		01D5C9E017E28D2800BA90A4 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				01AE0F9118087CF5008B7120 /* ipad-background-1.jpg */,
 				01117DA1180790E30089831F /* canadian-flag.png */,
 				01491BC51806295D007BEADA /* live-100x100.png */,
 				016C72D51807644F0058FD4F /* abn-new-logo-50pct.png */,
@@ -570,6 +573,7 @@
 				01491BC818062DB9007BEADA /* ipad-play-button-75x75.png in Resources */,
 				01D5C9EC17E2911E00BA90A4 /* elipses-thumbnail.png in Resources */,
 				01D5C9F717E2971500BA90A4 /* contact-thumb@2x.png in Resources */,
+				01AE0F9218087CF5008B7120 /* ipad-background-1.jpg in Resources */,
 				013C1B3017EE18C10083D177 /* youtube-logo-35px.jpg in Resources */,
 				01F6596F17EFD6DF0087936E /* app-icon-76px.png in Resources */,
 				013C1B4017EF88A40083D177 /* facebook-icon-110px.png in Resources */,
