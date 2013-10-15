@@ -269,7 +269,7 @@ Please consider a one-time financial gift.  Your donations are tax-deductible. <
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="clC-cl-bNs">
-                                <rect key="frame" x="0.0" y="45" width="321" height="476"/>
+                                <rect key="frame" x="0.0" y="45" width="321" height="475"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" calendarEvent="YES"/>
                             </webView>
@@ -279,7 +279,7 @@ Please consider a one-time financial gift.  Your donations are tax-deductible. <
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J5r-Tn-Tgm">
-                                <rect key="frame" x="38" y="0.0" width="42" height="43"/>
+                                <rect key="frame" x="0.0" y="0.0" width="42" height="43"/>
                                 <fontDescription key="fontDescription" type="boldSystem" size="button"/>
                                 <state key="normal" backgroundImage="back.button.red.png">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -294,7 +294,7 @@ Please consider a one-time financial gift.  Your donations are tax-deductible. <
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JJa-Xr-ER1">
-                                <rect key="frame" x="235" y="0.0" width="42" height="43"/>
+                                <rect key="frame" x="270" y="0.0" width="42" height="43"/>
                                 <fontDescription key="fontDescription" type="boldSystem" size="button"/>
                                 <state key="normal" backgroundImage="forward.button.red.png">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -337,7 +337,6 @@ Please consider a one-time financial gift.  Your donations are tax-deductible. <
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="J5r-Tn-Tgm" firstAttribute="top" secondItem="TVE-q1-UCM" secondAttribute="top" id="QbT-Nn-mxu"/>
-                            <constraint firstAttribute="bottom" secondItem="clC-cl-bNs" secondAttribute="bottom" id="Xt2-cI-ueC"/>
                             <constraint firstItem="clC-cl-bNs" firstAttribute="centerX" secondItem="TVE-q1-UCM" secondAttribute="centerX" id="gwC-EP-Ugh"/>
                             <constraint firstItem="JJa-Xr-ER1" firstAttribute="bottom" secondItem="J5r-Tn-Tgm" secondAttribute="bottom" id="jXe-pL-qdt"/>
                             <constraint firstItem="clC-cl-bNs" firstAttribute="leading" secondItem="TVE-q1-UCM" secondAttribute="leading" id="scE-8V-LLZ"/>

@@ -11,6 +11,7 @@
 @interface YouTubeChannelViewController : UIViewController<UIWebViewDelegate, UIPickerViewDataSource, UIPickerViewDelegate> {
     NSMutableArray * channelsArray;
     NSMutableArray * urlsArray;
+    NSString * currentChannel;
 }
 
 @property (strong, nonatomic) IBOutlet UIWebView *webView;
@@ -27,9 +28,12 @@
 
 @property (nonatomic, retain) NSMutableArray * channelsArray;
 @property (nonatomic, retain) NSMutableArray * urlsArray;
+@property (nonatomic, retain) NSString * currentChannel;
 
 - (IBAction)backButtonClick:(id)sender;
 
 - (IBAction)forwardButtonClick:(id)sender;
+
+-(void) loadYouTubeChannel;
 
 @end

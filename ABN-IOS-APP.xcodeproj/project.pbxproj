@@ -71,6 +71,9 @@
 		015A341517E7C928007D83C2 /* youtube-thumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 015A341417E7C928007D83C2 /* youtube-thumb.png */; };
 		015A341B17E7CA64007D83C2 /* donate-thumb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 015A341917E7CA64007D83C2 /* donate-thumb@2x.png */; };
 		015A341D17E7CA9F007D83C2 /* donate-thumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 015A341C17E7CA9F007D83C2 /* donate-thumb.png */; };
+		01613C67180DF2A30007A992 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 01613C66180DF2A30007A992 /* Default-568h@2x.png */; };
+		01613C6A180DF7200007A992 /* abn-globe-logo-76h.png in Resources */ = {isa = PBXBuildFile; fileRef = 01613C68180DF7200007A992 /* abn-globe-logo-76h.png */; };
+		01613C6B180DF7200007A992 /* abn-globe-logo-152h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 01613C69180DF7200007A992 /* abn-globe-logo-152h@2x.png */; };
 		016C72D71807644F0058FD4F /* abn-new-logo-50pct.png in Resources */ = {isa = PBXBuildFile; fileRef = 016C72D51807644F0058FD4F /* abn-new-logo-50pct.png */; };
 		016C72D81807644F0058FD4F /* abn-new-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 016C72D61807644F0058FD4F /* abn-new-logo.png */; };
 		01AE0F9218087CF5008B7120 /* ipad-background-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01AE0F9118087CF5008B7120 /* ipad-background-1.jpg */; };
@@ -101,13 +104,12 @@
 		01DFE9F717E7D9D300D1122A /* OurVisionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01DFE9F617E7D9D300D1122A /* OurVisionViewController.m */; };
 		01F6595D17EFC9EF0087936E /* Default~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 01F6595817EFC9EF0087936E /* Default~ipad.png */; };
 		01F6595E17EFC9EF0087936E /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 01F6595917EFC9EF0087936E /* Default-Portrait~ipad.png */; };
-		01F6595F17EFC9EF0087936E /* Default~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 01F6595A17EFC9EF0087936E /* Default~iphone.png */; };
 		01F6596117EFC9EF0087936E /* abn-globe-logo~iphone.png.bak in Resources */ = {isa = PBXBuildFile; fileRef = 01F6595C17EFC9EF0087936E /* abn-globe-logo~iphone.png.bak */; };
 		01F6596417EFCA610087936E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 01F6596217EFCA610087936E /* Default@2x.png */; };
 		01F6596517EFCA610087936E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 01F6596317EFCA610087936E /* Default.png */; };
 		01F6596D17EFD6DF0087936E /* abn-globe-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 01F6596617EFD6DF0087936E /* abn-globe-logo.png */; };
 		01F6596E17EFD6DF0087936E /* abn-globe-logo~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 01F6596717EFD6DF0087936E /* abn-globe-logo~ipad.png */; };
-		01F6596F17EFD6DF0087936E /* app-icon-76px.png in Resources */ = {isa = PBXBuildFile; fileRef = 01F6596817EFD6DF0087936E /* app-icon-76px.png */; };
+		01F6596F17EFD6DF0087936E /* abn-globe-logo-76px~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 01F6596817EFD6DF0087936E /* abn-globe-logo-76px~ipad.png */; };
 		01F6597017EFD6DF0087936E /* abn-globe-logo~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 01F6596917EFD6DF0087936E /* abn-globe-logo~iphone.png */; };
 		01F6597117EFD6DF0087936E /* abn-globe-logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 01F6596A17EFD6DF0087936E /* abn-globe-logo@2x.png */; };
 		01F6597217EFD6DF0087936E /* abn-globe-logo@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 01F6596B17EFD6DF0087936E /* abn-globe-logo@2x~ipad.png */; };
@@ -166,7 +168,7 @@
 		013F395717E934CE006B5C6C /* PayPalPaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalPaymentViewController.h; sourceTree = "<group>"; };
 		013F395B17E9394C006B5C6C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		013F395D17E93BE7006B5C6C /* paypal-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "paypal-logo.png"; sourceTree = "<group>"; };
-		0143427417E15B3200BCE1F2 /* ABN-IOS-APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ABN-IOS-APP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0143427417E15B3200BCE1F2 /* LT76CT679P.com.abnsat.v1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LT76CT679P.com.abnsat.v1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0143427717E15B3200BCE1F2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0143427917E15B3200BCE1F2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0143427B17E15B3200BCE1F2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -199,6 +201,9 @@
 		015A341917E7CA64007D83C2 /* donate-thumb@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "donate-thumb@2x.png"; sourceTree = "<group>"; };
 		015A341C17E7CA9F007D83C2 /* donate-thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "donate-thumb.png"; sourceTree = "<group>"; };
 		015A341E17E7CAA5007D83C2 /* donate-thumb@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "donate-thumb@2x.png"; sourceTree = "<group>"; };
+		01613C66180DF2A30007A992 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		01613C68180DF7200007A992 /* abn-globe-logo-76h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "abn-globe-logo-76h.png"; sourceTree = "<group>"; };
+		01613C69180DF7200007A992 /* abn-globe-logo-152h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "abn-globe-logo-152h@2x.png"; sourceTree = "<group>"; };
 		016C72D51807644F0058FD4F /* abn-new-logo-50pct.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "abn-new-logo-50pct.png"; sourceTree = "<group>"; };
 		016C72D61807644F0058FD4F /* abn-new-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "abn-new-logo.png"; sourceTree = "<group>"; };
 		01AE0F9118087CF5008B7120 /* ipad-background-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ipad-background-1.jpg"; sourceTree = "<group>"; };
@@ -235,13 +240,12 @@
 		01DFE9F617E7D9D300D1122A /* OurVisionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OurVisionViewController.m; sourceTree = "<group>"; };
 		01F6595817EFC9EF0087936E /* Default~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default~ipad.png"; sourceTree = "<group>"; };
 		01F6595917EFC9EF0087936E /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
-		01F6595A17EFC9EF0087936E /* Default~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default~iphone.png"; sourceTree = "<group>"; };
 		01F6595C17EFC9EF0087936E /* abn-globe-logo~iphone.png.bak */ = {isa = PBXFileReference; lastKnownFileType = file; path = "abn-globe-logo~iphone.png.bak"; sourceTree = "<group>"; };
 		01F6596217EFCA610087936E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		01F6596317EFCA610087936E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		01F6596617EFD6DF0087936E /* abn-globe-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "abn-globe-logo.png"; sourceTree = "<group>"; };
 		01F6596717EFD6DF0087936E /* abn-globe-logo~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "abn-globe-logo~ipad.png"; sourceTree = "<group>"; };
-		01F6596817EFD6DF0087936E /* app-icon-76px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app-icon-76px.png"; sourceTree = "<group>"; };
+		01F6596817EFD6DF0087936E /* abn-globe-logo-76px~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "abn-globe-logo-76px~ipad.png"; sourceTree = "<group>"; };
 		01F6596917EFD6DF0087936E /* abn-globe-logo~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "abn-globe-logo~iphone.png"; sourceTree = "<group>"; };
 		01F6596A17EFD6DF0087936E /* abn-globe-logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "abn-globe-logo@2x.png"; sourceTree = "<group>"; };
 		01F6596B17EFD6DF0087936E /* abn-globe-logo@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "abn-globe-logo@2x~ipad.png"; sourceTree = "<group>"; };
@@ -321,7 +325,7 @@
 		0143427517E15B3200BCE1F2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0143427417E15B3200BCE1F2 /* ABN-IOS-APP.app */,
+				0143427417E15B3200BCE1F2 /* LT76CT679P.com.abnsat.v1.app */,
 				014342A817E15B3200BCE1F2 /* ABN-IOS-APPTests.octest */,
 			);
 			name = Products;
@@ -419,6 +423,7 @@
 				01F6595C17EFC9EF0087936E /* abn-globe-logo~iphone.png.bak */,
 				01C4FA9717E64D03002F3858 /* back.button.grey.png */,
 				01C4FA8F17E64B38002F3858 /* back.button.red.png */,
+				01613C66180DF2A30007A992 /* Default-568h@2x.png */,
 				01DFE9EA17E7CF7500D1122A /* bassim-and-haifa.jpg */,
 				01C4FA9917E65568002F3858 /* cloud-air-backdrop.jpg */,
 				01D5C9EE17E2971500BA90A4 /* contact-thumb.png */,
@@ -428,11 +433,12 @@
 				01F6596317EFCA610087936E /* Default.png */,
 				01F6596217EFCA610087936E /* Default@2x.png */,
 				01F6595817EFC9EF0087936E /* Default~ipad.png */,
-				01F6595A17EFC9EF0087936E /* Default~iphone.png */,
 				015A341C17E7CA9F007D83C2 /* donate-thumb.png */,
 				015A341917E7CA64007D83C2 /* donate-thumb@2x.png */,
 				01D5C9F217E2971500BA90A4 /* elipses-thumb.png */,
 				01D5C9F117E2971500BA90A4 /* elipses-thumb@2x.png */,
+				01613C68180DF7200007A992 /* abn-globe-logo-76h.png */,
+				01613C69180DF7200007A992 /* abn-globe-logo-152h@2x.png */,
 				01D5C9EB17E2911E00BA90A4 /* elipses-thumbnail.png */,
 				013C1B3317EE1BFC0083D177 /* email-envelope-35px.png */,
 				013C1B4417EF8D330083D177 /* email-icon-110px.png */,
@@ -468,7 +474,7 @@
 				015A341E17E7CAA5007D83C2 /* donate-thumb@2x.png */,
 				01F6596617EFD6DF0087936E /* abn-globe-logo.png */,
 				01F6596717EFD6DF0087936E /* abn-globe-logo~ipad.png */,
-				01F6596817EFD6DF0087936E /* app-icon-76px.png */,
+				01F6596817EFD6DF0087936E /* abn-globe-logo-76px~ipad.png */,
 				01F6596917EFD6DF0087936E /* abn-globe-logo~iphone.png */,
 				01F6596A17EFD6DF0087936E /* abn-globe-logo@2x.png */,
 				01F6596B17EFD6DF0087936E /* abn-globe-logo@2x~ipad.png */,
@@ -494,7 +500,7 @@
 			);
 			name = "ABN-IOS-APP";
 			productName = "ABN-IOS-APP";
-			productReference = 0143427417E15B3200BCE1F2 /* ABN-IOS-APP.app */;
+			productReference = 0143427417E15B3200BCE1F2 /* LT76CT679P.com.abnsat.v1.app */;
 			productType = "com.apple.product-type.application";
 		};
 		014342A717E15B3200BCE1F2 /* ABN-IOS-APPTests */ = {
@@ -524,6 +530,11 @@
 			attributes = {
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Gorial, Sam";
+				TargetAttributes = {
+					0143427317E15B3200BCE1F2 = {
+						DevelopmentTeam = LT76CT679P;
+					};
+				};
 			};
 			buildConfigurationList = 0143426F17E15B3200BCE1F2 /* Build configuration list for PBXProject "ABN-IOS-APP" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -566,6 +577,7 @@
 				01D5C9E217E28E1C00BA90A4 /* abn-globe-logo.png.bak in Resources */,
 				01D5C9E617E2904300BA90A4 /* contact-thumbnail.png in Resources */,
 				013C1B3817EE1BFC0083D177 /* ie-35px.png in Resources */,
+				01613C6A180DF7200007A992 /* abn-globe-logo-76h.png in Resources */,
 				01D5C9E817E290A400BA90A4 /* watch-thumbnail.png in Resources */,
 				01F6596E17EFD6DF0087936E /* abn-globe-logo~ipad.png in Resources */,
 				013C1B4717EF8D330083D177 /* phone-icon-110px.png in Resources */,
@@ -575,14 +587,14 @@
 				01D5C9F717E2971500BA90A4 /* contact-thumb@2x.png in Resources */,
 				01AE0F9218087CF5008B7120 /* ipad-background-1.jpg in Resources */,
 				013C1B3017EE18C10083D177 /* youtube-logo-35px.jpg in Resources */,
-				01F6596F17EFD6DF0087936E /* app-icon-76px.png in Resources */,
+				01F6596F17EFD6DF0087936E /* abn-globe-logo-76px~ipad.png in Resources */,
 				013C1B4017EF88A40083D177 /* facebook-icon-110px.png in Resources */,
 				01D5C9F817E2971500BA90A4 /* contact-thumb.png in Resources */,
+				01613C67180DF2A30007A992 /* Default-568h@2x.png in Resources */,
 				01491BC418062904007BEADA /* live-90x40.png in Resources */,
 				01BE423F17F0F81A000E2370 /* bassim-and-haifa-240px.jpg in Resources */,
 				013C1B2A17EDCB820083D177 /* play_icon.png in Resources */,
 				01D5C9FB17E2971500BA90A4 /* elipses-thumb@2x.png in Resources */,
-				01F6595F17EFC9EF0087936E /* Default~iphone.png in Resources */,
 				01117DA2180790E30089831F /* canadian-flag.png in Resources */,
 				01D5C9FC17E2971500BA90A4 /* elipses-thumb.png in Resources */,
 				01D5C9FD17E2971500BA90A4 /* watch-thumb@2x.png in Resources */,
@@ -599,6 +611,7 @@
 				01C4FA9217E64B38002F3858 /* forward.button.grey.png in Resources */,
 				01F6596517EFCA610087936E /* Default.png in Resources */,
 				01F6597217EFD6DF0087936E /* abn-globe-logo@2x~ipad.png in Resources */,
+				01613C6B180DF7200007A992 /* abn-globe-logo-152h@2x.png in Resources */,
 				01C4FA9317E64B38002F3858 /* back.button.red.png in Resources */,
 				01C4FA9817E64D03002F3858 /* back.button.grey.png in Resources */,
 				01C4FA9A17E65568002F3858 /* cloud-air-backdrop.jpg in Resources */,
@@ -783,6 +796,8 @@
 		014342BB17E15B3200BCE1F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ABN-IOS-APP/ABN-IOS-APP-Prefix.pch";
 				INFOPLIST_FILE = "ABN-IOS-APP/ABN-IOS-APP-Info.plist";
@@ -794,7 +809,8 @@
 					"-lc++",
 					"-ObjC",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = LT76CT679P.com.abnsat.v1;
+				PROVISIONING_PROFILE = "B0747728-EC7A-4610-B762-9ED583E0F16C";
 				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
@@ -803,6 +819,8 @@
 		014342BC17E15B3200BCE1F2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Sam Gorial (LT76CT679P)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ABN-IOS-APP/ABN-IOS-APP-Prefix.pch";
 				INFOPLIST_FILE = "ABN-IOS-APP/ABN-IOS-APP-Info.plist";
@@ -815,7 +833,8 @@
 					"-lc++",
 					"-ObjC",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = LT76CT679P.com.abnsat.v1;
+				PROVISIONING_PROFILE = "9DD5EC5A-264D-4FF5-ACFF-A754CC507AC3";
 				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};

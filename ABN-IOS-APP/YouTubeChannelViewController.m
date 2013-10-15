@@ -100,15 +100,22 @@
     NSString * path = [urlsArray objectAtIndex: row];
     NSString * url = [NSString stringWithFormat:@"%@%@", baseUrl, path];
     
-    NSURLRequest *requestObj = [NSURLRequest requestWithURL:[NSURL URLWithString:url]];
-    [_webView loadRequest:requestObj];
+    self.currentChannel = url;
+    NSLog(@"Current channel: ");
+    NSLog(url);
     
-    self.channelPicker.hidden = YES;
-
 }
 
 - (IBAction)selectChannelClick:(id)sender {
-    self.channelPicker.hidden = NO;
+    
+    if(self.channelPicker.hidden) {
+        self.channelPicker.hidden = NO;
+    } else {
+        NSURLRequest *requestObj = [NSURLRequest requestWithURL:[NSURL URLWithString:self.currentChannel]];
+        [_webView loadRequest:requestObj];
+        self.channelPicker.hidden = YES;
+    }
+    
 }
 
 @end
