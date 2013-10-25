@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		010AB136181897B800809B17 /* stopAudio.png in Resources */ = {isa = PBXBuildFile; fileRef = 010AB134181897B800809B17 /* stopAudio.png */; };
+		010AB137181897B800809B17 /* playAudio.png in Resources */ = {isa = PBXBuildFile; fileRef = 010AB135181897B800809B17 /* playAudio.png */; };
 		01117DA2180790E30089831F /* canadian-flag.png in Resources */ = {isa = PBXBuildFile; fileRef = 01117DA1180790E30089831F /* canadian-flag.png */; };
 		01119DEB17E2A85800D96130 /* GetInvolvedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01119DEA17E2A85800D96130 /* GetInvolvedViewController.m */; };
 		01119DEE17E2A8BF00D96130 /* MoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01119DED17E2A8BF00D96130 /* MoreViewController.m */; };
@@ -127,6 +129,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		010AB134181897B800809B17 /* stopAudio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stopAudio.png; sourceTree = "<group>"; };
+		010AB135181897B800809B17 /* playAudio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playAudio.png; sourceTree = "<group>"; };
 		01117DA1180790E30089831F /* canadian-flag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "canadian-flag.png"; sourceTree = "<group>"; };
 		01119DE917E2A85800D96130 /* GetInvolvedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetInvolvedViewController.h; sourceTree = "<group>"; };
 		01119DEA17E2A85800D96130 /* GetInvolvedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetInvolvedViewController.m; sourceTree = "<group>"; };
@@ -411,6 +415,8 @@
 			isa = PBXGroup;
 			children = (
 				01AE0F9118087CF5008B7120 /* ipad-background-1.jpg */,
+				010AB134181897B800809B17 /* stopAudio.png */,
+				010AB135181897B800809B17 /* playAudio.png */,
 				01117DA1180790E30089831F /* canadian-flag.png */,
 				01491BC51806295D007BEADA /* live-100x100.png */,
 				016C72D51807644F0058FD4F /* abn-new-logo-50pct.png */,
@@ -563,6 +569,7 @@
 				0143428217E15B3200BCE1F2 /* InfoPlist.strings in Resources */,
 				01F6597317EFD6DF0087936E /* app-icon-152px.png in Resources */,
 				013C1B3E17EF88A40083D177 /* twitter-icon-110px.png in Resources */,
+				010AB137181897B800809B17 /* playAudio.png in Resources */,
 				0143429117E15B3200BCE1F2 /* MainStoryboard_iPhone.storyboard in Resources */,
 				0143429417E15B3200BCE1F2 /* MainStoryboard_iPad.storyboard in Resources */,
 				013C1B3A17EE1BFC0083D177 /* home-35px.png in Resources */,
@@ -575,6 +582,7 @@
 				014342A017E15B3200BCE1F2 /* second.png in Resources */,
 				014342A217E15B3200BCE1F2 /* second@2x.png in Resources */,
 				01D5C9E217E28E1C00BA90A4 /* abn-globe-logo.png.bak in Resources */,
+				010AB136181897B800809B17 /* stopAudio.png in Resources */,
 				01D5C9E617E2904300BA90A4 /* contact-thumbnail.png in Resources */,
 				013C1B3817EE1BFC0083D177 /* ie-35px.png in Resources */,
 				01613C6A180DF7200007A992 /* abn-globe-logo-76h.png in Resources */,
@@ -810,7 +818,7 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = LT76CT679P.com.abnsat.v1;
-				PROVISIONING_PROFILE = "B0747728-EC7A-4610-B762-9ED583E0F16C";
+				PROVISIONING_PROFILE = "762F03ED-9EDC-4321-BF2F-D23EE55A03C8";
 				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};

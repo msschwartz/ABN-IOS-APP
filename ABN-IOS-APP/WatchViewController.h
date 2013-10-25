@@ -6,17 +6,32 @@
 //  Copyright (c) 2013 Gorial, Sam. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "UIKit/UIKit.h"
 #import "MediaPlayer/MediaPlayer.h"
+#import "AVFoundation/AVPlayer.h"
 
 @interface WatchViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UIButton *arabicButton;
 @property (weak, nonatomic) IBOutlet UIButton *englishButton;
 
-@property (strong, nonatomic) MPMoviePlayerViewController *player;
+@property (weak, nonatomic) IBOutlet UIButton *arabicAudioButton;
+@property (weak, nonatomic) IBOutlet UIButton *englishAudioButton;
 
-extern const NSString * ARABIC_HLS_URL;
-extern const NSString * ENGLISH_HLS_URL;
+@property (strong, nonatomic) MPMoviePlayerViewController *player;
+@property (strong, nonatomic) AVPlayer *audioPlayer;
+
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *arabicAudioPlayingIndicator;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *englishAudioPlayingIndicator;
+
+
+@property (strong, nonatomic) UIImage * stopAudioImage;
+@property (strong, nonatomic) UIImage * playAudioImage;
+
+@property (strong, nonatomic) NSURL * arabicHlsUrl;
+@property (strong, nonatomic) NSURL * englishHlsUrl;
+
+@property BOOL arabicAudioPlaying;
+@property BOOL englishAudioPlaying;
 
 @end

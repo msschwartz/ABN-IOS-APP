@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="4">
     <dependencies>
         <deployment defaultVersion="1552" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
     </dependencies>
     <scenes>
         <!--Watch View Controller - Watch-->
@@ -22,7 +22,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OpA-TP-qMU">
-                                <rect key="frame" x="27" y="295" width="55" height="52"/>
+                                <rect key="frame" x="58" y="295" width="55" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="play_icon.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -32,7 +32,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wIh-JL-vU3">
-                                <rect key="frame" x="27" y="361" width="55" height="52"/>
+                                <rect key="frame" x="58" y="361" width="55" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="play_icon.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -41,15 +41,35 @@
                                     <action selector="englishButtonClick:" destination="2" eventType="touchUpInside" id="0Rd-em-bhn"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3SD-Ea-3bM">
+                                <rect key="frame" x="0.0" y="295" width="55" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="playAudio.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="arabicAudioButtonClick:" destination="2" eventType="touchUpInside" id="o4a-NS-M71"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="261-jc-dUO">
+                                <rect key="frame" x="0.0" y="361" width="55" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="playAudio.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="englishAudioButtonClick:" destination="2" eventType="touchUpInside" id="feb-t5-vRk"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ARABIC STREAM" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="190" translatesAutoresizingMaskIntoConstraints="NO" id="OOy-Kn-Ixg">
-                                <rect key="frame" x="101" y="262" width="190" height="117"/>
+                                <rect key="frame" x="121" y="262" width="190" height="117"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ENGLISH STREAM" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="199" translatesAutoresizingMaskIntoConstraints="NO" id="LC9-Ym-CNp">
-                                <rect key="frame" x="101" y="328" width="199" height="117"/>
+                                <rect key="frame" x="121" y="328" width="199" height="117"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -67,22 +87,34 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="abn-new-logo-50pct.png" translatesAutoresizingMaskIntoConstraints="NO" id="NGt-0k-rWd">
-                                <rect key="frame" x="66" y="60" width="189" height="161"/>
+                                <rect key="frame" x="66" y="59" width="190" height="190"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bringing the Light of God's Truth  to Middle Eastern People" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="294" translatesAutoresizingMaskIntoConstraints="NO" id="eOH-Zh-e8s">
-                                <rect key="frame" x="15" y="229" width="294" height="57"/>
+                                <rect key="frame" x="15" y="239" width="294" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
                                 <color key="textColor" red="1" green="0.23915553404911893" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="6ho-aK-F7j" userLabel="arabicAudioPlayingIndicator">
+                                <rect key="frame" x="75" y="311" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="XlT-LS-VeO" userLabel="englishAudioPlayingIndicator">
+                                <rect key="frame" x="75" y="377" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Watch Live" image="watch-thumb.png" id="7"/>
                     <connections>
+                        <outlet property="arabicAudioButton" destination="3SD-Ea-3bM" id="FnS-f4-Mbr"/>
+                        <outlet property="arabicAudioPlayingIndicator" destination="6ho-aK-F7j" id="6IS-Xb-625"/>
                         <outlet property="arabicButton" destination="OpA-TP-qMU" id="QAl-fh-GYg"/>
+                        <outlet property="englishAudioButton" destination="261-jc-dUO" id="c7o-cN-s2n"/>
+                        <outlet property="englishAudioPlayingIndicator" destination="XlT-LS-VeO" id="yEX-pO-tP4"/>
                         <outlet property="englishButton" destination="wIh-JL-vU3" id="2Zy-Bd-PR2"/>
                     </connections>
                 </viewController>
@@ -216,7 +248,7 @@ Please consider a one-time financial gift.  Your donations are tax-deductible. <
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kLi-cK-ZKh">
                                 <rect key="frame" x="66" y="390" width="217" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                 <state key="normal" title="Canadian Donor?  Click here!">
                                     <color key="titleColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -248,6 +280,7 @@ Please consider a one-time financial gift.  Your donations are tax-deductible. <
                     <connections>
                         <outlet property="amountButton" destination="brI-xF-t4K" id="4Iy-pi-cB8"/>
                         <outlet property="canadianDonorButton" destination="kLi-cK-ZKh" id="rJI-CQ-618"/>
+                        <outlet property="canadianDonorFlag" destination="qh8-nf-w5T" id="LNj-Ty-frg"/>
                         <outlet property="donateButton" destination="qul-mN-vLi" id="9Ba-EX-v3D"/>
                         <outlet property="noteButton" destination="TjA-M2-tFg" id="3n3-yD-fpf"/>
                     </connections>
@@ -1053,6 +1086,7 @@ They then expanded their ministry to a weekly local radio program in Chaldean, w
         <image name="live-100x100.png" width="100" height="100"/>
         <image name="paypal-logo.png" width="169" height="88"/>
         <image name="phone-35px.jpg" width="35" height="24"/>
+        <image name="playAudio.png" width="55" height="55"/>
         <image name="play_icon.png" width="64" height="64"/>
         <image name="twitter-logo-35px.png" width="35" height="35"/>
         <image name="watch-thumb.png" width="30" height="30"/>

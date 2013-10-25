@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0143427317E15B3200BCE1F2"
-               BuildableName = "com.abnsat.v1.app"
+               BuildableName = "LT76CT679P.com.abnsat.v1.app"
                BlueprintName = "ABN-IOS-APP"
                ReferencedContainer = "container:ABN-IOS-APP.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0143427317E15B3200BCE1F2"
-            BuildableName = "com.abnsat.v1.app"
+            BuildableName = "LT76CT679P.com.abnsat.v1.app"
             BlueprintName = "ABN-IOS-APP"
             ReferencedContainer = "container:ABN-IOS-APP.xcodeproj">
          </BuildableReference>
@@ -54,7 +54,7 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
-      buildConfiguration = "Release"
+      buildConfiguration = "Debug"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0143427317E15B3200BCE1F2"
-            BuildableName = "com.abnsat.v1.app"
+            BuildableName = "LT76CT679P.com.abnsat.v1.app"
             BlueprintName = "ABN-IOS-APP"
             ReferencedContainer = "container:ABN-IOS-APP.xcodeproj">
          </BuildableReference>
@@ -80,7 +80,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0143427317E15B3200BCE1F2"
-            BuildableName = "com.abnsat.v1.app"
+            BuildableName = "LT76CT679P.com.abnsat.v1.app"
             BlueprintName = "ABN-IOS-APP"
             ReferencedContainer = "container:ABN-IOS-APP.xcodeproj">
          </BuildableReference>
