@@ -116,6 +116,8 @@
 		01F6597117EFD6DF0087936E /* abn-globe-logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 01F6596A17EFD6DF0087936E /* abn-globe-logo@2x.png */; };
 		01F6597217EFD6DF0087936E /* abn-globe-logo@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 01F6596B17EFD6DF0087936E /* abn-globe-logo@2x~ipad.png */; };
 		01F6597317EFD6DF0087936E /* app-icon-152px.png in Resources */ = {isa = PBXBuildFile; fileRef = 01F6596C17EFD6DF0087936E /* app-icon-152px.png */; };
+		01FFF872181C1C51001CED1C /* playAudioIPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 01FFF870181C1C51001CED1C /* playAudioIPad.png */; };
+		01FFF873181C1C51001CED1C /* stopAudioIPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 01FFF871181C1C51001CED1C /* stopAudioIPad.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -254,6 +256,8 @@
 		01F6596A17EFD6DF0087936E /* abn-globe-logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "abn-globe-logo@2x.png"; sourceTree = "<group>"; };
 		01F6596B17EFD6DF0087936E /* abn-globe-logo@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "abn-globe-logo@2x~ipad.png"; sourceTree = "<group>"; };
 		01F6596C17EFD6DF0087936E /* app-icon-152px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app-icon-152px.png"; sourceTree = "<group>"; };
+		01FFF870181C1C51001CED1C /* playAudioIPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playAudioIPad.png; sourceTree = "<group>"; };
+		01FFF871181C1C51001CED1C /* stopAudioIPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stopAudioIPad.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -414,6 +418,8 @@
 		01D5C9E017E28D2800BA90A4 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				01FFF870181C1C51001CED1C /* playAudioIPad.png */,
+				01FFF871181C1C51001CED1C /* stopAudioIPad.png */,
 				01AE0F9118087CF5008B7120 /* ipad-background-1.jpg */,
 				010AB134181897B800809B17 /* stopAudio.png */,
 				010AB135181897B800809B17 /* playAudio.png */,
@@ -599,6 +605,7 @@
 				013C1B4017EF88A40083D177 /* facebook-icon-110px.png in Resources */,
 				01D5C9F817E2971500BA90A4 /* contact-thumb.png in Resources */,
 				01613C67180DF2A30007A992 /* Default-568h@2x.png in Resources */,
+				01FFF872181C1C51001CED1C /* playAudioIPad.png in Resources */,
 				01491BC418062904007BEADA /* live-90x40.png in Resources */,
 				01BE423F17F0F81A000E2370 /* bassim-and-haifa-240px.jpg in Resources */,
 				013C1B2A17EDCB820083D177 /* play_icon.png in Resources */,
@@ -613,6 +620,7 @@
 				01D5C9FE17E2971500BA90A4 /* watch-thumb.png in Resources */,
 				013C1B3F17EF88A40083D177 /* youtube-icon-110px.png in Resources */,
 				013C1B3117EE18C10083D177 /* facebook-logo-35px.png in Resources */,
+				01FFF873181C1C51001CED1C /* stopAudioIPad.png in Resources */,
 				01D5C9FF17E2971500BA90A4 /* youtube-thumb@2x.png in Resources */,
 				01C4FA9117E64B38002F3858 /* forward.button.red.png in Resources */,
 				01F6596417EFCA610087936E /* Default@2x.png in Resources */,

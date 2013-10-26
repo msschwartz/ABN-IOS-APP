@@ -18,9 +18,17 @@
 
 - (void)viewDidLoad {
     
-    self.playAudioImage = [UIImage imageNamed:@"playAudio.png"];
-    self.stopAudioImage = [UIImage imageNamed:@"stopAudio.png"];
+    if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+        self.playAudioImage = [UIImage imageNamed:@"playAudioIPad.png"];
+        self.stopAudioImage = [UIImage imageNamed:@"stopAudioIPad.png"];
+    } else {
+        self.playAudioImage = [UIImage imageNamed:@"playAudio.png"];
+        self.stopAudioImage = [UIImage imageNamed:@"stopAudio.png"];
+    }
     
+    [self.arabicAudioButton setBackgroundImage:self.playAudioImage forState:UIControlStateNormal];
+    [self.englishAudioButton setBackgroundImage:self.playAudioImage forState:UIControlStateNormal];
+
     self.arabicHlsUrl = [NSURL URLWithString:@"http://abnarabic-live.hls.adaptive.level3.net/hls-live/abnarabic-live/_definst_/live.m3u8"];
     self.englishHlsUrl = [NSURL URLWithString:@"http://abnenglish-live.hls.adaptive.level3.net/hls-live/abnenglish-live/_definst_/live.m3u8"];
     
