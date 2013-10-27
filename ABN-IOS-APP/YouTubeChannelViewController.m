@@ -32,9 +32,12 @@
     [channelsArray addObject:@"Arabic Gospel"];
     [channelsArray addObject:@"Kurdish Gospel"];
     [channelsArray addObject:@"Arabs for Christ"];
-    [channelsArray addObject:@"Jesus or Mohammed"];
+    [channelsArray addObject:@"Jesus or Mohammed I"];
+    [channelsArray addObject:@"Jesus or Mohammed II"];
     [channelsArray addObject:@"Jihad Exposed"];
     [channelsArray addObject:@"Arabs for Jesus"];
+    [channelsArray addObject:@"Praise and Worship"];
+    [channelsArray addObject:@"Arabic Praise Songs"];
 
     urlsArray = [[NSMutableArray alloc] init];
     [urlsArray addObject:@"ABNSAT2"];
@@ -43,8 +46,11 @@
     [urlsArray addObject:@"kurdishgospel"];
     [urlsArray addObject:@"arabsforchristabn"];
     [urlsArray addObject:@"JesusOrMuhammad"];
+    [urlsArray addObject:@"JesusOrMuhammadAtABN"];
     [urlsArray addObject:@"JihadExpose"];
     [urlsArray addObject:@"arabsforjesus"];
+    [urlsArray addObject:@"Nranmlk"];
+    [urlsArray addObject:@"ArabicPraiseSongs"];
 
     [[self.selectChannelButton layer] setBorderWidth:2.0f];
     [[self.selectChannelButton layer] setCornerRadius:5.0f];
@@ -98,7 +104,7 @@
     
     NSString * baseUrl = @"https://www.youtube.com/user/";
     NSString * path = [urlsArray objectAtIndex: row];
-    NSString * url = [NSString stringWithFormat:@"%@%@", baseUrl, path];
+    NSString * url = [NSString stringWithFormat:@"%@%@/videos", baseUrl, path];
     
     self.currentChannel = url;
     NSLog(@"Current channel: ");
