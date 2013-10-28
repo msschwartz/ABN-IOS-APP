@@ -84,7 +84,6 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
              "<body>%@<p>- %@</body> \n"
              "</html>", @"helvetica", [NSNumber numberWithInt:20], verse, reference];
 
-            //[[self votdWebView] loadHTMLString: [NSString stringWithFormat: @"%@<p>- %@", verse, reference] baseURL:NULL];
             [[self votdWebView] loadHTMLString:html baseURL:NULL];
 
         }

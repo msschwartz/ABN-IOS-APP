@@ -42,14 +42,14 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Watch Live Video - ARABIC" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GZM-yk-gJY">
-                                <rect key="frame" x="256" y="635" width="309" height="21"/>
+                                <rect key="frame" x="414" y="634" width="309" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Watch Live Video - ENGLISH" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3HZ-q0-D9D">
-                                <rect key="frame" x="256" y="758" width="309" height="21"/>
+                                <rect key="frame" x="414" y="757" width="309" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -110,6 +110,34 @@
                                 <rect key="frame" x="199" y="758" width="20" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xCg-2h-mKa">
+                                <rect key="frame" x="288" y="617" width="55" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="calendar.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="upcomingShowsArabicClick:" destination="1jC-zi-F7s" eventType="touchUpInside" id="TN6-Wa-KIC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gfv-Gt-Heu">
+                                <rect key="frame" x="288" y="741" width="55" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="calendar.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="upcomingShowsEnglishClick:" destination="1jC-zi-F7s" eventType="touchUpInside" id="Bip-pK-SSe"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="JHc-Yv-zaH" userLabel="arabicScheduleLoadingIndicator">
+                                <rect key="frame" x="305" y="636" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="aH1-bC-q7I" userLabel="englishScheduleLoadingIndicator">
+                                <rect key="frame" x="305" y="759" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -118,9 +146,13 @@
                         <outlet property="arabicAudioButton" destination="aQ7-tU-xNp" id="Z4I-ll-6jN"/>
                         <outlet property="arabicAudioPlayingIndicator" destination="FFs-1D-zGe" id="qbR-fF-YVr"/>
                         <outlet property="arabicButton" destination="u8j-9E-V2o" id="BL1-cx-zMB"/>
+                        <outlet property="arabicScheduleLoadingIndicator" destination="JHc-Yv-zaH" id="nHL-Aa-qrd"/>
                         <outlet property="englishAudioButton" destination="1Rf-RG-j8S" id="BEh-c4-lXg"/>
                         <outlet property="englishAudioPlayingIndicator" destination="RLF-9t-xVp" id="hLL-4H-Wus"/>
                         <outlet property="englishButton" destination="aCs-aw-VfR" id="xYo-bG-VGk"/>
+                        <outlet property="englishScheduleLoadingIndicator" destination="aH1-bC-q7I" id="6og-VQ-r24"/>
+                        <outlet property="upcomingShowsArabic" destination="xCg-2h-mKa" id="qnW-X1-mFk"/>
+                        <outlet property="upcomingShowsEnglish" destination="gfv-Gt-Heu" id="gKo-rG-Wnp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Md5-rP-5iT" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -564,6 +596,7 @@
         <image name="abn-new-logo.png" width="630" height="640"/>
         <image name="back.button.red.png" width="51" height="51"/>
         <image name="bassim-and-haifa-240px.jpg" width="240" height="320"/>
+        <image name="calendar.png" width="55" height="55"/>
         <image name="camera-live-large.png" width="297" height="301"/>
         <image name="canadian-flag.png" width="65" height="50"/>
         <image name="elipses-thumb.png" width="30" height="24"/>

@@ -78,6 +78,7 @@
 		01613C6B180DF7200007A992 /* abn-globe-logo-152h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 01613C69180DF7200007A992 /* abn-globe-logo-152h@2x.png */; };
 		016C72D71807644F0058FD4F /* abn-new-logo-50pct.png in Resources */ = {isa = PBXBuildFile; fileRef = 016C72D51807644F0058FD4F /* abn-new-logo-50pct.png */; };
 		016C72D81807644F0058FD4F /* abn-new-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 016C72D61807644F0058FD4F /* abn-new-logo.png */; };
+		019D58F6181E95EE004F8A97 /* calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = 019D58F5181E95EE004F8A97 /* calendar.png */; };
 		01AE0F9218087CF5008B7120 /* ipad-background-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01AE0F9118087CF5008B7120 /* ipad-background-1.jpg */; };
 		01BE423F17F0F81A000E2370 /* bassim-and-haifa-240px.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01BE423E17F0F81A000E2370 /* bassim-and-haifa-240px.jpg */; };
 		01C4FA8C17E5F829002F3858 /* ContactUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C4FA8B17E5F829002F3858 /* ContactUsViewController.m */; };
@@ -212,6 +213,7 @@
 		01613C69180DF7200007A992 /* abn-globe-logo-152h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "abn-globe-logo-152h@2x.png"; sourceTree = "<group>"; };
 		016C72D51807644F0058FD4F /* abn-new-logo-50pct.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "abn-new-logo-50pct.png"; sourceTree = "<group>"; };
 		016C72D61807644F0058FD4F /* abn-new-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "abn-new-logo.png"; sourceTree = "<group>"; };
+		019D58F5181E95EE004F8A97 /* calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendar.png; sourceTree = "<group>"; };
 		01AE0F9118087CF5008B7120 /* ipad-background-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ipad-background-1.jpg"; sourceTree = "<group>"; };
 		01BE423E17F0F81A000E2370 /* bassim-and-haifa-240px.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bassim-and-haifa-240px.jpg"; sourceTree = "<group>"; };
 		01C4FA8A17E5F829002F3858 /* ContactUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactUsViewController.h; sourceTree = "<group>"; };
@@ -419,6 +421,7 @@
 			isa = PBXGroup;
 			children = (
 				01FFF870181C1C51001CED1C /* playAudioIPad.png */,
+				019D58F5181E95EE004F8A97 /* calendar.png */,
 				01FFF871181C1C51001CED1C /* stopAudioIPad.png */,
 				01AE0F9118087CF5008B7120 /* ipad-background-1.jpg */,
 				010AB134181897B800809B17 /* stopAudio.png */,
@@ -632,6 +635,7 @@
 				01C4FA9817E64D03002F3858 /* back.button.grey.png in Resources */,
 				01C4FA9A17E65568002F3858 /* cloud-air-backdrop.jpg in Resources */,
 				015A340F17E7C583007D83C2 /* facebook-logo-75px.png in Resources */,
+				019D58F6181E95EE004F8A97 /* calendar.png in Resources */,
 				015A341117E7C5F4007D83C2 /* youtube-logo-75px.jpg in Resources */,
 				015A341317E7C62D007D83C2 /* twitter-logo-75px.png in Resources */,
 				013C1B4817EF8D330083D177 /* email-icon-110px.png in Resources */,

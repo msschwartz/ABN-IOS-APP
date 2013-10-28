@@ -42,7 +42,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3SD-Ea-3bM">
-                                <rect key="frame" x="0.0" y="295" width="55" height="52"/>
+                                <rect key="frame" x="6" y="295" width="55" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -52,7 +52,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="261-jc-dUO">
-                                <rect key="frame" x="0.0" y="361" width="55" height="52"/>
+                                <rect key="frame" x="6" y="361" width="55" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -61,17 +61,17 @@
                                     <action selector="englishAudioButtonClick:" destination="2" eventType="touchUpInside" id="feb-t5-vRk"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ARABIC STREAM" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="190" translatesAutoresizingMaskIntoConstraints="NO" id="OOy-Kn-Ixg">
-                                <rect key="frame" x="121" y="262" width="190" height="117"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ARABIC STREAM" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="130" translatesAutoresizingMaskIntoConstraints="NO" id="OOy-Kn-Ixg">
+                                <rect key="frame" x="172" y="265" width="130" height="117"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ENGLISH STREAM" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="199" translatesAutoresizingMaskIntoConstraints="NO" id="LC9-Ym-CNp">
-                                <rect key="frame" x="121" y="328" width="199" height="117"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ENGLISH STREAM" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="142" translatesAutoresizingMaskIntoConstraints="NO" id="LC9-Ym-CNp">
+                                <rect key="frame" x="172" y="331" width="142" height="117"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -105,6 +105,34 @@
                                 <rect key="frame" x="75" y="377" width="20" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OJ9-02-q1p">
+                                <rect key="frame" x="121" y="367" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="calendar.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="upcomingShowsEnglishClick:" destination="2" eventType="touchUpInside" id="kHy-XP-2Qy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v0k-1x-AYs">
+                                <rect key="frame" x="121" y="301" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="calendar.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="upcomingShowsArabicClick:" destination="2" eventType="touchUpInside" id="Jwk-CY-pna"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="M6T-Vk-Knp" userLabel="arabicScheduleLoadingIndicator">
+                                <rect key="frame" x="131" y="311" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="oA5-1f-Zoz" userLabel="englishScheduleLoadingIndicator">
+                                <rect key="frame" x="131" y="377" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -113,9 +141,13 @@
                         <outlet property="arabicAudioButton" destination="3SD-Ea-3bM" id="FnS-f4-Mbr"/>
                         <outlet property="arabicAudioPlayingIndicator" destination="6ho-aK-F7j" id="6IS-Xb-625"/>
                         <outlet property="arabicButton" destination="OpA-TP-qMU" id="QAl-fh-GYg"/>
+                        <outlet property="arabicScheduleLoadingIndicator" destination="M6T-Vk-Knp" id="7sj-pW-QVa"/>
                         <outlet property="englishAudioButton" destination="261-jc-dUO" id="c7o-cN-s2n"/>
                         <outlet property="englishAudioPlayingIndicator" destination="XlT-LS-VeO" id="yEX-pO-tP4"/>
                         <outlet property="englishButton" destination="wIh-JL-vU3" id="2Zy-Bd-PR2"/>
+                        <outlet property="englishScheduleLoadingIndicator" destination="oA5-1f-Zoz" id="g8x-pD-sJC"/>
+                        <outlet property="upcomingShowsArabic" destination="v0k-1x-AYs" id="0gL-aR-voR"/>
+                        <outlet property="upcomingShowsEnglish" destination="OJ9-02-q1p" id="Sn4-FB-Pt1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="10" sceneMemberID="firstResponder"/>
@@ -1072,6 +1104,7 @@ They then expanded their ministry to a weekly local radio program in Chaldean, w
         <image name="back.button.grey.png" width="51" height="51"/>
         <image name="back.button.red.png" width="51" height="51"/>
         <image name="bassim-and-haifa.jpg" width="271" height="184"/>
+        <image name="calendar.png" width="55" height="55"/>
         <image name="canadian-flag.png" width="65" height="50"/>
         <image name="cloud-air-backdrop.jpg" width="407" height="451"/>
         <image name="contact-thumb.png" width="28" height="28"/>
