@@ -146,8 +146,8 @@
                         <outlet property="englishAudioPlayingIndicator" destination="XlT-LS-VeO" id="yEX-pO-tP4"/>
                         <outlet property="englishButton" destination="wIh-JL-vU3" id="2Zy-Bd-PR2"/>
                         <outlet property="englishScheduleLoadingIndicator" destination="oA5-1f-Zoz" id="g8x-pD-sJC"/>
-                        <outlet property="upcomingShowsArabic" destination="v0k-1x-AYs" id="0gL-aR-voR"/>
-                        <outlet property="upcomingShowsEnglish" destination="OJ9-02-q1p" id="Sn4-FB-Pt1"/>
+                        <outlet property="upcomingShowsArabic" destination="v0k-1x-AYs" id="e5Q-p8-XTJ"/>
+                        <outlet property="upcomingShowsEnglish" destination="OJ9-02-q1p" id="EXq-Hg-qxY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="10" sceneMemberID="firstResponder"/>

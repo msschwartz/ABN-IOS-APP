@@ -148,9 +148,6 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 
 - (IBAction)upcomingShowsEnglishClick:(id)sender {
     
-    self.englishScheduleLoadingIndicator.hidden = NO;
-    self.upcomingShowsEnglish.hidden = YES;
-    
     UIView * view = [self buildViewForSchedule:self.englishScheduleFeedUrlString];
     
     if(view == nil) {
@@ -164,16 +161,10 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
     [applicationLoadViewIn setTimingFunction:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn]];
     [[view layer]addAnimation:applicationLoadViewIn forKey:kCATransitionMoveIn];
     
-    self.englishScheduleLoadingIndicator.hidden = YES;
-    self.upcomingShowsEnglish.hidden = NO;
-    
     [self.view addSubview:view];
 }
 
 - (IBAction)upcomingShowsArabicClick:(id)sender {
-
-    self.arabicScheduleLoadingIndicator.hidden = NO;
-    self.upcomingShowsArabic.hidden = YES;
 
     UIView * view = [self buildViewForSchedule:self.arabicScheduleFeedUrlString];
 
@@ -188,9 +179,6 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
     [applicationLoadViewIn setTimingFunction:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn]];
     [[view layer]addAnimation:applicationLoadViewIn forKey:kCATransitionMoveIn];
     
-    self.arabicScheduleLoadingIndicator.hidden = YES;
-    self.upcomingShowsArabic.hidden = NO;
-
     [self.view addSubview:view];
 }
 
@@ -207,7 +195,7 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
     label.shadowColor = UIColorFromRGB(0xe5e7eb);
     label.shadowOffset = CGSizeMake(0, 1);
     label.textColor = UIColorFromRGB(0x717880);
-    label.text = @"Upcoming Programs";
+    label.text = @"Coming Up";
     label.font = [UIFont boldSystemFontOfSize:17.0];
     UIBarButtonItem *toolBarTitle = [[UIBarButtonItem alloc] initWithCustomView:label];
     
@@ -222,8 +210,8 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
     toolbar.frame = CGRectMake(0, 0, screenWidth, 40);
     [toolbar setItems:items];
 
-    UIView *view = [[UIView alloc] initWithFrame: [[UIScreen mainScreen] bounds]];
-
+    UIView *view = [[UIView alloc] initWithFrame: screenRect];
+    
     [view addSubview:table];
     [view addSubview:toolbar];
 

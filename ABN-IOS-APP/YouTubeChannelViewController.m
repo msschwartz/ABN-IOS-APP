@@ -108,7 +108,7 @@
     
     self.currentChannel = url;
     NSLog(@"Current channel: ");
-    NSLog(url);
+    NSLog(@"%@", url);
     
 }
 

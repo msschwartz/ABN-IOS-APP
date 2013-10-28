@@ -73,7 +73,7 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
             NSString *verse = [votd objectForKey:@"content"];
             NSString *reference = [votd objectForKey:@"display_ref"];
             
-            NSLog(verse);
+            NSLog(@"%@", verse);
             
             NSString * html = [NSString stringWithFormat:@"<html> \n"
              "<head> \n"

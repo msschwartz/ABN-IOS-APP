@@ -34,6 +34,4 @@
 
 - (IBAction)forwardButtonClick:(id)sender;
 
--(void) loadYouTubeChannel;
-
 @end

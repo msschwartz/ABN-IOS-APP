@@ -29,7 +29,7 @@
 }
 
 - (void) openUrl: (NSString *) url {
-    NSLog(url);
+    NSLog(@"%@", url);
     [[UIApplication sharedApplication] openURL: [NSURL URLWithString:url]];
 }
 

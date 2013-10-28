@@ -141,7 +141,7 @@
 }
 
 - (void) openUrl: (NSString *) url {
-    NSLog(url);
+    NSLog(@"%@", url);
     [[UIApplication sharedApplication] openURL: [NSURL URLWithString:url]];
 }
 
@@ -202,7 +202,7 @@
             NSMutableString *verse = [votd objectForKey:@"content"];
             NSString *reference = [votd objectForKey:@"display_ref"];
 
-            NSLog(verse);
+            NSLog(@"%@", verse);
             
             [[self votdWebView] loadHTMLString: [NSString stringWithFormat: @"%@<p>- %@", verse, reference] baseURL:NULL];
         }
