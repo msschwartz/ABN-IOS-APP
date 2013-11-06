@@ -10,8 +10,4 @@
 
 @interface MoreViewController : UITableViewController
 
-@property (weak, nonatomic) IBOutlet UITableViewCell *cellOne;
-@property (weak, nonatomic) IBOutlet UITableViewCell *cellTwo;
-@property (weak, nonatomic) IBOutlet UITableViewCell *cellThree;
-
 @end

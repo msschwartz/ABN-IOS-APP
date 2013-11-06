@@ -7,6 +7,7 @@
 //
 
 #import "MoreViewController.h"
+#import "DataTableViewController.h"
 
 @interface MoreViewController ()
 
@@ -14,14 +15,11 @@
 
 @implementation MoreViewController
 
-- (void)viewDidLoad
-{    
+- (void)viewDidLoad {
     [super viewDidLoad];
-    
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
 
@@ -50,17 +48,6 @@
         case 102:
             [self openUrl:@"http://www.youtube.com/user/ABNSAT2"];
             break;
-        case 103:
-            // Meet the founders
-            //UIViewController *viewController = [[UIViewController alloc] init];
-            //[self presentViewController:viewController animated:YES completion:nil];
-            break;
-        case 104:
-            // Statement of Faith
-            break;
-        case 105:
-            // Our Vision
-            break;
         default:
             break;
     }
@@ -68,6 +55,19 @@
 
 - (NSUInteger) supportedInterfaceOrientations {
     return UIInterfaceOrientationMaskPortrait;
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    NSInteger i = [sender tag];
+    
+    if(i != 10 && i != 11) {
+        return;
+    }
+    
+    DataTableViewController *vc = [segue destinationViewController];
+    vc.sender = i;
+    
 }
 
 @end

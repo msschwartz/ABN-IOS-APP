@@ -9,7 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface OurVisionViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UIBarButtonItem *doneButton;
-@property (weak, nonatomic) IBOutlet UIToolbar *toolbar;
 
 @end
