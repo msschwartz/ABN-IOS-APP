@@ -7,6 +7,7 @@
 //
 
 #import "WatchViewController.h"
+#import "DataTableViewController.h"
 #import "MediaPlayer/MediaPlayer.h"
 #import "AVFoundation/AVPlayer.h"
 
@@ -14,10 +15,6 @@
 colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 \
 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
-
-@interface WatchViewController ()
-
-@end
 
 @implementation WatchViewController
 
@@ -33,8 +30,10 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
     
     [self.arabicAudioButton setBackgroundImage:self.playAudioImage forState:UIControlStateNormal];
     [self.englishAudioButton setBackgroundImage:self.playAudioImage forState:UIControlStateNormal];
+    [self.worshipAudio setBackgroundImage:self.playAudioImage forState:UIControlStateNormal];
 
     self.arabicHlsUrl = [NSURL URLWithString:@"http://abnarabic-live.hls.adaptive.level3.net/hls-live/abnarabic-live/_definst_/live.m3u8"];
+    self.worshipHlsUrl = [NSURL URLWithString:@"http://abnworshipchannel-live.hls.adaptive.level3.net/hls-live/abnworshipchannel-live/_definst_/live.m3u8"];
     self.englishHlsUrl = [NSURL URLWithString:@"http://abnenglish-live.hls.adaptive.level3.net/hls-live/abnenglish-live/_definst_/live.m3u8"];
     
     NSString * scheduleFeedUrlTemplate = @"http://www.google.com/calendar/feeds/%@/public/full?alt=json&orderby=starttime&max-results=10&singleevents=true&sortorder=ascending&futureevents=true";
@@ -60,7 +59,9 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
     [self stopAudioPlayer];
 
     self.player = [[MPMoviePlayerViewController alloc] initWithContentURL:self.arabicHlsUrl];
+    
     [self presentMoviePlayerViewControllerAnimated:self.player];
+
 }
 
 - (IBAction)englishButtonClick:(id)sender {
@@ -70,6 +71,15 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
     self.player = [[MPMoviePlayerViewController alloc] initWithContentURL:self.englishHlsUrl];
     [self presentMoviePlayerViewControllerAnimated:self.player];
 }
+
+- (IBAction)worshipButtonClick:(id)sender {
+    
+    [self stopAudioPlayer];
+    
+    self.player = [[MPMoviePlayerViewController alloc] initWithContentURL:self.worshipHlsUrl];
+    [self presentMoviePlayerViewControllerAnimated:self.player];
+}
+
 
 - (IBAction)arabicAudioButtonClick:(id)sender {
 
@@ -113,28 +123,46 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
     self.englishAudioPlaying = YES;
 }
 
+- (IBAction)worshipAudioButtonClick:(id)sender {
+    
+    if(self.worshipAudioPlaying) {
+        [self stopAudioPlayer];
+        return;
+    }
+    
+    [self stopAudioPlayer];
+    
+    self.worshipButton.hidden = YES;
+    self.worshipAudioPlayingIndicator.hidden = NO;
+    
+    [self.worshipAudio setBackgroundImage:self.stopAudioImage forState:UIControlStateNormal];
+    
+    self.audioPlayer = [[AVPlayer alloc] initWithURL:self.worshipHlsUrl];
+    
+    [self.audioPlayer play];
+    
+    self.worshipAudioPlaying = YES;
+}
+
 -(void) stopAudioPlayer {
     self.audioPlayer = nil;
     
     self.arabicAudioPlaying = NO;
     self.englishAudioPlaying = NO;
+    self.worshipAudioPlaying = NO;
     
     self.arabicButton.hidden = NO;
     self.englishButton.hidden = NO;
+    self.worshipButton.hidden = NO;
 
     self.englishAudioPlayingIndicator.hidden = YES;
     self.arabicAudioPlayingIndicator.hidden = YES;
+    self.worshipAudioPlayingIndicator.hidden = YES;
 
     [self.arabicAudioButton setBackgroundImage:self.playAudioImage forState:UIControlStateNormal];
     [self.englishAudioButton setBackgroundImage:self.playAudioImage forState:UIControlStateNormal];
+    [self.worshipAudio setBackgroundImage:self.playAudioImage forState:UIControlStateNormal];
     
-}
-
-
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    return interfaceOrientation == UIInterfaceOrientationPortrait ||
-        interfaceOrientation == UIInterfaceOrientationLandscapeRight ||
-        interfaceOrientation == UIInterfaceOrientationLandscapeLeft;
 }
 
 #pragma mark -
@@ -403,6 +431,19 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
     table.delegate = self;
     
     return table;
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    NSInteger i = [sender tag];
+    
+    if(i != 10 && i != 11) {
+        return;
+    }
+    
+    DataTableViewController *vc = [segue destinationViewController];
+    vc.sender = i;
+    
 }
 
 @end

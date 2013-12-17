@@ -26,8 +26,4 @@
     return YES;
 }
 
-- (NSUInteger) supportedInterfaceOrientations {
-    return UIInterfaceOrientationMaskPortrait;
-}
-
 @end

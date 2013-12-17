@@ -31,6 +31,10 @@
     self.descriptionTextView.text = description;
     self.imageView.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:imageUrl]]];
     
+    CALayer * l = [self.imageView layer];
+    [l setMasksToBounds:YES];
+    [l setCornerRadius:10.0];
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -39,10 +43,6 @@
 
 - (BOOL) prefersStatusBarHidden {
     return YES;
-}
-
-- (NSUInteger) supportedInterfaceOrientations {
-    return UIInterfaceOrientationMaskPortrait;
 }
 
 @end
