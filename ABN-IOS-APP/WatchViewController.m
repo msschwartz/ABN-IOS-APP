@@ -31,10 +31,12 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
     [self.arabicAudioButton setBackgroundImage:self.playAudioImage forState:UIControlStateNormal];
     [self.englishAudioButton setBackgroundImage:self.playAudioImage forState:UIControlStateNormal];
     [self.worshipAudio setBackgroundImage:self.playAudioImage forState:UIControlStateNormal];
+    [self.surathAudioButton setBackgroundImage:self.playAudioImage forState:UIControlStateNormal];
 
     self.arabicHlsUrl = [NSURL URLWithString:@"http://abnarabic-live.hls.adaptive.level3.net/hls-live/abnarabic-live/_definst_/live.m3u8"];
     self.worshipHlsUrl = [NSURL URLWithString:@"http://abnworshipchannel-live.hls.adaptive.level3.net/hls-live/abnworshipchannel-live/_definst_/live.m3u8"];
     self.englishHlsUrl = [NSURL URLWithString:@"http://abnenglish-live.hls.adaptive.level3.net/hls-live/abnenglish-live/_definst_/live.m3u8"];
+    self.surathHlsUrl = [NSURL URLWithString:@"http://live.surath.abnvideos.com/surath/live.m3u8"];
     
     NSString * scheduleFeedUrlTemplate = @"http://www.google.com/calendar/feeds/%@/public/full?alt=json&orderby=starttime&max-results=10&singleevents=true&sortorder=ascending&futureevents=true";
     
@@ -77,6 +79,13 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
     [self stopAudioPlayer];
     
     self.player = [[MPMoviePlayerViewController alloc] initWithContentURL:self.worshipHlsUrl];
+    [self presentMoviePlayerViewControllerAnimated:self.player];
+}
+
+- (IBAction)surathButtonClick:(id)sender {
+    [self stopAudioPlayer];
+    
+    self.player = [[MPMoviePlayerViewController alloc] initWithContentURL:self.surathHlsUrl];
     [self presentMoviePlayerViewControllerAnimated:self.player];
 }
 
@@ -144,24 +153,48 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
     self.worshipAudioPlaying = YES;
 }
 
+- (IBAction)surathAudioButtonClick:(id)sender {
+    if(self.surathAudioPlaying) {
+        [self stopAudioPlayer];
+        return;
+    }
+    
+    [self stopAudioPlayer];
+    
+    self.surathButton.hidden = YES;
+    self.surathAudioPlayingIndicator.hidden = NO;
+    
+    [self.surathAudioButton setBackgroundImage:self.stopAudioImage forState:UIControlStateNormal];
+    
+    self.audioPlayer = [[AVPlayer alloc] initWithURL:self.surathHlsUrl];
+    
+    [self.audioPlayer play];
+    
+    self.surathAudioPlaying = YES;
+}
+
 -(void) stopAudioPlayer {
     self.audioPlayer = nil;
     
     self.arabicAudioPlaying = NO;
     self.englishAudioPlaying = NO;
     self.worshipAudioPlaying = NO;
+    self.surathAudioPlaying = NO;
     
     self.arabicButton.hidden = NO;
     self.englishButton.hidden = NO;
     self.worshipButton.hidden = NO;
+    self.surathButton.hidden = NO;
 
     self.englishAudioPlayingIndicator.hidden = YES;
     self.arabicAudioPlayingIndicator.hidden = YES;
     self.worshipAudioPlayingIndicator.hidden = YES;
+    self.surathAudioPlayingIndicator.hidden = YES;
 
     [self.arabicAudioButton setBackgroundImage:self.playAudioImage forState:UIControlStateNormal];
     [self.englishAudioButton setBackgroundImage:self.playAudioImage forState:UIControlStateNormal];
     [self.worshipAudio setBackgroundImage:self.playAudioImage forState:UIControlStateNormal];
+    [self.surathAudioButton setBackgroundImage:self.playAudioImage forState:UIControlStateNormal];
     
 }
 
