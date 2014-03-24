@@ -149,7 +149,6 @@
                                 </state>
                                 <connections>
                                     <action selector="surathButtonClick:" destination="1jC-zi-F7s" eventType="touchUpInside" id="Q1j-5g-v9v"/>
-                                    <action selector="worshipButtonClick:" destination="1jC-zi-F7s" eventType="touchUpInside" id="MMm-LE-WpQ"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Watch Live Video - SURATH" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g1i-CW-dB2">
@@ -169,6 +168,68 @@
                                     <action selector="surathAudioButtonClick:" destination="1jC-zi-F7s" eventType="touchUpInside" id="oz2-9M-l6p"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="dEi-5v-VU6" userLabel="Kurdish Activity Indicator">
+                                <rect key="frame" x="156" y="362" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NFY-gV-tgq">
+                                <rect key="frame" x="124" y="335" width="75" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="ipad-play-button-75x75.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="kurdishButtonClick:" destination="1jC-zi-F7s" eventType="touchUpInside" id="d1o-3r-H7P"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Watch Live Video - KURDISH" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bEm-MO-U8V">
+                                <rect key="frame" x="333" y="362" width="359" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hTt-Ui-7vT">
+                                <rect key="frame" x="20" y="335" width="75" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="kurdishAudioButtonClick:" destination="1jC-zi-F7s" eventType="touchUpInside" id="9K8-lp-3ak"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="lIj-rW-wfa" userLabel="Alquddus Activity Indicator">
+                                <rect key="frame" x="156" y="439" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HkJ-1O-GNE">
+                                <rect key="frame" x="124" y="412" width="75" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="ipad-play-button-75x75.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="alquddusButtonClick:" destination="1jC-zi-F7s" eventType="touchUpInside" id="lTB-ep-Xc5"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Watch Live Video - ALQUDDUS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UXR-Du-brt">
+                                <rect key="frame" x="333" y="439" width="359" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6tx-Ho-f5o">
+                                <rect key="frame" x="20" y="412" width="75" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="alquddusAudioButtonClick:" destination="1jC-zi-F7s" eventType="touchUpInside" id="Uyv-DO-DtH"/>
+                                </connections>
+                            </button>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="JHc-Yv-zaH" userLabel="arabicScheduleLoadingIndicator">
                                 <rect key="frame" x="260" y="47" width="20" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -178,7 +239,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </activityIndicatorView>
                             <button opaque="NO" tag="10" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uf5-TG-NiJ">
-                                <rect key="frame" x="204" y="417" width="90" height="72"/>
+                                <rect key="frame" x="72" y="689" width="90" height="72"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="tv.medium.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -190,7 +251,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="11" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a4W-XA-oLJ">
-                                <rect key="frame" x="452" y="417" width="90" height="72"/>
+                                <rect key="frame" x="568" y="689" width="90" height="72"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="male.user.medium.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -202,14 +263,14 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Our Programs" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jvg-Ml-Jcx">
-                                <rect key="frame" x="196" y="497" width="113" height="21"/>
+                                <rect key="frame" x="64" y="769" width="113" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Our Hosts" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1FU-Dd-STh">
-                                <rect key="frame" x="461" y="497" width="86" height="21"/>
+                                <rect key="frame" x="577" y="769" width="86" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -220,6 +281,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Watch Live" image="watch-thumb.png" id="8W1-Nb-97W"/>
                     <connections>
+                        <outlet property="alquddusAudioButton" destination="6tx-Ho-f5o" id="Ecz-84-WXr"/>
+                        <outlet property="alquddusAudioPlayingIndicator" destination="lIj-rW-wfa" id="ZlX-4A-DR8"/>
+                        <outlet property="alquddusButton" destination="HkJ-1O-GNE" id="jau-23-YAA"/>
                         <outlet property="arabicAudioButton" destination="aQ7-tU-xNp" id="Z4I-ll-6jN"/>
                         <outlet property="arabicAudioPlayingIndicator" destination="FFs-1D-zGe" id="qbR-fF-YVr"/>
                         <outlet property="arabicButton" destination="u8j-9E-V2o" id="BL1-cx-zMB"/>
@@ -228,6 +292,9 @@
                         <outlet property="englishAudioPlayingIndicator" destination="RLF-9t-xVp" id="hLL-4H-Wus"/>
                         <outlet property="englishButton" destination="aCs-aw-VfR" id="xYo-bG-VGk"/>
                         <outlet property="englishScheduleLoadingIndicator" destination="aH1-bC-q7I" id="6og-VQ-r24"/>
+                        <outlet property="kurdishAudioButton" destination="hTt-Ui-7vT" id="J6y-6r-7Es"/>
+                        <outlet property="kurdishAudioPlayingIndicator" destination="dEi-5v-VU6" id="7nl-KZ-VZa"/>
+                        <outlet property="kurdushButton" destination="NFY-gV-tgq" id="p61-wJ-Yu8"/>
                         <outlet property="surathAudioButton" destination="Amw-5k-RFE" id="2JF-Ha-z1E"/>
                         <outlet property="surathButton" destination="jfN-hS-opK" id="W9y-cB-yfh"/>
                         <outlet property="upcomingShowsArabic" destination="xCg-2h-mKa" id="qnW-X1-mFk"/>

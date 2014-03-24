@@ -16,12 +16,16 @@
 @property (weak, nonatomic) IBOutlet UIButton *englishButton;
 @property (weak, nonatomic) IBOutlet UIButton *worshipButton;
 @property (weak, nonatomic) IBOutlet UIButton *surathButton;
+@property (weak, nonatomic) IBOutlet UIButton *kurdushButton;
+@property (weak, nonatomic) IBOutlet UIButton *alquddusButton;
 
 
 @property (weak, nonatomic) IBOutlet UIButton *arabicAudioButton;
 @property (weak, nonatomic) IBOutlet UIButton *englishAudioButton;
 @property (weak, nonatomic) IBOutlet UIButton *worshipAudio;
 @property (weak, nonatomic) IBOutlet UIButton *surathAudioButton;
+@property (weak, nonatomic) IBOutlet UIButton *kurdishAudioButton;
+@property (weak, nonatomic) IBOutlet UIButton *alquddusAudioButton;
 
 @property (strong, nonatomic) MPMoviePlayerViewController *player;
 @property (strong, nonatomic) AVPlayer *audioPlayer;
@@ -30,6 +34,8 @@
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *englishAudioPlayingIndicator;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *worshipAudioPlayingIndicator;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *surathAudioPlayingIndicator;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *kurdishAudioPlayingIndicator;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *alquddusAudioPlayingIndicator;
 
 
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *arabicScheduleLoadingIndicator;
@@ -42,11 +48,15 @@
 @property (strong, nonatomic) NSURL * englishHlsUrl;
 @property (strong, nonatomic) NSURL * worshipHlsUrl;
 @property (strong, nonatomic) NSURL * surathHlsUrl;
+@property (strong, nonatomic) NSURL * kurdishHlsUrl;
+@property (strong, nonatomic) NSURL * alquddusHlsUrl;
 
 @property BOOL arabicAudioPlaying;
 @property BOOL englishAudioPlaying;
 @property BOOL worshipAudioPlaying;
 @property BOOL surathAudioPlaying;
+@property BOOL kurdishAudioPlaying;
+@property BOOL alquddusAudioPlaying;
 
 @property NSString * englishScheduleFeedUrlString;
 @property NSString * arabicScheduleFeedUrlString;

@@ -32,11 +32,15 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
     [self.englishAudioButton setBackgroundImage:self.playAudioImage forState:UIControlStateNormal];
     [self.worshipAudio setBackgroundImage:self.playAudioImage forState:UIControlStateNormal];
     [self.surathAudioButton setBackgroundImage:self.playAudioImage forState:UIControlStateNormal];
+    [self.kurdishAudioButton setBackgroundImage:self.playAudioImage forState:UIControlStateNormal];
+    [self.alquddusAudioButton setBackgroundImage:self.playAudioImage forState:UIControlStateNormal];
 
     self.arabicHlsUrl = [NSURL URLWithString:@"http://abnarabic-live.hls.adaptive.level3.net/hls-live/abnarabic-live/_definst_/live.m3u8"];
     self.worshipHlsUrl = [NSURL URLWithString:@"http://abnworshipchannel-live.hls.adaptive.level3.net/hls-live/abnworshipchannel-live/_definst_/live.m3u8"];
     self.englishHlsUrl = [NSURL URLWithString:@"http://abnenglish-live.hls.adaptive.level3.net/hls-live/abnenglish-live/_definst_/live.m3u8"];
-    self.surathHlsUrl = [NSURL URLWithString:@"http://live.surath.abnvideos.com/surath/live.m3u8"];
+    self.surathHlsUrl = [NSURL URLWithString:@"http://surath.abnsat.com/surath/live.m3u8"];
+    self.kurdishHlsUrl = [NSURL URLWithString:@"http://kurdish.abnsat.com/kurdish/live.m3u8"];
+    self.alquddusHlsUrl = [NSURL URLWithString:@"http://alquddoos.abnsat.com/alquddoos/live.m3u8"];
     
     NSString * scheduleFeedUrlTemplate = @"http://www.google.com/calendar/feeds/%@/public/full?alt=json&orderby=starttime&max-results=10&singleevents=true&sortorder=ascending&futureevents=true";
     
@@ -86,6 +90,20 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
     [self stopAudioPlayer];
     
     self.player = [[MPMoviePlayerViewController alloc] initWithContentURL:self.surathHlsUrl];
+    [self presentMoviePlayerViewControllerAnimated:self.player];
+}
+
+- (IBAction)kurdishButtonClick:(id)sender {
+    [self stopAudioPlayer];
+    
+    self.player = [[MPMoviePlayerViewController alloc] initWithContentURL:self.kurdishHlsUrl];
+    [self presentMoviePlayerViewControllerAnimated:self.player];
+}
+
+- (IBAction)alquddusButtonClick:(id)sender {
+    [self stopAudioPlayer];
+    
+    self.player = [[MPMoviePlayerViewController alloc] initWithContentURL:self.alquddusHlsUrl];
     [self presentMoviePlayerViewControllerAnimated:self.player];
 }
 
@@ -173,6 +191,46 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
     self.surathAudioPlaying = YES;
 }
 
+- (IBAction)kurdishAudioButtonClick:(id)sender {
+    if(self.kurdishAudioPlaying) {
+        [self stopAudioPlayer];
+        return;
+    }
+    
+    [self stopAudioPlayer];
+    
+    self.kurdushButton.hidden = YES;
+    self.kurdishAudioPlayingIndicator.hidden = NO;
+    
+    [self.kurdishAudioButton setBackgroundImage:self.stopAudioImage forState:UIControlStateNormal];
+    
+    self.audioPlayer = [[AVPlayer alloc] initWithURL:self.kurdishHlsUrl];
+    
+    [self.audioPlayer play];
+    
+    self.kurdishAudioPlaying = YES;
+}
+
+- (IBAction)alquddusAudioButtonClick:(id)sender {
+    if(self.alquddusAudioPlaying) {
+        [self stopAudioPlayer];
+        return;
+    }
+    
+    [self stopAudioPlayer];
+    
+    self.alquddusButton.hidden = YES;
+    self.alquddusAudioPlayingIndicator.hidden = NO;
+    
+    [self.alquddusAudioButton setBackgroundImage:self.stopAudioImage forState:UIControlStateNormal];
+    
+    self.audioPlayer = [[AVPlayer alloc] initWithURL:self.alquddusHlsUrl];
+    
+    [self.audioPlayer play];
+    
+    self.alquddusAudioPlaying = YES;
+}
+
 -(void) stopAudioPlayer {
     self.audioPlayer = nil;
     
@@ -180,21 +238,29 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
     self.englishAudioPlaying = NO;
     self.worshipAudioPlaying = NO;
     self.surathAudioPlaying = NO;
+    self.kurdishAudioPlaying = NO;
+    self.alquddusAudioPlaying = NO;
     
     self.arabicButton.hidden = NO;
     self.englishButton.hidden = NO;
     self.worshipButton.hidden = NO;
     self.surathButton.hidden = NO;
+    self.kurdushButton.hidden = NO;
+    self.alquddusButton.hidden = NO;
 
     self.englishAudioPlayingIndicator.hidden = YES;
     self.arabicAudioPlayingIndicator.hidden = YES;
     self.worshipAudioPlayingIndicator.hidden = YES;
     self.surathAudioPlayingIndicator.hidden = YES;
+    self.kurdishAudioPlayingIndicator.hidden = YES;
+    self.alquddusAudioPlayingIndicator.hidden = YES;
 
     [self.arabicAudioButton setBackgroundImage:self.playAudioImage forState:UIControlStateNormal];
     [self.englishAudioButton setBackgroundImage:self.playAudioImage forState:UIControlStateNormal];
     [self.worshipAudio setBackgroundImage:self.playAudioImage forState:UIControlStateNormal];
     [self.surathAudioButton setBackgroundImage:self.playAudioImage forState:UIControlStateNormal];
+    [self.kurdishAudioButton setBackgroundImage:self.playAudioImage forState:UIControlStateNormal];
+    [self.alquddusAudioButton setBackgroundImage:self.playAudioImage forState:UIControlStateNormal];
     
 }
 
