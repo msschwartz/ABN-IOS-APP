@@ -35,12 +35,12 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
     [self.kurdishAudioButton setBackgroundImage:self.playAudioImage forState:UIControlStateNormal];
     [self.alquddusAudioButton setBackgroundImage:self.playAudioImage forState:UIControlStateNormal];
 
-    self.arabicHlsUrl = [NSURL URLWithString:@"http://abnarabic-live.hls.adaptive.level3.net/hls-live/abnarabic-live/_definst_/live.m3u8"];
-    self.worshipHlsUrl = [NSURL URLWithString:@"http://abnworshipchannel-live.hls.adaptive.level3.net/hls-live/abnworshipchannel-live/_definst_/live.m3u8"];
-    self.englishHlsUrl = [NSURL URLWithString:@"http://abnenglish-live.hls.adaptive.level3.net/hls-live/abnenglish-live/_definst_/live.m3u8"];
-    self.surathHlsUrl = [NSURL URLWithString:@"http://surath.abnsat.com/surath/live.m3u8"];
-    self.kurdishHlsUrl = [NSURL URLWithString:@"http://kurdish.abnsat.com/kurdish/live.m3u8"];
-    self.alquddusHlsUrl = [NSURL URLWithString:@"http://alquddoos.abnsat.com/alquddoos/live.m3u8"];
+    self.arabicHlsUrl = [NSURL URLWithString:@"http://live.abnsat.com/arabic.m3u8"];
+    self.worshipHlsUrl = [NSURL URLWithString:@"http://live.abnsat.com/worship.m3u8"];
+    self.englishHlsUrl = [NSURL URLWithString:@"http://live.abnsat.com/trinity.m3u8"];
+    self.surathHlsUrl = [NSURL URLWithString:@"http://live.abnsat.com/surath.m3u8"];
+    self.kurdishHlsUrl = [NSURL URLWithString:@"http://live.abnsat.com/kurdish.m3u8"];
+    self.alquddusHlsUrl = [NSURL URLWithString:@"http://live.abnsat.com/alquddoos.m3u8"];
     
     NSString * scheduleFeedUrlTemplate = @"http://www.google.com/calendar/feeds/%@/public/full?alt=json&orderby=starttime&max-results=10&singleevents=true&sortorder=ascending&futureevents=true";
     
