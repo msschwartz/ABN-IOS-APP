@@ -40,7 +40,6 @@
 		013C1B4717EF8D330083D177 /* phone-icon-110px.png in Resources */ = {isa = PBXBuildFile; fileRef = 013C1B4317EF8D330083D177 /* phone-icon-110px.png */; };
 		013C1B4817EF8D330083D177 /* email-icon-110px.png in Resources */ = {isa = PBXBuildFile; fileRef = 013C1B4417EF8D330083D177 /* email-icon-110px.png */; };
 		013C1B5117EF95B30083D177 /* IPadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 013C1B5017EF95B30083D177 /* IPadViewController.m */; };
-		013C1B5217EF96A90083D177 /* IPadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 013C1B5017EF95B30083D177 /* IPadViewController.m */; };
 		013C1B5517EFA4FD0083D177 /* VotdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 013C1B5417EFA4FD0083D177 /* VotdViewController.m */; };
 		013F393E17E929DA006B5C6C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 013F393D17E929DA006B5C6C /* AVFoundation.framework */; };
 		013F394017E929E1006B5C6C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 013F393F17E929E1006B5C6C /* AudioToolbox.framework */; };
@@ -52,11 +51,9 @@
 		013F394C17E92A22006B5C6C /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 013F394B17E92A22006B5C6C /* OpenGLES.framework */; };
 		013F394E17E92A30006B5C6C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 013F394D17E92A30006B5C6C /* QuartzCore.framework */; };
 		013F395017E92A39006B5C6C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 013F394F17E92A39006B5C6C /* Security.framework */; };
-		013F395917E934CE006B5C6C /* libPayPalMobile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 013F395417E934CE006B5C6C /* libPayPalMobile.a */; };
 		013F395A17E934F5006B5C6C /* libPayPalMobile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 013F395417E934CE006B5C6C /* libPayPalMobile.a */; };
 		013F395C17E9394C006B5C6C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 013F395B17E9394C006B5C6C /* SystemConfiguration.framework */; };
 		013F395E17E93BE7006B5C6C /* paypal-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 013F395D17E93BE7006B5C6C /* paypal-logo.png */; };
-		013F395F17E93BE7006B5C6C /* paypal-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 013F395D17E93BE7006B5C6C /* paypal-logo.png */; };
 		0143427817E15B3200BCE1F2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0143427717E15B3200BCE1F2 /* UIKit.framework */; };
 		0143427A17E15B3200BCE1F2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0143427917E15B3200BCE1F2 /* Foundation.framework */; };
 		0143427C17E15B3200BCE1F2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0143427B17E15B3200BCE1F2 /* CoreGraphics.framework */; };
@@ -69,11 +66,6 @@
 		0143429B17E15B3200BCE1F2 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0143429A17E15B3200BCE1F2 /* first@2x.png */; };
 		014342A017E15B3200BCE1F2 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 0143429F17E15B3200BCE1F2 /* second.png */; };
 		014342A217E15B3200BCE1F2 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 014342A117E15B3200BCE1F2 /* second@2x.png */; };
-		014342AA17E15B3200BCE1F2 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 014342A917E15B3200BCE1F2 /* SenTestingKit.framework */; };
-		014342AB17E15B3200BCE1F2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0143427717E15B3200BCE1F2 /* UIKit.framework */; };
-		014342AC17E15B3200BCE1F2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0143427917E15B3200BCE1F2 /* Foundation.framework */; };
-		014342B417E15B3200BCE1F2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 014342B217E15B3200BCE1F2 /* InfoPlist.strings */; };
-		014342B717E15B3200BCE1F2 /* ABN_IOS_APPTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 014342B617E15B3200BCE1F2 /* ABN_IOS_APPTests.m */; };
 		01491BC418062904007BEADA /* live-90x40.png in Resources */ = {isa = PBXBuildFile; fileRef = 01491BC318062904007BEADA /* live-90x40.png */; };
 		01491BC61806295D007BEADA /* live-100x100.png in Resources */ = {isa = PBXBuildFile; fileRef = 01491BC51806295D007BEADA /* live-100x100.png */; };
 		01491BC818062DB9007BEADA /* ipad-play-button-75x75.png in Resources */ = {isa = PBXBuildFile; fileRef = 01491BC718062DB9007BEADA /* ipad-play-button-75x75.png */; };
@@ -131,16 +123,6 @@
 		01FFF872181C1C51001CED1C /* playAudioIPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 01FFF870181C1C51001CED1C /* playAudioIPad.png */; };
 		01FFF873181C1C51001CED1C /* stopAudioIPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 01FFF871181C1C51001CED1C /* stopAudioIPad.png */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		014342AD17E15B3200BCE1F2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0143426C17E15B3200BCE1F2 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0143427317E15B3200BCE1F2;
-			remoteInfo = "ABN-IOS-APP";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		010AB134181897B800809B17 /* stopAudio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stopAudio.png; sourceTree = "<group>"; };
@@ -215,7 +197,6 @@
 		0143429A17E15B3200BCE1F2 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
 		0143429F17E15B3200BCE1F2 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		014342A117E15B3200BCE1F2 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
-		014342A817E15B3200BCE1F2 /* ABN-IOS-APPTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ABN-IOS-APPTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		014342A917E15B3200BCE1F2 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		014342B117E15B3200BCE1F2 /* ABN-IOS-APPTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ABN-IOS-APPTests-Info.plist"; sourceTree = "<group>"; };
 		014342B317E15B3200BCE1F2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -310,17 +291,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		014342A417E15B3200BCE1F2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				014342AA17E15B3200BCE1F2 /* SenTestingKit.framework in Frameworks */,
-				014342AB17E15B3200BCE1F2 /* UIKit.framework in Frameworks */,
-				014342AC17E15B3200BCE1F2 /* Foundation.framework in Frameworks */,
-				013F395917E934CE006B5C6C /* libPayPalMobile.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -360,7 +330,6 @@
 			isa = PBXGroup;
 			children = (
 				0143427417E15B3200BCE1F2 /* LT76CT679P.com.abnsat.v1.app */,
-				014342A817E15B3200BCE1F2 /* ABN-IOS-APPTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -555,31 +524,13 @@
 			productReference = 0143427417E15B3200BCE1F2 /* LT76CT679P.com.abnsat.v1.app */;
 			productType = "com.apple.product-type.application";
 		};
-		014342A717E15B3200BCE1F2 /* ABN-IOS-APPTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 014342BD17E15B3200BCE1F2 /* Build configuration list for PBXNativeTarget "ABN-IOS-APPTests" */;
-			buildPhases = (
-				014342A317E15B3200BCE1F2 /* Sources */,
-				014342A417E15B3200BCE1F2 /* Frameworks */,
-				014342A517E15B3200BCE1F2 /* Resources */,
-				014342A617E15B3200BCE1F2 /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				014342AE17E15B3200BCE1F2 /* PBXTargetDependency */,
-			);
-			name = "ABN-IOS-APPTests";
-			productName = "ABN-IOS-APPTests";
-			productReference = 014342A817E15B3200BCE1F2 /* ABN-IOS-APPTests.octest */;
-			productType = "com.apple.product-type.bundle";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		0143426C17E15B3200BCE1F2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastTestingUpgradeCheck = 0610;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Gorial, Sam";
 				TargetAttributes = {
@@ -601,7 +552,6 @@
 			projectRoot = "";
 			targets = (
 				0143427317E15B3200BCE1F2 /* ABN-IOS-APP */,
-				014342A717E15B3200BCE1F2 /* ABN-IOS-APPTests */,
 			);
 		};
 /* End PBXProject section */
@@ -699,32 +649,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		014342A517E15B3200BCE1F2 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				014342B417E15B3200BCE1F2 /* InfoPlist.strings in Resources */,
-				013F395F17E93BE7006B5C6C /* paypal-logo.png in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		014342A617E15B3200BCE1F2 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0143427017E15B3200BCE1F2 /* Sources */ = {
@@ -748,24 +673,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		014342A317E15B3200BCE1F2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				013C1B5217EF96A90083D177 /* IPadViewController.m in Sources */,
-				014342B717E15B3200BCE1F2 /* ABN_IOS_APPTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		014342AE17E15B3200BCE1F2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 0143427317E15B3200BCE1F2 /* ABN-IOS-APP */;
-			targetProxy = 014342AD17E15B3200BCE1F2 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		0143428017E15B3200BCE1F2 /* InfoPlist.strings */ = {
@@ -829,7 +737,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -878,7 +786,7 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = LT76CT679P.com.abnsat.v1;
-				PROVISIONING_PROFILE = "762F03ED-9EDC-4321-BF2F-D23EE55A03C8";
+				PROVISIONING_PROFILE = "";
 				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
@@ -888,7 +796,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Sam Gorial (LT76CT679P)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ABN-IOS-APP/ABN-IOS-APP-Prefix.pch";
 				INFOPLIST_FILE = "ABN-IOS-APP/ABN-IOS-APP-Info.plist";
@@ -902,51 +810,9 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = LT76CT679P.com.abnsat.v1;
-				PROVISIONING_PROFILE = "9DD5EC5A-264D-4FF5-ACFF-A754CC507AC3";
+				PROVISIONING_PROFILE = "";
 				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		014342BE17E15B3200BCE1F2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ABN-IOS-APP.app/ABN-IOS-APP";
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ABN-IOS-APP/ABN-IOS-APP-Prefix.pch";
-				INFOPLIST_FILE = "ABN-IOS-APPTests/ABN-IOS-APPTests-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/ABN-IOS-APP/PayPalMobile\"",
-				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Debug;
-		};
-		014342BF17E15B3200BCE1F2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ABN-IOS-APP.app/ABN-IOS-APP";
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ABN-IOS-APP/ABN-IOS-APP-Prefix.pch";
-				INFOPLIST_FILE = "ABN-IOS-APPTests/ABN-IOS-APPTests-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/ABN-IOS-APP/PayPalMobile\"",
-				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};
@@ -967,15 +833,6 @@
 			buildConfigurations = (
 				014342BB17E15B3200BCE1F2 /* Debug */,
 				014342BC17E15B3200BCE1F2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		014342BD17E15B3200BCE1F2 /* Build configuration list for PBXNativeTarget "ABN-IOS-APPTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				014342BE17E15B3200BCE1F2 /* Debug */,
-				014342BF17E15B3200BCE1F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
