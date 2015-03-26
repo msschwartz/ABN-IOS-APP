@@ -8,17 +8,11 @@
 
 #import "PayPalMobile.h"
 
-@interface IPadViewController : UIViewController<PayPalPaymentDelegate, UIPickerViewDelegate, UITextFieldDelegate>
+@interface IPadViewController : UIViewController<UIPickerViewDelegate, UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UIView *paypalView;
 
 @property (weak, nonatomic) IBOutlet UIView *contactUsView;
-
-@property (weak, nonatomic) IBOutlet UITextField *amountTextField;
-
-@property (weak, nonatomic) IBOutlet UITextField *noteTextField;
-
-@property (weak, nonatomic) IBOutlet UIButton *donateButton;
 
 @property (weak, nonatomic) IBOutlet UIButton *facebookButton;
 
@@ -44,5 +38,6 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *canadianDonorsButton;
 
+@property (weak, nonatomic) IBOutlet UIButton *donateNowButton;
 
 @end

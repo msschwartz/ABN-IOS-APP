@@ -8,14 +8,10 @@
 
 #import "PayPalMobile.h"
 
-@interface GetInvolvedViewController : UIViewController<PayPalPaymentDelegate, UIPickerViewDelegate, UITextFieldDelegate>
+@interface GetInvolvedViewController : UIViewController<UIPickerViewDelegate, UITextFieldDelegate>
 
-@property (weak, nonatomic) IBOutlet UITextField *amountButton;
-@property (weak, nonatomic) IBOutlet UITextField *noteButton;
-@property (weak, nonatomic) IBOutlet UIButton *donateButton;
 @property (weak, nonatomic) IBOutlet UIButton *canadianDonorButton;
 @property (weak, nonatomic) IBOutlet UIImageView *canadianDonorFlag;
-
-- (IBAction)donateClick:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *donateButton;
 
 @end

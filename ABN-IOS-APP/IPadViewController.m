@@ -18,126 +18,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.paypalView.layer.cornerRadius = 10;
-    self.paypalView.layer.masksToBounds = YES;
-
     self.contactUsView.layer.cornerRadius = 10;
     self.contactUsView.layer.masksToBounds = YES;
-
-    [[self noteTextField] setReturnKeyType:UIReturnKeyDone];
-    [[self noteTextField] resignFirstResponder];
-    [[self noteTextField] setDelegate:self];
     
     [self loadVotd];
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-}
-
-- (BOOL)textFieldShouldReturn:(UITextField *)textField {
-    [textField resignFirstResponder];
-    return YES;
-}
-
--(void)textFieldDidBeginEditing:(UITextField *)textField {
-    
-    [UIView beginAnimations:nil context:NULL];
-    [UIView setAnimationDuration:0.35f];
-    CGRect frame = self.view.frame;
-    frame.origin.y = -100;
-    [self.view setFrame:frame];
-    [UIView commitAnimations];
-}
-
--(BOOL)textFieldShouldEndEditing:(UITextField *)textField {
-    
-    [UIView beginAnimations:nil context:NULL];
-    [UIView setAnimationDuration:0.35f];
-    CGRect frame = self.view.frame;
-    frame.origin.y = 0;
-    [self.view setFrame:frame];
-    [UIView commitAnimations];
-    return YES;
-}
-
-- (void) invalidAmount {
-    UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"" message:@"Please verify your information is correct." delegate:self cancelButtonTitle:@"Close" otherButtonTitles:nil];
-    alert.alertViewStyle = UIAlertViewStyleDefault;
-    [alert show];
-}
-
-- (void) doDonate {
-    
-    NSString * amount = self.amountTextField.text;
-    NSString * note = self.noteTextField.text;
-    
-    NSNumberFormatter * formatter = [[NSNumberFormatter alloc] init];
-    [formatter setNumberStyle:NSNumberFormatterDecimalStyle];
-    
-    if([formatter numberFromString:amount] == nil) {
-        [self invalidAmount];
-        return;
-    }
-    
-    if(note == NULL || note.length == 0) {
-        note = @"Monetary donation to ABN.";
-    }
-    
-    // Create a PayPalPayment
-    PayPalPayment *payment = [[PayPalPayment alloc] init];
-    payment.amount = [[NSDecimalNumber alloc] initWithString:amount];
-    payment.currencyCode = @"USD";
-    payment.shortDescription = note;
-    
-    // Check whether payment is processable.
-    if (!payment.processable) {
-        [self invalidAmount];
-        return;
-    }
-    
-    // Start out working with the test environment! When you are ready, remove this line to switch to live.
-    //[PayPalPaymentViewController setEnvironment:PayPalEnvironmentNoNetwork];
-    
-    // Provide a payerId that uniquely identifies a user within the scope of your system,
-    // such as an email address or user ID.
-    NSString *aPayerId = @"noreply@abnsat.com";
-    
-    // Create a PayPalPaymentViewController with the credentials and payerId, the PayPalPayment
-    // from the previous step, and a PayPalPaymentDelegate to handle the results.
-    PayPalPaymentViewController *paymentViewController;
-    paymentViewController = [[PayPalPaymentViewController alloc] initWithClientId:@"AQ7jBBAgVgpeHyrvnXcb8DJ0kiDWQt0D75lXaPPOb4i7673Gb_Xdc7eMZha7"
-                                                                    receiverEmail:@"accountant@abnsat.com"
-                                                                          payerId:aPayerId
-                                                                          payment:payment
-                                                                         delegate:self];
-    
-    // Present the PayPalPaymentViewController.
-    [self presentViewController:paymentViewController animated:YES completion:nil];
-    
-}
-
-- (IBAction)donateButtonClick:(id)sender {
-    [self doDonate];
-}
-
-#pragma mark - PayPalPaymentDelegate methods
-
-- (void)payPalPaymentDidComplete:(PayPalPayment *)completedPayment {
-    // Payment was processed successfully; send to server for verification and fulfillment.
-    //[self verifyCompletedPayment:completedPayment];
-    
-    UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"Thank You" message:@"Your donation was accepted!  Thank you and God bless you!" delegate:self cancelButtonTitle:@"Close" otherButtonTitles:nil];
-    alert.alertViewStyle = UIAlertViewStyleDefault;
-    [alert show];
-    
-    // Dismiss the PayPalPaymentViewController.
-    [self dismissViewControllerAnimated:YES completion:nil];
-}
-
-- (void)payPalPaymentDidCancel {
-    // The payment was canceled; dismiss the PayPalPaymentViewController.
-    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (void) openUrl: (NSString *) url {
@@ -212,6 +96,10 @@
 - (IBAction)canadianDonorsButton:(id)sender {
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"Canadian Donors" message: @"Make checks out to \"GNTCA\"\nABN Inc.\nP.O Box 34085\n446 Holland Trail\nAurora ON, L4G 7T6 Canada" delegate: nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
     [alert show];
+}
+
+- (IBAction)donateNowClick:(id)sender {
+    [self openUrl:@"http://www.abnsat.com/#!donate/c2t8"];
 }
 
 @end
