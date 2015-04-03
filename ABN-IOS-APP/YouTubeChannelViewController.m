@@ -32,12 +32,13 @@
     [channelsArray addObject:@"Arabic Gospel"];
     [channelsArray addObject:@"Kurdish Gospel"];
     [channelsArray addObject:@"Arabs for Christ"];
-    [channelsArray addObject:@"Jesus or Mohammed I"];
-    [channelsArray addObject:@"Jesus or Mohammed II"];
+    [channelsArray addObject:@"Jesus or Mohammed"];
     [channelsArray addObject:@"Jihad Exposed"];
     [channelsArray addObject:@"Arabs for Jesus"];
     [channelsArray addObject:@"Praise and Worship"];
     [channelsArray addObject:@"Arabic Praise Songs"];
+    [channelsArray addObject:@"Trinity Channel"];
+    [channelsArray addObject:@"ABN Arabic"];
 
     urlsArray = [[NSMutableArray alloc] init];
     [urlsArray addObject:@"ABNSAT2"];
@@ -45,12 +46,13 @@
     [urlsArray addObject:@"arabicgospel"];
     [urlsArray addObject:@"kurdishgospel"];
     [urlsArray addObject:@"arabsforchristabn"];
-    [urlsArray addObject:@"JesusOrMuhammad"];
     [urlsArray addObject:@"JesusOrMuhammadAtABN"];
     [urlsArray addObject:@"JihadExpose"];
     [urlsArray addObject:@"arabsforjesus"];
     [urlsArray addObject:@"Nranmlk"];
     [urlsArray addObject:@"ArabicPraiseSongs"];
+    [urlsArray addObject:@"trinitychannel1"];
+    [urlsArray addObject:@"ArabsforChristABN"];
 
     [[self.selectChannelButton layer] setBorderWidth:2.0f];
     [[self.selectChannelButton layer] setCornerRadius:5.0f];
