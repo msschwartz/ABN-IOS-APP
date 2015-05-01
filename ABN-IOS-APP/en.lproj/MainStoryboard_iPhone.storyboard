@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="4">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Watch-->
@@ -17,11 +18,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" alpha="0.25" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cloud-air-backdrop.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="i5s-b8-56x">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                            <imageView userInteractionEnabled="NO" alpha="0.25" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud-air-backdrop.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="i5s-b8-56x">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OpA-TP-qMU">
-                                <rect key="frame" x="58" y="81" width="40" height="40"/>
+                                <rect key="frame" x="58" y="62" width="40" height="40"/>
                                 <state key="normal" backgroundImage="play_icon.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -30,7 +31,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wIh-JL-vU3">
-                                <rect key="frame" x="58" y="125" width="40" height="40"/>
+                                <rect key="frame" x="58" y="106" width="40" height="40"/>
                                 <state key="normal" backgroundImage="play_icon.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -39,7 +40,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zgK-3d-qJR">
-                                <rect key="frame" x="58" y="168" width="40" height="40"/>
+                                <rect key="frame" x="58" y="149" width="40" height="40"/>
                                 <state key="normal" backgroundImage="play_icon.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -47,27 +48,27 @@
                                     <action selector="worshipButtonClick:" destination="2" eventType="touchUpInside" id="l3d-kr-NGK"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3SD-Ea-3bM">
-                                <rect key="frame" x="6" y="81" width="40" height="40"/>
-                                <state key="normal">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3SD-Ea-3bM">
+                                <rect key="frame" x="12" y="62" width="40" height="40"/>
+                                <state key="normal" image="playAudio.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="arabicAudioButtonClick:" destination="2" eventType="touchUpInside" id="o4a-NS-M71"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="261-jc-dUO">
-                                <rect key="frame" x="6" y="125" width="40" height="40"/>
-                                <state key="normal">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="261-jc-dUO">
+                                <rect key="frame" x="12" y="106" width="40" height="40"/>
+                                <state key="normal" image="playAudio.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="englishAudioButtonClick:" destination="2" eventType="touchUpInside" id="feb-t5-vRk"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zie-Pa-ZH4">
-                                <rect key="frame" x="6" y="168" width="40" height="40"/>
-                                <state key="normal">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zie-Pa-ZH4">
+                                <rect key="frame" x="12" y="149" width="40" height="40"/>
+                                <state key="normal" image="playAudio.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -75,49 +76,40 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ARABIC STREAM" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="130" translatesAutoresizingMaskIntoConstraints="NO" id="OOy-Kn-Ixg">
-                                <rect key="frame" x="164" y="86" width="130" height="25"/>
+                                <rect key="frame" x="121" y="67" width="130" height="25"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ENGLISH STREAM" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="142" translatesAutoresizingMaskIntoConstraints="NO" id="LC9-Ym-CNp">
-                                <rect key="frame" x="164" y="132" width="142" height="25"/>
+                                <rect key="frame" x="121" y="113" width="142" height="25"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="WORSHIP STREAM" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="225" translatesAutoresizingMaskIntoConstraints="NO" id="ubX-ca-Lkg">
-                                <rect key="frame" x="121" y="163" width="225" height="49"/>
+                                <rect key="frame" x="121" y="144" width="225" height="49"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Watch ABN " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J4L-uv-6Ba">
-                                <rect key="frame" x="50" y="20" width="236" height="39"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="live-100x100.png" translatesAutoresizingMaskIntoConstraints="NO" id="7Yi-uB-ZKm">
-                                <rect key="frame" x="200" y="-9" width="109" height="97"/>
-                            </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bringing the Light of God's Truth  to Middle Eastern People" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="294" translatesAutoresizingMaskIntoConstraints="NO" id="eOH-Zh-e8s">
-                                <rect key="frame" x="21" y="335" width="294" height="57"/>
+                                <rect key="frame" x="21" y="316" width="294" height="57"/>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
                                 <color key="textColor" red="1" green="0.23915553404911893" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="6ho-aK-F7j" userLabel="arabicAudioPlayingIndicator">
-                                <rect key="frame" x="65" y="86" width="20" height="20"/>
+                                <rect key="frame" x="68" y="72" width="20" height="20"/>
                             </activityIndicatorView>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="XlT-LS-VeO" userLabel="englishAudioPlayingIndicator">
-                                <rect key="frame" x="65" y="130" width="20" height="20"/>
+                                <rect key="frame" x="68" y="117" width="20" height="20"/>
                             </activityIndicatorView>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="2WX-iD-ail" userLabel="worshipAudioPlayingIndicator">
-                                <rect key="frame" x="65" y="173" width="20" height="20"/>
+                                <rect key="frame" x="68" y="159" width="20" height="20"/>
                             </activityIndicatorView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Na9-b6-ACs">
-                                <rect key="frame" x="58" y="210" width="40" height="40"/>
+                                <rect key="frame" x="58" y="191" width="40" height="40"/>
                                 <state key="normal" backgroundImage="play_icon.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -125,9 +117,9 @@
                                     <action selector="surathButtonClick:" destination="2" eventType="touchUpInside" id="Uxp-2Z-HQF"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eLc-Nx-TQO">
-                                <rect key="frame" x="6" y="210" width="40" height="40"/>
-                                <state key="normal">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eLc-Nx-TQO">
+                                <rect key="frame" x="12" y="191" width="40" height="40"/>
+                                <state key="normal" image="playAudio.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -135,16 +127,16 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SURATH STREAM" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="225" translatesAutoresizingMaskIntoConstraints="NO" id="rUf-Sk-mKR">
-                                <rect key="frame" x="121" y="205" width="225" height="49"/>
+                                <rect key="frame" x="121" y="186" width="225" height="49"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="ErE-mh-Cmo" userLabel="surathAudioPlayingIndicator">
-                                <rect key="frame" x="65" y="215" width="20" height="20"/>
+                                <rect key="frame" x="67" y="201" width="20" height="20"/>
                             </activityIndicatorView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="16i-gN-xoV">
-                                <rect key="frame" x="58" y="250" width="40" height="40"/>
+                                <rect key="frame" x="58" y="231" width="40" height="40"/>
                                 <state key="normal" backgroundImage="play_icon.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -152,9 +144,9 @@
                                     <action selector="kurdishButtonClick:" destination="2" eventType="touchUpInside" id="mHV-3t-llx"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cyX-Oy-u14">
-                                <rect key="frame" x="6" y="250" width="40" height="40"/>
-                                <state key="normal">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cyX-Oy-u14">
+                                <rect key="frame" x="12" y="231" width="40" height="40"/>
+                                <state key="normal" image="playAudio.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -162,16 +154,16 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="KURDISH STREAM" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="225" translatesAutoresizingMaskIntoConstraints="NO" id="q9Q-ui-mYF">
-                                <rect key="frame" x="121" y="245" width="225" height="49"/>
+                                <rect key="frame" x="121" y="226" width="225" height="49"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="pXl-fN-5ZL" userLabel="kurdishAudioPlayingIndicator">
-                                <rect key="frame" x="65" y="255" width="20" height="20"/>
+                                <rect key="frame" x="68" y="241" width="20" height="20"/>
                             </activityIndicatorView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xo5-wZ-ii4">
-                                <rect key="frame" x="58" y="292" width="40" height="40"/>
+                                <rect key="frame" x="58" y="273" width="40" height="40"/>
                                 <state key="normal" backgroundImage="play_icon.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -179,9 +171,9 @@
                                     <action selector="alquddusButtonClick:" destination="2" eventType="touchUpInside" id="7tK-8C-Zcm"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Lr-ra-gFa">
-                                <rect key="frame" x="6" y="292" width="40" height="40"/>
-                                <state key="normal">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Lr-ra-gFa">
+                                <rect key="frame" x="12" y="273" width="40" height="40"/>
+                                <state key="normal" image="playAudio.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -189,42 +181,38 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ALQUDDUS STREAM" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="225" translatesAutoresizingMaskIntoConstraints="NO" id="f78-w4-IMO">
-                                <rect key="frame" x="121" y="287" width="225" height="49"/>
+                                <rect key="frame" x="121" y="268" width="225" height="49"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="vuj-bx-lF7" userLabel="alquddusAudioPlayingIndicator">
-                                <rect key="frame" x="65" y="297" width="20" height="20"/>
-                            </activityIndicatorView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OJ9-02-q1p">
-                                <rect key="frame" x="121" y="125" width="35" height="35"/>
-                                <state key="normal" backgroundImage="calendar.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="upcomingShowsEnglishClick:" destination="2" eventType="touchUpInside" id="kHy-XP-2Qy"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v0k-1x-AYs">
-                                <rect key="frame" x="121" y="81" width="35" height="35"/>
-                                <state key="normal" backgroundImage="calendar.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="upcomingShowsArabicClick:" destination="2" eventType="touchUpInside" id="Jwk-CY-pna"/>
-                                </connections>
-                            </button>
-                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="M6T-Vk-Knp" userLabel="arabicScheduleLoadingIndicator">
-                                <rect key="frame" x="131" y="97" width="20" height="20"/>
-                            </activityIndicatorView>
-                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="oA5-1f-Zoz" userLabel="englishScheduleLoadingIndicator">
-                                <rect key="frame" x="131" y="157" width="20" height="20"/>
+                                <rect key="frame" x="68" y="284" width="20" height="20"/>
                             </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="i5s-b8-56x" firstAttribute="leading" secondItem="16" secondAttribute="leadingMargin" constant="-16" id="7WN-Y7-nAr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="i5s-b8-56x" secondAttribute="trailing" constant="-16" id="kz1-3U-gXJ"/>
+                            <constraint firstItem="i5s-b8-56x" firstAttribute="bottom" secondItem="16" secondAttribute="bottomMargin" id="pQ6-sb-E6p"/>
+                            <constraint firstItem="i5s-b8-56x" firstAttribute="top" secondItem="16" secondAttribute="topMargin" id="yD6-Ov-Z6N"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Watch Live" image="watch-thumb.png" id="7"/>
+                    <navigationItem key="navigationItem" title="Watch" id="orc-GH-vWG">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="Kxm-9y-oGk">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7TI-Gh-D9A">
+                                <rect key="frame" x="233" y="7" width="39" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="icon-cast-identified.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showChromecastPicker:" destination="2" eventType="touchUpInside" id="dli-t7-VEW"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <nil key="simulatedStatusBarMetrics"/>
                     <connections>
                         <outlet property="alquddusAudioButton" destination="9Lr-ra-gFa" id="tPe-nO-Gsx"/>
                         <outlet property="alquddusAudioPlayingIndicator" destination="vuj-bx-lF7" id="ZDd-83-Xkg"/>
@@ -232,18 +220,15 @@
                         <outlet property="arabicAudioButton" destination="3SD-Ea-3bM" id="FnS-f4-Mbr"/>
                         <outlet property="arabicAudioPlayingIndicator" destination="6ho-aK-F7j" id="6IS-Xb-625"/>
                         <outlet property="arabicButton" destination="OpA-TP-qMU" id="QAl-fh-GYg"/>
-                        <outlet property="arabicScheduleLoadingIndicator" destination="M6T-Vk-Knp" id="7sj-pW-QVa"/>
+                        <outlet property="chromecastButton" destination="7TI-Gh-D9A" id="0rc-G2-oPP"/>
                         <outlet property="englishAudioButton" destination="261-jc-dUO" id="c7o-cN-s2n"/>
                         <outlet property="englishAudioPlayingIndicator" destination="XlT-LS-VeO" id="yEX-pO-tP4"/>
                         <outlet property="englishButton" destination="wIh-JL-vU3" id="2Zy-Bd-PR2"/>
-                        <outlet property="englishScheduleLoadingIndicator" destination="oA5-1f-Zoz" id="g8x-pD-sJC"/>
                         <outlet property="kurdishAudioButton" destination="cyX-Oy-u14" id="OH0-iY-370"/>
                         <outlet property="kurdishAudioPlayingIndicator" destination="pXl-fN-5ZL" id="ubj-Kn-3wa"/>
                         <outlet property="surathAudioButton" destination="eLc-Nx-TQO" id="BAZ-mi-lz8"/>
                         <outlet property="surathAudioPlayingIndicator" destination="ErE-mh-Cmo" id="dMG-62-oni"/>
                         <outlet property="surathButton" destination="Na9-b6-ACs" id="2pZ-H2-5rz"/>
-                        <outlet property="upcomingShowsArabic" destination="v0k-1x-AYs" id="e5Q-p8-XTJ"/>
-                        <outlet property="upcomingShowsEnglish" destination="OJ9-02-q1p" id="EXq-Hg-qxY"/>
                         <outlet property="worshipAudio" destination="zie-Pa-ZH4" id="Scx-eE-pG6"/>
                         <outlet property="worshipAudioPlayingIndicator" destination="2WX-iD-ail" id="u4O-bd-5fa"/>
                         <outlet property="worshipButton" destination="zgK-3d-qJR" id="Dd8-pQ-itI"/>
@@ -251,7 +236,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="10" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="939" y="-1024"/>
+            <point key="canvasLocation" x="1471" y="-1024"/>
         </scene>
         <!--Get Involved-->
         <scene sceneID="13">
@@ -334,7 +319,7 @@ Please consider a one-time financial gift.  Your donations are tax-deductible. <
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="12" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1295" y="-582"/>
+            <point key="canvasLocation" x="1827" y="-582"/>
         </scene>
         <!--YouTube Channel-->
         <scene sceneID="NSV-1K-XFt">
@@ -606,7 +591,7 @@ Please consider a one-time financial gift.  Your donations are tax-deductible. <
                                         <attributedString key="userComments">
                                             <fragment content="jkjkj">
                                                 <attributes>
-                                                    <font key="NSFont" metaFont="toolTip"/>
+                                                    <font key="NSFont" metaFont="smallSystem"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
                                                 </attributes>
                                             </fragment>
@@ -1157,7 +1142,7 @@ They then expanded their ministry to a weekly local radio program in Chaldean, w
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="2" kind="relationship" relationship="viewControllers" id="26"/>
+                        <segue destination="88D-64-dFW" kind="relationship" relationship="viewControllers" id="26"/>
                         <segue destination="3" kind="relationship" relationship="viewControllers" id="fTK-bv-5pP"/>
                         <segue destination="zPj-FY-AZa" kind="relationship" relationship="viewControllers" id="aRm-Ek-6ER"/>
                         <segue destination="3nZ-qa-hW2" kind="relationship" relationship="viewControllers" id="Mod-kk-rnH"/>
@@ -1168,6 +1153,25 @@ They then expanded their ministry to a weekly local radio program in Chaldean, w
             </objects>
             <point key="canvasLocation" x="132" y="180"/>
         </scene>
+        <!--Watch Live-->
+        <scene sceneID="dZx-FU-xg6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="88D-64-dFW" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Watch Live" image="watch-thumb.png" id="7"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1uF-C5-tfh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2" kind="relationship" relationship="rootViewController" id="4iO-71-20H"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ElR-Vl-tAu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="939" y="-1024"/>
+        </scene>
     </scenes>
     <resources>
         <image name="back.button.grey.png" width="51" height="51"/>
@@ -1175,7 +1179,6 @@ They then expanded their ministry to a weekly local radio program in Chaldean, w
         <image name="bassim-and-haifa.jpg" width="271" height="184"/>
         <image name="bible.small-35px.png" width="35" height="35"/>
         <image name="bulb.small-35px.jpeg" width="27" height="35"/>
-        <image name="calendar.png" width="55" height="55"/>
         <image name="canadian-flag.png" width="65" height="50"/>
         <image name="cloud-air-backdrop.jpg" width="407" height="451"/>
         <image name="contact-thumb.png" width="28" height="28"/>
@@ -1187,10 +1190,11 @@ They then expanded their ministry to a weekly local radio program in Chaldean, w
         <image name="forward.button.red.png" width="51" height="51"/>
         <image name="heart.small-35px.jpg" width="35" height="27"/>
         <image name="home-35px.png" width="35" height="35"/>
+        <image name="icon-cast-identified.png" width="39" height="34"/>
         <image name="ie-35px.png" width="35" height="35"/>
-        <image name="live-100x100.png" width="100" height="100"/>
         <image name="male.user.small-35px.png" width="35" height="35"/>
         <image name="phone-35px.jpg" width="35" height="24"/>
+        <image name="playAudio.png" width="55" height="55"/>
         <image name="play_icon.png" width="64" height="64"/>
         <image name="pray.hands.small-35px.png" width="23" height="35"/>
         <image name="program.small-35px.png" width="35" height="35"/>

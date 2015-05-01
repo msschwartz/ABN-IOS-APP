@@ -122,6 +122,13 @@
 		01F6597317EFD6DF0087936E /* app-icon-152px.png in Resources */ = {isa = PBXBuildFile; fileRef = 01F6596C17EFD6DF0087936E /* app-icon-152px.png */; };
 		01FFF872181C1C51001CED1C /* playAudioIPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 01FFF870181C1C51001CED1C /* playAudioIPad.png */; };
 		01FFF873181C1C51001CED1C /* stopAudioIPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 01FFF871181C1C51001CED1C /* stopAudioIPad.png */; };
+		6118D1D11AF308FB00CB5C31 /* icon-cast-connected.png in Resources */ = {isa = PBXBuildFile; fileRef = 6118D1CD1AF308FB00CB5C31 /* icon-cast-connected.png */; };
+		6118D1D21AF308FB00CB5C31 /* icon-cast-connected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6118D1CE1AF308FB00CB5C31 /* icon-cast-connected@2x.png */; };
+		6118D1D31AF308FB00CB5C31 /* icon-cast-identified.png in Resources */ = {isa = PBXBuildFile; fileRef = 6118D1CF1AF308FB00CB5C31 /* icon-cast-identified.png */; };
+		6118D1D41AF308FB00CB5C31 /* icon-cast-identified@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6118D1D01AF308FB00CB5C31 /* icon-cast-identified@2x.png */; };
+		6172D0791AE81684007F8347 /* GoogleCast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6172D0781AE81684007F8347 /* GoogleCast.framework */; };
+		6172D07B1AE816BE007F8347 /* MediaAccessibility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6172D07A1AE816BE007F8347 /* MediaAccessibility.framework */; };
+		6172D07D1AE816CB007F8347 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6172D07C1AE816CB007F8347 /* CoreText.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -265,6 +272,13 @@
 		01F6596C17EFD6DF0087936E /* app-icon-152px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app-icon-152px.png"; sourceTree = "<group>"; };
 		01FFF870181C1C51001CED1C /* playAudioIPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playAudioIPad.png; sourceTree = "<group>"; };
 		01FFF871181C1C51001CED1C /* stopAudioIPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stopAudioIPad.png; sourceTree = "<group>"; };
+		6118D1CD1AF308FB00CB5C31 /* icon-cast-connected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-cast-connected.png"; sourceTree = "<group>"; };
+		6118D1CE1AF308FB00CB5C31 /* icon-cast-connected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-cast-connected@2x.png"; sourceTree = "<group>"; };
+		6118D1CF1AF308FB00CB5C31 /* icon-cast-identified.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-cast-identified.png"; sourceTree = "<group>"; };
+		6118D1D01AF308FB00CB5C31 /* icon-cast-identified@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-cast-identified@2x.png"; sourceTree = "<group>"; };
+		6172D0781AE81684007F8347 /* GoogleCast.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleCast.framework; path = GoogleCastSDK/GoogleCast.framework; sourceTree = "<group>"; };
+		6172D07A1AE816BE007F8347 /* MediaAccessibility.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaAccessibility.framework; path = System/Library/Frameworks/MediaAccessibility.framework; sourceTree = SDKROOT; };
+		6172D07C1AE816CB007F8347 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -272,6 +286,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6172D07D1AE816CB007F8347 /* CoreText.framework in Frameworks */,
+				6172D07B1AE816BE007F8347 /* MediaAccessibility.framework in Frameworks */,
+				6172D0791AE81684007F8347 /* GoogleCast.framework in Frameworks */,
 				013C1B2C17EDCE1C0083D177 /* MediaPlayer.framework in Frameworks */,
 				013F395C17E9394C006B5C6C /* SystemConfiguration.framework in Frameworks */,
 				0143427817E15B3200BCE1F2 /* UIKit.framework in Frameworks */,
@@ -337,6 +354,9 @@
 		0143427617E15B3200BCE1F2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6172D07C1AE816CB007F8347 /* CoreText.framework */,
+				6172D07A1AE816BE007F8347 /* MediaAccessibility.framework */,
+				6172D0781AE81684007F8347 /* GoogleCast.framework */,
 				013C1B2B17EDCE1C0083D177 /* MediaPlayer.framework */,
 				0143427717E15B3200BCE1F2 /* UIKit.framework */,
 				0143427917E15B3200BCE1F2 /* Foundation.framework */,
@@ -417,6 +437,10 @@
 		01D5C9E017E28D2800BA90A4 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				6118D1CD1AF308FB00CB5C31 /* icon-cast-connected.png */,
+				6118D1CE1AF308FB00CB5C31 /* icon-cast-connected@2x.png */,
+				6118D1CF1AF308FB00CB5C31 /* icon-cast-identified.png */,
+				6118D1D01AF308FB00CB5C31 /* icon-cast-identified@2x.png */,
 				01272D871829BF970032D164 /* pray.hands.small-35px.png */,
 				01272D811829BE290032D164 /* bible.small-35px.png */,
 				01130BED182B441D00C58DD8 /* tv.medium.png */,
@@ -604,6 +628,7 @@
 				01491BC418062904007BEADA /* live-90x40.png in Resources */,
 				01BE423F17F0F81A000E2370 /* bassim-and-haifa-240px.jpg in Resources */,
 				013C1B2A17EDCB820083D177 /* play_icon.png in Resources */,
+				6118D1D11AF308FB00CB5C31 /* icon-cast-connected.png in Resources */,
 				01D5C9FB17E2971500BA90A4 /* elipses-thumb@2x.png in Resources */,
 				01117DA2180790E30089831F /* canadian-flag.png in Resources */,
 				01D5C9FC17E2971500BA90A4 /* elipses-thumb.png in Resources */,
@@ -614,8 +639,11 @@
 				01130BEE182B441D00C58DD8 /* tv.medium.png in Resources */,
 				01F6595E17EFC9EF0087936E /* Default-Portrait~ipad.png in Resources */,
 				01D5C9FE17E2971500BA90A4 /* watch-thumb.png in Resources */,
+				6118D1D31AF308FB00CB5C31 /* icon-cast-identified.png in Resources */,
+				6118D1D21AF308FB00CB5C31 /* icon-cast-connected@2x.png in Resources */,
 				013C1B3F17EF88A40083D177 /* youtube-icon-110px.png in Resources */,
 				013C1B3117EE18C10083D177 /* facebook-logo-35px.png in Resources */,
+				6118D1D41AF308FB00CB5C31 /* icon-cast-identified@2x.png in Resources */,
 				01FFF873181C1C51001CED1C /* stopAudioIPad.png in Resources */,
 				01D5C9FF17E2971500BA90A4 /* youtube-thumb@2x.png in Resources */,
 				01130BEC182B42D900C58DD8 /* program.medium.png in Resources */,
@@ -774,6 +802,10 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GoogleCastSDK",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ABN-IOS-APP/ABN-IOS-APP-Prefix.pch";
 				INFOPLIST_FILE = "ABN-IOS-APP/ABN-IOS-APP-Info.plist";
@@ -797,6 +829,10 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GoogleCastSDK",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ABN-IOS-APP/ABN-IOS-APP-Prefix.pch";
 				INFOPLIST_FILE = "ABN-IOS-APP/ABN-IOS-APP-Info.plist";

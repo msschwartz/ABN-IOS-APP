@@ -9,8 +9,16 @@
 #import "UIKit/UIKit.h"
 #import "MediaPlayer/MediaPlayer.h"
 #import "AVFoundation/AVPlayer.h"
+#import <GoogleCast/GoogleCast.h>
 
-@interface WatchViewController : UIViewController<UITableViewDataSource, UITableViewDelegate, NSXMLParserDelegate>
+@interface WatchViewController : UIViewController <UITableViewDataSource,
+                                                    UITableViewDelegate,
+                                                    NSXMLParserDelegate,
+                                                    UIActionSheetDelegate,
+                                                    GCKDeviceScannerListener,
+                                                    GCKDeviceManagerDelegate,
+                                                    GCKMediaControlChannelDelegate,
+                                                    GCKLoggerDelegate>
 
 @property (weak, nonatomic) IBOutlet UIButton *arabicButton;
 @property (weak, nonatomic) IBOutlet UIButton *englishButton;
@@ -69,5 +77,15 @@
 
 @property NSMutableArray * upcomingShowsData;
 @property UITableView * upcomingShowsTable;
+
+@property GCKMediaControlChannel *mediaControlChannel;
+@property GCKApplicationMetadata *applicationMetadata;
+@property GCKDevice *selectedChromecast;
+@property (nonatomic, strong) GCKDeviceScanner *deviceScanner;
+@property (nonatomic, strong) IBOutlet UIButton *chromecastButton;
+@property (nonatomic, strong) GCKDeviceManager *deviceManager;
+@property (nonatomic, readonly) GCKMediaInformation *mediaInformation;
+@property (nonatomic, strong) UIImage *chromecastNormalImage;
+@property (nonatomic, strong) UIImage *chromecastConncetedImage;
 
 @end
