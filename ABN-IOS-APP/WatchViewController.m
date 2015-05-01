@@ -44,12 +44,13 @@ static NSString *kReceiverAppID = @"EF278A15";
     
     self.upcomingShowsData = [[NSMutableArray alloc] init];
     
+    [[GCKLogger sharedInstance] setDelegate:self];
+    self.chromecastNormalImage = [UIImage imageNamed:@"icon-cast-identified.png"];
+    self.chromecastConncetedImage = [UIImage imageNamed:@"icon-cast-connected.png"];
     self.deviceScanner = [[GCKDeviceScanner alloc] init];
-    self.deviceScanner.passiveScan = YES;
     [self.deviceScanner addListener:self];
+    [self.deviceScanner setFilterCriteria:nil];
     [self.deviceScanner startScan];
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(movieFinishedCallback:) name:MPMoviePlayerPlaybackDidFinishNotification object:nil];
     
     [super viewDidLoad];
 }
@@ -91,12 +92,6 @@ static NSString *kReceiverAppID = @"EF278A15";
         self.player = [[MPMoviePlayerViewController alloc] initWithContentURL:hlsUrl];
         [self presentMoviePlayerViewControllerAnimated:self.player];
     }
-}
-
-
-- (void)movieFinishedCallback:(NSNotification *) notification {
-    NSLog(@"movieFinishedCallback");
-    [self stopAudioPlayer];
 }
 
 
@@ -603,6 +598,7 @@ static NSString *kReceiverAppID = @"EF278A15";
 }
 
 - (void)deviceDisconnected {
+    [self.chromecastButton setImage:self.chromecastNormalImage forState:UIControlStateNormal];
     self.mediaControlChannel = nil;
     self.deviceManager = nil;
     self.selectedChromecast = nil;
@@ -696,16 +692,13 @@ static NSString *kReceiverAppID = @"EF278A15";
 #pragma mark - GCKDeviceManagerDelegate
 
 - (void)deviceManagerDidConnect:(GCKDeviceManager *)deviceManager {
-    NSLog(@"connected!");
+    NSLog(@"deviceManagerDidConnect");
+    [self.chromecastButton setImage:self.chromecastConncetedImage forState:UIControlStateNormal];
     [self.deviceManager launchApplication:kReceiverAppID relaunchIfRunning:YES];
 }
 
-- (void)deviceManager:(GCKDeviceManager *)deviceManager
-didConnectToCastApplication:(GCKApplicationMetadata *)applicationMetadata
-            sessionID:(NSString *)sessionID
-  launchedApplication:(BOOL)launchedApplication {
-    
-    NSLog(@"application has launched");
+- (void)deviceManager:(GCKDeviceManager *)deviceManager didConnectToCastApplication:(GCKApplicationMetadata *)applicationMetadata sessionID:(NSString *)sessionID launchedApplication:(BOOL)launchedApplication {
+    NSLog(@"deviceManager didConnectToCastApplication");
     self.mediaControlChannel = [[GCKMediaControlChannel alloc] init];
     self.mediaControlChannel.delegate = self;
     [self.deviceManager addChannel:self.mediaControlChannel];
@@ -713,11 +706,13 @@ didConnectToCastApplication:(GCKApplicationMetadata *)applicationMetadata
 }
 
 - (void)deviceManager:(GCKDeviceManager *)deviceManager didFailToConnectToApplicationWithError:(NSError *)error {
+    NSLog(@"deviceManager didFailToConnectToApplicationWithError");
     [self showError:error.description];
     [self deviceDisconnected];
 }
 
 - (void)deviceManager:(GCKDeviceManager *)deviceManager didFailToConnectWithError:(GCKError *)error {
+    NSLog(@"deviceManager didFailToConnectWithError");
     [self showError:error.description];
     [self deviceDisconnected];
 }
@@ -734,6 +729,13 @@ didConnectToCastApplication:(GCKApplicationMetadata *)applicationMetadata
 
 - (void)deviceManager:(GCKDeviceManager *)deviceManager didReceiveStatusForApplication:(GCKApplicationMetadata *)applicationMetadata {
     self.applicationMetadata = applicationMetadata;
+}
+
+
+#pragma mark - GCKLoggerDelegate
+
+- (void)logFromFunction:(const char *)function message:(NSString *)message {
+    NSLog(@"%s  %@", function, message);
 }
 
 

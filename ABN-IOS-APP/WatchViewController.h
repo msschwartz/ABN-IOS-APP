@@ -17,7 +17,8 @@
                                                     UIActionSheetDelegate,
                                                     GCKDeviceScannerListener,
                                                     GCKDeviceManagerDelegate,
-                                                    GCKMediaControlChannelDelegate>
+                                                    GCKMediaControlChannelDelegate,
+                                                    GCKLoggerDelegate>
 
 @property (weak, nonatomic) IBOutlet UIButton *arabicButton;
 @property (weak, nonatomic) IBOutlet UIButton *englishButton;
@@ -84,5 +85,7 @@
 @property (nonatomic, strong) IBOutlet UIButton *chromecastButton;
 @property (nonatomic, strong) GCKDeviceManager *deviceManager;
 @property (nonatomic, readonly) GCKMediaInformation *mediaInformation;
+@property (nonatomic, strong) UIImage *chromecastNormalImage;
+@property (nonatomic, strong) UIImage *chromecastConncetedImage;
 
 @end
