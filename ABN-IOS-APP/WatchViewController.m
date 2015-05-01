@@ -16,6 +16,8 @@ colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 \
 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 
+static NSString *kReceiverAppID = @"EF278A15";
+
 @implementation WatchViewController
 
 - (void)viewDidLoad {
@@ -28,19 +30,12 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
         self.stopAudioImage = [UIImage imageNamed:@"stopAudio.png"];
     }
     
-    [self.arabicAudioButton setBackgroundImage:self.playAudioImage forState:UIControlStateNormal];
-    [self.englishAudioButton setBackgroundImage:self.playAudioImage forState:UIControlStateNormal];
-    [self.worshipAudio setBackgroundImage:self.playAudioImage forState:UIControlStateNormal];
-    [self.surathAudioButton setBackgroundImage:self.playAudioImage forState:UIControlStateNormal];
-    [self.kurdishAudioButton setBackgroundImage:self.playAudioImage forState:UIControlStateNormal];
-    [self.alquddusAudioButton setBackgroundImage:self.playAudioImage forState:UIControlStateNormal];
-
-    self.arabicHlsUrl = [NSURL URLWithString:@"http://live.abnsat.com/arabic.m3u8"];
-    self.worshipHlsUrl = [NSURL URLWithString:@"http://live.abnsat.com/worship.m3u8"];
-    self.englishHlsUrl = [NSURL URLWithString:@"http://live.abnsat.com/trinity.m3u8"];
-    self.surathHlsUrl = [NSURL URLWithString:@"http://live.abnsat.com/surath.m3u8"];
-    self.kurdishHlsUrl = [NSURL URLWithString:@"http://live.abnsat.com/kurdish.m3u8"];
-    self.alquddusHlsUrl = [NSURL URLWithString:@"http://live.abnsat.com/alquddoos.m3u8"];
+    self.arabicHlsUrl = [NSURL URLWithString:@"http://rtmp-arabic.abnsat.com/live/arabic/playlist.m3u8"];
+    self.worshipHlsUrl = [NSURL URLWithString:@"http://rtmp-worship.abnsat.com/live/worship/playlist.m3u8"];
+    self.englishHlsUrl = [NSURL URLWithString:@"http://rtmp-trinity.abnsat.com/live/trinity/playlist.m3u8"];
+    self.surathHlsUrl = [NSURL URLWithString:@"http://rtmp-surath.abnsat.com/live/surath/playlist.m3u8"];
+    self.kurdishHlsUrl = [NSURL URLWithString:@"http://rtmp-kurdish.abnsat.com/live/kurdish/playlist.m3u8"];
+    self.alquddusHlsUrl = [NSURL URLWithString:@"http://rtmp-alquddoos.abnsat.com/live/alquddoos/playlist.m3u8"];
     
     NSString * scheduleFeedUrlTemplate = @"http://www.google.com/calendar/feeds/%@/public/full?alt=json&orderby=starttime&max-results=10&singleevents=true&sortorder=ascending&futureevents=true";
     
@@ -48,6 +43,13 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
     self.arabicScheduleFeedUrlString = [NSString stringWithFormat:scheduleFeedUrlTemplate, @"1v9dhh74qeiuj9trbmihka9isc@group.calendar.google.com"];
     
     self.upcomingShowsData = [[NSMutableArray alloc] init];
+    
+    self.deviceScanner = [[GCKDeviceScanner alloc] init];
+    self.deviceScanner.passiveScan = YES;
+    [self.deviceScanner addListener:self];
+    [self.deviceScanner startScan];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(movieFinishedCallback:) name:MPMoviePlayerPlaybackDidFinishNotification object:nil];
     
     [super viewDidLoad];
 }
@@ -61,50 +63,40 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 }
 
 - (IBAction)arabicButtonClick:(id)sender {
-
-    [self stopAudioPlayer];
-
-    self.player = [[MPMoviePlayerViewController alloc] initWithContentURL:self.arabicHlsUrl];
-    
-    [self presentMoviePlayerViewControllerAnimated:self.player];
-
+    [self playVideoStream:self.arabicHlsUrl title:@"Arabic Stream"];
 }
-
 - (IBAction)englishButtonClick:(id)sender {
-
-    [self stopAudioPlayer];
-
-    self.player = [[MPMoviePlayerViewController alloc] initWithContentURL:self.englishHlsUrl];
-    [self presentMoviePlayerViewControllerAnimated:self.player];
+    [self playVideoStream:self.englishHlsUrl title:@"English Stream"];
 }
-
 - (IBAction)worshipButtonClick:(id)sender {
-    
-    [self stopAudioPlayer];
-    
-    self.player = [[MPMoviePlayerViewController alloc] initWithContentURL:self.worshipHlsUrl];
-    [self presentMoviePlayerViewControllerAnimated:self.player];
+    [self playVideoStream:self.worshipHlsUrl title:@"Worship Stream"];
 }
-
 - (IBAction)surathButtonClick:(id)sender {
-    [self stopAudioPlayer];
-    
-    self.player = [[MPMoviePlayerViewController alloc] initWithContentURL:self.surathHlsUrl];
-    [self presentMoviePlayerViewControllerAnimated:self.player];
+    [self playVideoStream:self.surathHlsUrl title:@"Surath Stream"];
 }
-
 - (IBAction)kurdishButtonClick:(id)sender {
-    [self stopAudioPlayer];
-    
-    self.player = [[MPMoviePlayerViewController alloc] initWithContentURL:self.kurdishHlsUrl];
-    [self presentMoviePlayerViewControllerAnimated:self.player];
+    [self playVideoStream:self.kurdishHlsUrl title:@"Kurdish Stream"];
+}
+- (IBAction)alquddusButtonClick:(id)sender {
+    [self playVideoStream:self.alquddusHlsUrl title:@"Al Quddoos Stream"];
 }
 
-- (IBAction)alquddusButtonClick:(id)sender {
+
+- (void)playVideoStream:(NSURL *)hlsUrl title:(NSString *)title {
     [self stopAudioPlayer];
-    
-    self.player = [[MPMoviePlayerViewController alloc] initWithContentURL:self.alquddusHlsUrl];
-    [self presentMoviePlayerViewControllerAnimated:self.player];
+    if ([self isCasting]) {
+        [self castVideo:hlsUrl title:title];
+    }
+    else {
+        self.player = [[MPMoviePlayerViewController alloc] initWithContentURL:hlsUrl];
+        [self presentMoviePlayerViewControllerAnimated:self.player];
+    }
+}
+
+
+- (void)movieFinishedCallback:(NSNotification *) notification {
+    NSLog(@"movieFinishedCallback");
+    [self stopAudioPlayer];
 }
 
 
@@ -120,7 +112,7 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
     self.arabicButton.hidden = YES;
     self.arabicAudioPlayingIndicator.hidden = NO;
 
-    [self.arabicAudioButton setBackgroundImage:self.stopAudioImage forState:UIControlStateNormal];
+    [self.arabicAudioButton setImage:self.stopAudioImage forState:UIControlStateNormal];
 
     self.audioPlayer = [[AVPlayer alloc] initWithURL:self.arabicHlsUrl];
     
@@ -141,7 +133,7 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
     self.englishButton.hidden = YES;
     self.englishAudioPlayingIndicator.hidden = NO;
     
-    [self.englishAudioButton setBackgroundImage:self.stopAudioImage forState:UIControlStateNormal];
+    [self.englishAudioButton setImage:self.stopAudioImage forState:UIControlStateNormal];
 
     self.audioPlayer = [[AVPlayer alloc] initWithURL:self.englishHlsUrl];
 
@@ -162,7 +154,7 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
     self.worshipButton.hidden = YES;
     self.worshipAudioPlayingIndicator.hidden = NO;
     
-    [self.worshipAudio setBackgroundImage:self.stopAudioImage forState:UIControlStateNormal];
+    [self.worshipAudio setImage:self.stopAudioImage forState:UIControlStateNormal];
     
     self.audioPlayer = [[AVPlayer alloc] initWithURL:self.worshipHlsUrl];
     
@@ -182,7 +174,7 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
     self.surathButton.hidden = YES;
     self.surathAudioPlayingIndicator.hidden = NO;
     
-    [self.surathAudioButton setBackgroundImage:self.stopAudioImage forState:UIControlStateNormal];
+    [self.surathAudioButton setImage:self.stopAudioImage forState:UIControlStateNormal];
     
     self.audioPlayer = [[AVPlayer alloc] initWithURL:self.surathHlsUrl];
     
@@ -202,7 +194,7 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
     self.kurdushButton.hidden = YES;
     self.kurdishAudioPlayingIndicator.hidden = NO;
     
-    [self.kurdishAudioButton setBackgroundImage:self.stopAudioImage forState:UIControlStateNormal];
+    [self.kurdishAudioButton setImage:self.stopAudioImage forState:UIControlStateNormal];
     
     self.audioPlayer = [[AVPlayer alloc] initWithURL:self.kurdishHlsUrl];
     
@@ -222,7 +214,7 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
     self.alquddusButton.hidden = YES;
     self.alquddusAudioPlayingIndicator.hidden = NO;
     
-    [self.alquddusAudioButton setBackgroundImage:self.stopAudioImage forState:UIControlStateNormal];
+    [self.alquddusAudioButton setImage:self.stopAudioImage forState:UIControlStateNormal];
     
     self.audioPlayer = [[AVPlayer alloc] initWithURL:self.alquddusHlsUrl];
     
@@ -233,6 +225,10 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 
 -(void) stopAudioPlayer {
     self.audioPlayer = nil;
+    
+    if (self.isCasting) {
+        [self stopCastingVideo];
+    }
     
     self.arabicAudioPlaying = NO;
     self.englishAudioPlaying = NO;
@@ -255,12 +251,12 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
     self.kurdishAudioPlayingIndicator.hidden = YES;
     self.alquddusAudioPlayingIndicator.hidden = YES;
 
-    [self.arabicAudioButton setBackgroundImage:self.playAudioImage forState:UIControlStateNormal];
-    [self.englishAudioButton setBackgroundImage:self.playAudioImage forState:UIControlStateNormal];
-    [self.worshipAudio setBackgroundImage:self.playAudioImage forState:UIControlStateNormal];
-    [self.surathAudioButton setBackgroundImage:self.playAudioImage forState:UIControlStateNormal];
-    [self.kurdishAudioButton setBackgroundImage:self.playAudioImage forState:UIControlStateNormal];
-    [self.alquddusAudioButton setBackgroundImage:self.playAudioImage forState:UIControlStateNormal];
+    [self.arabicAudioButton setImage:self.playAudioImage forState:UIControlStateNormal];
+    [self.englishAudioButton setImage:self.playAudioImage forState:UIControlStateNormal];
+    [self.worshipAudio setImage:self.playAudioImage forState:UIControlStateNormal];
+    [self.surathAudioButton setImage:self.playAudioImage forState:UIControlStateNormal];
+    [self.kurdishAudioButton setImage:self.playAudioImage forState:UIControlStateNormal];
+    [self.alquddusAudioButton setImage:self.playAudioImage forState:UIControlStateNormal];
     
 }
 
@@ -390,7 +386,7 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
     CGFloat screenWidth = screenRect.size.width;
     
     UILabel *eventNameLabel = [[UILabel alloc] initWithFrame:CGRectMake(imageWidth + 5, 0, screenWidth - imageWidth - 5, (rowHeight / 2) + 10)];
-    eventNameLabel.lineBreakMode = UILineBreakModeWordWrap;
+    [eventNameLabel setLineBreakMode:NSLineBreakByWordWrapping];
     eventNameLabel.numberOfLines = 3;
     eventNameLabel.textColor = [UIColor darkGrayColor];
     eventNameLabel.backgroundColor = [UIColor whiteColor];
@@ -398,7 +394,7 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
     eventNameLabel.text =  [[NSString alloc] initWithFormat:@"%@", eventName];
 
     UILabel *eventDateTimeLabel = [[UILabel alloc] initWithFrame:CGRectMake(imageWidth + 5, (rowHeight / 2) + 10, screenWidth - imageWidth - 5, (rowHeight / 2) - 10)];
-    eventDateTimeLabel.lineBreakMode = UILineBreakModeTailTruncation;
+    [eventNameLabel setLineBreakMode:NSLineBreakByTruncatingTail];
     eventDateTimeLabel.numberOfLines = 1;
     eventDateTimeLabel.textColor = [UIColor grayColor];
     eventDateTimeLabel.backgroundColor = [UIColor whiteColor];
@@ -533,7 +529,6 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    
     NSInteger i = [sender tag];
     
     if(i != 10 && i != 11) {
@@ -544,5 +539,214 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
     vc.sender = i;
     
 }
+
+
+
+
+#pragma mark Chromecast
+
+- (IBAction)showChromecastPicker:(id)sender {
+    if (self.selectedChromecast == nil) {
+        // show error if no chromecasts found
+        if (self.deviceScanner.devices.count < 1) {
+            [self showError:@"No chromecasts available"];
+            return;
+        }
+        
+        // show picker
+        UIActionSheet *sheet = [[UIActionSheet alloc] initWithTitle:@"Connect to Device"
+                                                           delegate:self
+                                                  cancelButtonTitle:nil
+                                             destructiveButtonTitle:nil
+                                                  otherButtonTitles:nil];
+        
+        for (GCKDevice *device in self.deviceScanner.devices) {
+            [sheet addButtonWithTitle:device.friendlyName];
+        }
+        
+        [sheet addButtonWithTitle:@"Cancel"];
+        sheet.cancelButtonIndex = sheet.numberOfButtons - 1;
+        [sheet showInView:self.view];
+    } else {
+        // Gather stats from device.
+        [self updateStatsFromDevice];
+        
+        NSString *friendlyName = [NSString stringWithFormat:@"Casting to %@", self.selectedChromecast.friendlyName];
+        NSString *mediaTitle = [self.mediaInformation.metadata stringForKey:kGCKMetadataKeyTitle];
+        
+        UIActionSheet *sheet = [[UIActionSheet alloc] initWithTitle:friendlyName
+                                                           delegate:self
+                                                  cancelButtonTitle:nil
+                                             destructiveButtonTitle:nil
+                                                  otherButtonTitles:nil];
+        if (mediaTitle != nil) {
+            [sheet addButtonWithTitle:mediaTitle];
+        }
+        
+        // Offer disconnect option
+        [sheet addButtonWithTitle:@"Disconnect"];
+        [sheet addButtonWithTitle:@"Cancel"];
+        sheet.destructiveButtonIndex = sheet.numberOfButtons - 2;
+        sheet.cancelButtonIndex = sheet.numberOfButtons - 1;
+        [sheet showInView:self.view];
+    }
+}
+
+- (void)connectToDevice {
+    if (self.selectedChromecast == nil)
+        return;
+    
+    NSDictionary *info = [[NSBundle mainBundle] infoDictionary];
+    self.deviceManager = [[GCKDeviceManager alloc] initWithDevice:self.selectedChromecast clientPackageName:[info objectForKey:@"CFBundleIdentifier"]];
+    self.deviceManager.delegate = self;
+    [self.deviceManager connect];
+}
+
+- (void)deviceDisconnected {
+    self.mediaControlChannel = nil;
+    self.deviceManager = nil;
+    self.selectedChromecast = nil;
+}
+
+- (void)updateStatsFromDevice {
+    if (self.mediaControlChannel && [self isCasting]) {
+        _mediaInformation = self.mediaControlChannel.mediaStatus.mediaInformation;
+    }
+}
+
+- (BOOL)isCasting {
+    return (self.deviceManager && self.deviceManager.isConnected);
+}
+
+- (void)updateButtonStates {
+    if ([self isCasting]) {
+        //Show cast button in enabled state
+        [self.chromecastButton setTintColor:[UIColor blueColor]];
+    } else {
+        //Show cast button in disabled state
+        [self.chromecastButton setTintColor:[UIColor grayColor]];
+        
+    }
+}
+
+- (void)castVideo:(NSURL *)hlsUrl title:(NSString *)title {
+    NSLog(@"Cast Video");
+    
+    //Show alert if not connected
+    if (!self.deviceManager || !self.deviceManager.isConnected) {
+        [self showError:@"Chromecast application is not connected properly"];
+        return;
+    }
+    
+    //Define Media metadata
+    GCKMediaMetadata *metadata = [[GCKMediaMetadata alloc] init];
+    [metadata setString:title forKey:kGCKMetadataKeyTitle];
+    
+    //define Media information
+    GCKMediaInformation *mediaInformation =
+    [[GCKMediaInformation alloc] initWithContentID:hlsUrl.absoluteString
+                                        streamType:GCKMediaStreamTypeLive
+                                       contentType:@"video/mp4"
+                                          metadata:metadata
+                                    streamDuration:0
+                                        customData:nil];
+    [_mediaControlChannel loadMedia:mediaInformation autoplay:TRUE playPosition:0];
+}
+
+- (void)stopCastingVideo {
+    if (_mediaControlChannel != nil) {
+        [_mediaControlChannel stop];
+    }
+}
+
+
+#pragma mark - GCKDeviceScannerListener
+- (void)deviceDidComeOnline:(GCKDevice *)device {
+    NSLog(@"device found: %@", device.friendlyName);
+}
+
+- (void)deviceDidGoOffline:(GCKDevice *)device {
+    NSLog(@"device lost: %@", device.friendlyName);
+}
+
+#pragma mark UIActionSheetDelegate
+- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
+    if (buttonIndex == actionSheet.destructiveButtonIndex) {
+        // disconnect button
+        NSLog(@"Disconnecting device: %@", self.selectedChromecast.friendlyName);
+        [self.deviceManager stopApplication];
+        [self.deviceManager disconnect];
+        [self deviceDisconnected];
+    }
+    else if (buttonIndex == actionSheet.cancelButtonIndex) {
+        // nothing
+    }
+    else {
+        // clicked a device or the current
+        if (self.selectedChromecast == nil) {
+            if (buttonIndex < self.deviceScanner.devices.count) {
+                self.selectedChromecast = self.deviceScanner.devices[buttonIndex];
+                NSLog(@"Selecting device: %@", self.selectedChromecast.friendlyName);
+                [self connectToDevice];
+            }
+        }
+    }
+}
+
+#pragma mark - GCKDeviceManagerDelegate
+
+- (void)deviceManagerDidConnect:(GCKDeviceManager *)deviceManager {
+    NSLog(@"connected!");
+    [self.deviceManager launchApplication:kReceiverAppID relaunchIfRunning:YES];
+}
+
+- (void)deviceManager:(GCKDeviceManager *)deviceManager
+didConnectToCastApplication:(GCKApplicationMetadata *)applicationMetadata
+            sessionID:(NSString *)sessionID
+  launchedApplication:(BOOL)launchedApplication {
+    
+    NSLog(@"application has launched");
+    self.mediaControlChannel = [[GCKMediaControlChannel alloc] init];
+    self.mediaControlChannel.delegate = self;
+    [self.deviceManager addChannel:self.mediaControlChannel];
+    [self.mediaControlChannel requestStatus];
+}
+
+- (void)deviceManager:(GCKDeviceManager *)deviceManager didFailToConnectToApplicationWithError:(NSError *)error {
+    [self showError:error.description];
+    [self deviceDisconnected];
+}
+
+- (void)deviceManager:(GCKDeviceManager *)deviceManager didFailToConnectWithError:(GCKError *)error {
+    [self showError:error.description];
+    [self deviceDisconnected];
+}
+
+- (void)deviceManager:(GCKDeviceManager *)deviceManager didDisconnectWithError:(GCKError *)error {
+    NSLog(@"Received notification that device disconnected");
+    
+    if (error != nil) {
+        [self showError:error.description];
+    }
+    
+    [self deviceDisconnected];
+}
+
+- (void)deviceManager:(GCKDeviceManager *)deviceManager didReceiveStatusForApplication:(GCKApplicationMetadata *)applicationMetadata {
+    self.applicationMetadata = applicationMetadata;
+}
+
+
+#pragma mark Helpers
+
+- (void)showError:(NSString *)error {
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error"
+                                                    message:error
+                                                   delegate:nil
+                                          cancelButtonTitle:@"OK"
+                                          otherButtonTitles:nil];
+    [alert show];
+}
+
 
 @end
