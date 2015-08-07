@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="zzO-DM-xMq">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="zzO-DM-xMq">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
         <!--Watch-->
@@ -19,9 +19,6 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ipad-background-1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="VD4-qS-MB2">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="978"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="abn-new-logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="xuc-uh-9OY">
-                                <rect key="frame" x="211" y="603" width="320" height="283"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u8j-9E-V2o">
                                 <rect key="frame" x="127" y="76" width="75" height="75"/>
@@ -188,8 +185,62 @@
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="lIj-rW-wfa" userLabel="alquddoos playing ind">
                                 <rect key="frame" x="154" y="495" width="20" height="20"/>
                             </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jsx-lo-hNQ">
+                                <rect key="frame" x="127" y="546" width="75" height="75"/>
+                                <state key="normal" image="ipad-play-button-75x75.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="prayerButtonClick:" destination="1jC-zi-F7s" eventType="touchUpInside" id="wOP-08-3Ve"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Watch Live Video - PRAYER" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qqZ-qs-G2K">
+                                <rect key="frame" x="257" y="573" width="359" height="27"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MmP-tq-DQF">
+                                <rect key="frame" x="23" y="546" width="75" height="75"/>
+                                <state key="normal" image="playAudioIPad.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="prayerAudioButtonClick:" destination="1jC-zi-F7s" eventType="touchUpInside" id="eFM-WI-r7I"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Lzj-eQ-g1i" userLabel="alquddoos playing ind">
+                                <rect key="frame" x="157" y="573" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q5K-JF-m0q">
+                                <rect key="frame" x="127" y="624" width="75" height="75"/>
+                                <state key="normal" image="ipad-play-button-75x75.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="europeButtonClick:" destination="1jC-zi-F7s" eventType="touchUpInside" id="paW-Db-ibn"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Watch Live Video - EUROPE &amp; MIDDLE EAST" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8lC-VI-BMc">
+                                <rect key="frame" x="257" y="651" width="458" height="27"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VP7-KT-qxv">
+                                <rect key="frame" x="23" y="624" width="75" height="75"/>
+                                <state key="normal" image="playAudioIPad.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="europeAudioButtonClick:" destination="1jC-zi-F7s" eventType="touchUpInside" id="40x-hn-RSc"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="540-rW-hLU" userLabel="alquddoos playing ind">
+                                <rect key="frame" x="157" y="651" width="20" height="20"/>
+                            </activityIndicatorView>
                             <button opaque="NO" tag="10" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uf5-TG-NiJ">
-                                <rect key="frame" x="72" y="689" width="90" height="72"/>
+                                <rect key="frame" x="86" y="758" width="90" height="72"/>
                                 <state key="normal" image="tv.medium.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -200,7 +251,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="11" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a4W-XA-oLJ">
-                                <rect key="frame" x="568" y="689" width="90" height="72"/>
+                                <rect key="frame" x="568" y="758" width="90" height="72"/>
                                 <state key="normal" image="male.user.medium.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -211,13 +262,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Our Programs" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jvg-Ml-Jcx">
-                                <rect key="frame" x="64" y="769" width="113" height="21"/>
+                                <rect key="frame" x="78" y="838" width="113" height="21"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Our Hosts" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1FU-Dd-STh">
-                                <rect key="frame" x="577" y="769" width="86" height="21"/>
+                                <rect key="frame" x="577" y="838" width="86" height="21"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -225,6 +276,9 @@
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="xV7-Pj-mVi" userLabel="worship playing ind">
                                 <rect key="frame" x="154" y="265" width="20" height="20"/>
                             </activityIndicatorView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="abn-new-logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="xuc-uh-9OY">
+                                <rect key="frame" x="275" y="721" width="218" height="193"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -254,9 +308,15 @@
                         <outlet property="englishAudioButton" destination="1Rf-RG-j8S" id="BEh-c4-lXg"/>
                         <outlet property="englishAudioPlayingIndicator" destination="RLF-9t-xVp" id="hLL-4H-Wus"/>
                         <outlet property="englishButton" destination="aCs-aw-VfR" id="xYo-bG-VGk"/>
+                        <outlet property="europeAudioButton" destination="VP7-KT-qxv" id="qdr-rW-nLZ"/>
+                        <outlet property="europeAudioPlayingIndicator" destination="540-rW-hLU" id="2xl-NR-jjF"/>
+                        <outlet property="europeButton" destination="Q5K-JF-m0q" id="FfZ-Ir-rmf"/>
                         <outlet property="kurdishAudioButton" destination="hTt-Ui-7vT" id="J6y-6r-7Es"/>
                         <outlet property="kurdishAudioPlayingIndicator" destination="dEi-5v-VU6" id="7nl-KZ-VZa"/>
                         <outlet property="kurdushButton" destination="NFY-gV-tgq" id="p61-wJ-Yu8"/>
+                        <outlet property="prayerAudioButton" destination="MmP-tq-DQF" id="CWe-9w-y88"/>
+                        <outlet property="prayerAudioPlayingIndicator" destination="Lzj-eQ-g1i" id="pzD-QJ-7qq"/>
+                        <outlet property="prayerButton" destination="jsx-lo-hNQ" id="Y1q-f7-bIG"/>
                         <outlet property="surathAudioButton" destination="Amw-5k-RFE" id="2JF-Ha-z1E"/>
                         <outlet property="surathAudioPlayingIndicator" destination="bN0-zv-lDg" id="miW-Z2-164"/>
                         <outlet property="surathButton" destination="jfN-hS-opK" id="W9y-cB-yfh"/>
