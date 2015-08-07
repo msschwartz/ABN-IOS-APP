@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="4">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -81,7 +81,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ENGLISH STREAM" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="142" translatesAutoresizingMaskIntoConstraints="NO" id="LC9-Ym-CNp">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TRINITY CHANNEL" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="142" translatesAutoresizingMaskIntoConstraints="NO" id="LC9-Ym-CNp">
                                 <rect key="frame" x="121" y="113" width="142" height="25"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -94,7 +94,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bringing the Light of God's Truth  to Middle Eastern People" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="294" translatesAutoresizingMaskIntoConstraints="NO" id="eOH-Zh-e8s">
-                                <rect key="frame" x="21" y="316" width="294" height="57"/>
+                                <rect key="frame" x="16" y="409" width="288" height="57"/>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
                                 <color key="textColor" red="1" green="0.23915553404911893" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -189,6 +189,60 @@
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="vuj-bx-lF7" userLabel="alquddusAudioPlayingIndicator">
                                 <rect key="frame" x="68" y="284" width="20" height="20"/>
                             </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zbh-yP-eYF" userLabel="prayerVideo">
+                                <rect key="frame" x="58" y="315" width="40" height="40"/>
+                                <state key="normal" backgroundImage="play_icon.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="prayerButtonClick:" destination="2" eventType="touchUpInside" id="QcK-j7-dA2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e8M-ng-Nwx" userLabel="prayerAudio">
+                                <rect key="frame" x="12" y="315" width="40" height="40"/>
+                                <state key="normal" image="playAudio.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="prayerAudioButtonClick:" destination="2" eventType="touchUpInside" id="hcA-hL-uQf"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PRAYER STREAM" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="225" translatesAutoresizingMaskIntoConstraints="NO" id="yc0-Cd-1MS">
+                                <rect key="frame" x="121" y="310" width="225" height="49"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="NAg-M6-SpF" userLabel="prayerInd">
+                                <rect key="frame" x="68" y="326" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bzV-Qf-U4a" userLabel="europeVideo">
+                                <rect key="frame" x="58" y="357" width="40" height="40"/>
+                                <state key="normal" backgroundImage="play_icon.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="europeButtonClick:" destination="2" eventType="touchUpInside" id="92e-fU-y5D"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RSd-I9-alz" userLabel="europeAudio">
+                                <rect key="frame" x="12" y="357" width="40" height="40"/>
+                                <state key="normal" image="playAudio.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="europeAudioButtonClick:" destination="2" eventType="touchUpInside" id="Nu9-z5-vIw"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="EUROPE &amp; MIDDLE EAST" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="225" translatesAutoresizingMaskIntoConstraints="NO" id="nH6-v4-GUy">
+                                <rect key="frame" x="121" y="352" width="225" height="49"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="yO3-bw-4JI" userLabel="europeInd">
+                                <rect key="frame" x="68" y="368" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -224,8 +278,15 @@
                         <outlet property="englishAudioButton" destination="261-jc-dUO" id="c7o-cN-s2n"/>
                         <outlet property="englishAudioPlayingIndicator" destination="XlT-LS-VeO" id="yEX-pO-tP4"/>
                         <outlet property="englishButton" destination="wIh-JL-vU3" id="2Zy-Bd-PR2"/>
+                        <outlet property="europeAudioButton" destination="RSd-I9-alz" id="e4o-jC-y88"/>
+                        <outlet property="europeAudioPlayingIndicator" destination="yO3-bw-4JI" id="hkg-0e-UF3"/>
+                        <outlet property="europeButton" destination="bzV-Qf-U4a" id="Qip-1L-mQJ"/>
                         <outlet property="kurdishAudioButton" destination="cyX-Oy-u14" id="OH0-iY-370"/>
                         <outlet property="kurdishAudioPlayingIndicator" destination="pXl-fN-5ZL" id="ubj-Kn-3wa"/>
+                        <outlet property="kurdushButton" destination="16i-gN-xoV" id="1gc-pk-DD2"/>
+                        <outlet property="prayerAudioButton" destination="e8M-ng-Nwx" id="l0n-Sh-Rfs"/>
+                        <outlet property="prayerAudioPlayingIndicator" destination="NAg-M6-SpF" id="XBw-SV-Ril"/>
+                        <outlet property="prayerButton" destination="zbh-yP-eYF" id="lnj-oF-LEy"/>
                         <outlet property="surathAudioButton" destination="eLc-Nx-TQO" id="BAZ-mi-lz8"/>
                         <outlet property="surathAudioPlayingIndicator" destination="ErE-mh-Cmo" id="dMG-62-oni"/>
                         <outlet property="surathButton" destination="Na9-b6-ACs" id="2pZ-H2-5rz"/>
