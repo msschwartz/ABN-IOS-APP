@@ -36,6 +36,8 @@ static NSString *kReceiverAppID = @"EF278A15";
     self.surathHlsUrl = [NSURL URLWithString:@"http://rtmp-surath.abnsat.com/live/surath/playlist.m3u8"];
     self.kurdishHlsUrl = [NSURL URLWithString:@"http://rtmp-kurdish.abnsat.com/live/kurdish/playlist.m3u8"];
     self.alquddusHlsUrl = [NSURL URLWithString:@"http://rtmp-alquddoos.abnsat.com/live/alquddoos/playlist.m3u8"];
+    self.prayerHlsUrl = [NSURL URLWithString:@"http://rtmp-prayer.abnsat.com/live/prayer/playlist.m3u8"];
+    self.europeHlsUrl = [NSURL URLWithString:@"http://rtmp-abnhotbird.abnsat.com/live/abnhotbird/playlist.m3u8"];
     
     NSString * scheduleFeedUrlTemplate = @"http://www.google.com/calendar/feeds/%@/public/full?alt=json&orderby=starttime&max-results=10&singleevents=true&sortorder=ascending&futureevents=true";
     
@@ -80,6 +82,12 @@ static NSString *kReceiverAppID = @"EF278A15";
 }
 - (IBAction)alquddusButtonClick:(id)sender {
     [self playVideoStream:self.alquddusHlsUrl title:@"Al Quddoos Stream"];
+}
+- (IBAction)prayerButtonClick:(id)sender {
+    [self playVideoStream:self.prayerHlsUrl title:@"Prayer Stream"];
+}
+- (IBAction)europeButtonClick:(id)sender {
+    [self playVideoStream:self.europeHlsUrl title:@"Europe & Middle East"];
 }
 
 
@@ -218,6 +226,46 @@ static NSString *kReceiverAppID = @"EF278A15";
     self.alquddusAudioPlaying = YES;
 }
 
+- (IBAction)prayerAudioButtonClick:(id)sender {
+    if(self.prayerAudioPlaying) {
+        [self stopAudioPlayer];
+        return;
+    }
+    
+    [self stopAudioPlayer];
+    
+    self.prayerButton.hidden = YES;
+    self.prayerAudioPlayingIndicator.hidden = NO;
+    
+    [self.prayerAudioButton setImage:self.stopAudioImage forState:UIControlStateNormal];
+    
+    self.audioPlayer = [[AVPlayer alloc] initWithURL:self.prayerHlsUrl];
+    
+    [self.audioPlayer play];
+    
+    self.prayerAudioPlaying = YES;
+}
+
+- (IBAction)europeAudioButtonClick:(id)sender {
+    if(self.europeAudioPlaying) {
+        [self stopAudioPlayer];
+        return;
+    }
+    
+    [self stopAudioPlayer];
+    
+    self.europeButton.hidden = YES;
+    self.europeAudioPlayingIndicator.hidden = NO;
+    
+    [self.europeAudioButton setImage:self.stopAudioImage forState:UIControlStateNormal];
+    
+    self.audioPlayer = [[AVPlayer alloc] initWithURL:self.europeHlsUrl];
+    
+    [self.audioPlayer play];
+    
+    self.europeAudioPlaying = YES;
+}
+
 -(void) stopAudioPlayer {
     self.audioPlayer = nil;
     
@@ -231,6 +279,8 @@ static NSString *kReceiverAppID = @"EF278A15";
     self.surathAudioPlaying = NO;
     self.kurdishAudioPlaying = NO;
     self.alquddusAudioPlaying = NO;
+    self.prayerAudioPlaying = NO;
+    self.europeAudioPlaying = NO;
     
     self.arabicButton.hidden = NO;
     self.englishButton.hidden = NO;
@@ -238,6 +288,8 @@ static NSString *kReceiverAppID = @"EF278A15";
     self.surathButton.hidden = NO;
     self.kurdushButton.hidden = NO;
     self.alquddusButton.hidden = NO;
+    self.prayerButton.hidden = NO;
+    self.europeButton.hidden = NO;
 
     self.englishAudioPlayingIndicator.hidden = YES;
     self.arabicAudioPlayingIndicator.hidden = YES;
@@ -245,6 +297,8 @@ static NSString *kReceiverAppID = @"EF278A15";
     self.surathAudioPlayingIndicator.hidden = YES;
     self.kurdishAudioPlayingIndicator.hidden = YES;
     self.alquddusAudioPlayingIndicator.hidden = YES;
+    self.prayerAudioPlayingIndicator.hidden = YES;
+    self.europeAudioPlayingIndicator.hidden = YES;
 
     [self.arabicAudioButton setImage:self.playAudioImage forState:UIControlStateNormal];
     [self.englishAudioButton setImage:self.playAudioImage forState:UIControlStateNormal];
@@ -252,7 +306,8 @@ static NSString *kReceiverAppID = @"EF278A15";
     [self.surathAudioButton setImage:self.playAudioImage forState:UIControlStateNormal];
     [self.kurdishAudioButton setImage:self.playAudioImage forState:UIControlStateNormal];
     [self.alquddusAudioButton setImage:self.playAudioImage forState:UIControlStateNormal];
-    
+    [self.prayerAudioButton setImage:self.playAudioImage forState:UIControlStateNormal];
+    [self.europeAudioButton setImage:self.playAudioImage forState:UIControlStateNormal];
 }
 
 #pragma mark -

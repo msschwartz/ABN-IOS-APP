@@ -26,6 +26,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *surathButton;
 @property (weak, nonatomic) IBOutlet UIButton *kurdushButton;
 @property (weak, nonatomic) IBOutlet UIButton *alquddusButton;
+@property (weak, nonatomic) IBOutlet UIButton *prayerButton;
+@property (weak, nonatomic) IBOutlet UIButton *europeButton;
 
 
 @property (weak, nonatomic) IBOutlet UIButton *arabicAudioButton;
@@ -34,6 +36,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *surathAudioButton;
 @property (weak, nonatomic) IBOutlet UIButton *kurdishAudioButton;
 @property (weak, nonatomic) IBOutlet UIButton *alquddusAudioButton;
+@property (weak, nonatomic) IBOutlet UIButton *prayerAudioButton;
+@property (weak, nonatomic) IBOutlet UIButton *europeAudioButton;
 
 @property (strong, nonatomic) MPMoviePlayerViewController *player;
 @property (strong, nonatomic) AVPlayer *audioPlayer;
@@ -44,6 +48,8 @@
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *surathAudioPlayingIndicator;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *kurdishAudioPlayingIndicator;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *alquddusAudioPlayingIndicator;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *prayerAudioPlayingIndicator;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *europeAudioPlayingIndicator;
 
 
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *arabicScheduleLoadingIndicator;
@@ -58,6 +64,8 @@
 @property (strong, nonatomic) NSURL * surathHlsUrl;
 @property (strong, nonatomic) NSURL * kurdishHlsUrl;
 @property (strong, nonatomic) NSURL * alquddusHlsUrl;
+@property (strong, nonatomic) NSURL * prayerHlsUrl;
+@property (strong, nonatomic) NSURL * europeHlsUrl;
 
 @property BOOL arabicAudioPlaying;
 @property BOOL englishAudioPlaying;
@@ -65,6 +73,8 @@
 @property BOOL surathAudioPlaying;
 @property BOOL kurdishAudioPlaying;
 @property BOOL alquddusAudioPlaying;
+@property BOOL prayerAudioPlaying;
+@property BOOL europeAudioPlaying;
 
 @property NSString * englishScheduleFeedUrlString;
 @property NSString * arabicScheduleFeedUrlString;
